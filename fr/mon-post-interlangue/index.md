@@ -1,10 +1,22 @@
----
-noteId: "5c6c4420133f11edb5ab61a613de1d89"
-tags: []
-
----
-
-# Mon Post Interlangue
+# Le MonkeyPox avec Jupyter Notebook, PLotly et DataPane 
 
 
 let's write something in this  post 
+
+
+
+
+testons : 
+
+{{< admonition tip >}}
+**LoveIt** theme has [special shortcode for image](../theme-documentation-extended-shortcodes#image), which provides more features.
+{{< /admonition >}}
+
+
+
+
+
+
+je vais mettre un autre titre
+
+##  un autre titre

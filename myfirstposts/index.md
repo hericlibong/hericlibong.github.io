@@ -1,9 +1,3 @@
----
-noteId: "5c7062d0133f11edb5ab61a613de1d89"
-tags: []
-
----
-
 # my fist title
 
 
