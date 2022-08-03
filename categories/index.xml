@@ -1,7 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - hericblog</title>
+        <title>Categories - Category - My New Hugo Site</title>
         <link>https://hericlibong.github.io/categories/</link>
-        <description>Categories - Category - hericblog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://hericlibong.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <description>Categories - Category - My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><atom:link href="https://hericlibong.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
 </rss>

@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Balise - Mon nouveau site Hugo</title>
+        <link>https://hericlibong.github.io/fr/tags/</link>
+        <description>Tags - Balise - Mon nouveau site Hugo</description>
+        <generator>Hugo -- gohugo.io</generator><language>fr</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><atom:link href="https://hericlibong.github.io/fr/tags/" rel="self" type="application/rss+xml" /></channel>
+</rss>

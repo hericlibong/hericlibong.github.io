@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>hericblog</title>
+        <title>My New Hugo Site</title>
         <link>https://hericlibong.github.io/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Aug 2022 04:15:18 &#43;0000</lastBuildDate>
+        <description>Hugo theme - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 04:15:18 &#43;0000</lastBuildDate>
             <atom:link href="https://hericlibong.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>my fist title</title>
     <link>https://hericlibong.github.io/posts/myfirstposts/</link>
     <pubDate>Wed, 03 Aug 2022 04:15:18 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>Heric Libong</author>
     <guid>https://hericlibong.github.io/posts/myfirstposts/</guid>
     <description><![CDATA[this is the first content of the post
 def function(): return to nnothiing Just 1 ####test]]></description>
