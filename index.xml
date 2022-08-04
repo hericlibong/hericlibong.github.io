@@ -7,12 +7,15 @@
             <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</lastBuildDate>
             <atom:link href="https://hericlibong.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Mon Post Interlangue</title>
+    <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane</title>
     <link>https://hericlibong.github.io/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</pubDate>
     <author>Heric Libong</author>
     <guid>https://hericlibong.github.io/mon-post-interlangue/</guid>
-    <description><![CDATA[Titre mon titre let&rsquo;s write something in this post]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/monkey.png" referrerpolicy="no-referrer">
+            </div>Titre mon titre let&rsquo;s write something in this post
+IFrame not supported ]]></description>
 </item>
 <item>
     <title>my fist title</title>

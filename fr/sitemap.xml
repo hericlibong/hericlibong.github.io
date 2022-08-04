@@ -20,7 +20,15 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/about/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/plotly/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/plotly/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/plotly/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/plotly/"
+                    /></url><url>
             <loc>https://hericlibong.github.io/fr/categories/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -30,9 +38,33 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/categories/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/datapane/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://hericlibong.github.io/fr/categories/dataviz/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/datapane/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/datapane/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/datapane/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/fr/categories/dataviz/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/categories/dataviz/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/categories/dataviz/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/jupyter-notebook/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/jupyter-notebook/"
+                    /></url><url>
             <loc>https://hericlibong.github.io/fr/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -42,7 +74,15 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/monkeypox/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/monkeypox/"
+                    /></url><url>
             <loc>https://hericlibong.github.io/fr/posts/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -52,7 +92,15 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/posts/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/python/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/python/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/python/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/python/"
+                    /></url><url>
             <loc>https://hericlibong.github.io/fr/tags/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"

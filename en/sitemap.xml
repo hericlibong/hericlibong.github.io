@@ -11,6 +11,42 @@
                     hreflang="en"
                     href="https://hericlibong.github.io/about/"
                     /></url><url>
+            <loc>https://hericlibong.github.io/tags/plotly/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/plotly/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/plotly/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/categories/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/categories/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/categories/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/tags/datapane/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/datapane/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/datapane/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/categories/dataviz/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/categories/dataviz/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/categories/dataviz/"
+                    /></url><url>
             <loc>https://hericlibong.github.io/mon-post-interlangue/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
@@ -19,6 +55,24 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://hericlibong.github.io/mon-post-interlangue/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/jupyter-notebook/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/jupyter-notebook/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/monkeypox/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/monkeypox/"
                     /></url><url>
             <loc>https://hericlibong.github.io/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
@@ -38,17 +92,16 @@
                     hreflang="en"
                     href="https://hericlibong.github.io/posts/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/myfirstposts/</loc><lastmod>2022-08-03T04:15:18&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://hericlibong.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hericlibong.github.io/tags/python/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
-                        href="https://hericlibong.github.io/fr/categories/"
+                        href="https://hericlibong.github.io/fr/tags/python/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://hericlibong.github.io/categories/"
+                    href="https://hericlibong.github.io/tags/python/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hericlibong.github.io/tags/</loc><lastmod>2022-08-03T15:07:17&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
                         href="https://hericlibong.github.io/fr/tags/"
@@ -56,4 +109,5 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://hericlibong.github.io/tags/"
-                    /></url></urlset>
+                    /></url><url>
+            <loc>https://hericlibong.github.io/myfirstposts/</loc><lastmod>2022-08-03T04:15:18&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
