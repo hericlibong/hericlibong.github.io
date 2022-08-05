@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hericlibong.github.io\/fr\/mon-post-interlangue\/"
-        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  72 ,
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  327 ,
         "url": "https:\/\/hericlibong.github.io\/fr\/mon-post-interlangue\/","datePublished": "2022-08-03T15:07:40+00:00","dateModified": "2022-08-03T15:07:40+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
@@ -110,8 +110,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Le MonkeyPox avec Jupyter Notebook, PLotly et DataPane </h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/fr/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">inclus dans <a href="/fr/categories/dataviz/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Dataviz</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;72 mots&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;Une minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;327 mots&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -128,17 +128,90 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#réaliser-partager-et-intégrer-son-data-visualizer-en-python">Réaliser, partager et intégrer son data visualizer en python</a></li>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#réaliser-partager-et-intégrer-son-data-visualizer-en-python-br">Réaliser, partager et intégrer son data visualizer en python <br></a></li>
+                    <li><a href="#datapane-une-bonne-alternative-en-total-python-br">Datapane une bonne alternative en total python <br></a></li>
+                    <li><a href="#notre-mission">Notre mission</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#un-autre-titre">un autre titre</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><hr>
-<h3 id="réaliser-partager-et-intégrer-son-data-visualizer-en-python">Réaliser, partager et intégrer son data visualizer en python</h3>
-<hr>
-<p>Quand je me suis lancé dans la science des données poour agrémenter mes récits de faits&hellip; mais  surtout j&rsquo;étais particlièrement administratif devant la puissance narrative visualisations et de leur interactivité et la libérté de lecture qu&rsquo;elles offraient.</p>
-<iframe src="https://datapane.com/reports/E7ydRP3/monkeypox2/embed/" width="100%" height="540px" style="border: none;">IFrame not supported</iframe>
+<h6 id="réaliser-partager-et-intégrer-son-data-visualizer-en-python-br">Réaliser, partager et intégrer son data visualizer en python <br></h6>
+<p>Quand je me suis lancé dans la science des données poour agrémenter mes récits de faits&hellip; mais  surtout j&rsquo;étais particlièrement admiratif devant la puissance narrative des visualisations interactives, de la liberté de lecture qu&rsquo;elles offrent aux lecteurs. <br> Par contre, après une première formation en <code>Python</code>, j&rsquo;ai été quelque peu déçu par la pauvreté narrative des librairies graphiques communes à ce language. Elles sont puissantes et efficaces mais la plupart restent très orientées sciences des données. Elles ne sont pas toujours très accessibles. <br> <br> Dans tous les cas, pas très ludiques. Du coup, on est facilement tenté de se tourner vers dess solutions tels que <code>D3js</code> ou encore des applications &ldquo;prêt-à-visualiser&rdquo; tel que DataWarper ou <a href="https://app.flourish.studio/login" target="_blank" rel="noopener noreffer ">Flourish</a>.</p>
+<br>
+<div style="text-align:center;"><iframe src="https://giphy.com/embed/GobVQOj6KdCsE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/show-boss-let-GobVQOj6KdCsE"></a></p><br>
+<h6 id="datapane-une-bonne-alternative-en-total-python-br">Datapane une bonne alternative en total python <br></h6>
+<br>
+<p>En fait si. &hellip;.</p>
+<p>DataPane est celle que je trouve vraiment intéressante en matière de qualité temps. elle peut  être  le  support d&rsquo;applications complexes auussi bien que de simples visualisations. Son  code python  intégré  permet de</p>
+<p>De plus, comme nous le verrons  DataPane est très simple à partager et à intégrer.  Ce  qui n&rsquo;est pas toujours de la plupart des autres librairies  graphiques python</p>
+<p>l&rsquo;application s&rsquo;intégre à votre environnemennt notebook et permeet de générer des rapport directement à partir de cet environnement. Et surtoot  datapane est flexible à la fois par l&rsquo;utilisation que l&rsquo;on  veut en  faire, pour les environnemennts qu&rsquo;elle peuuut intégrer.<br></p>
+<br>
+<div style = "text-align:center; width:25%px">
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/funny1.gif"
+        data-srcset="/images/funny1.gif, /images/funny1.gif 1.5x, /images/funny1.gif 2x"
+        data-sizes="auto"
+        alt="/images/funny1.gif"
+        title="money1" width="453" height="247" /></p>
+</div>
+<h6 id="notre-mission">Notre mission</h6>
+<p>L&rsquo;idée n&rsquo;est pas de reproduire l&rsquo;intégralité du notebook</p>
+<p>si ce n&rsquo;est pas déjà fait la première chose est d&rsquo;installer Datapane et de l&rsquo;importer</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip3 install -U datapane
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>et de l&rsquo;importer avec les librairies dont nous aurons besoin</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/globaldothealth/monkeypox/main/timeseries-confirmed.csv&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;newmonkeyset.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">data_world</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><iframe src="https://datapane.com/reports/E7ydRP3/monkeypox2/embed/" width="100%" height="540px" style="border: none;">IFrame not supported</iframe>
 <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"><img
         class="lazyload version"
         src="/svg/loading.min.svg"
@@ -157,8 +230,6 @@
         </div>
     </div>
 <p><i class="fa-duotone fa-chart-simple"></i></p>
-<p>je vais mettre un autre titre</p>
-<h2 id="un-autre-titre">un autre titre</h2>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
