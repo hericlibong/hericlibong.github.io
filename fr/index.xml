@@ -7,14 +7,14 @@
             <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:40 &#43;0000</lastBuildDate>
             <atom:link href="https://hericlibong.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Le MonkeyPox avec Jupyter Notebook, PLotly et DataPane </title>
+    <title>Visualiser la &#39;Variole du singe&#39; avec DataPane </title>
     <link>https://hericlibong.github.io/fr/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:40 &#43;0000</pubDate>
     <author>Heric Libong</author>
     <guid>https://hericlibong.github.io/fr/mon-post-interlangue/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/monkey.png" referrerpolicy="no-referrer">
-            </div>Réaliser, partager et intégrer son data visualizer en python Quand je me suis lancé dans la science des données poour agrémenter mes récits de faits&hellip; mais surtout j&rsquo;étais particlièrement admiratif devant la puissance narrative des visualisations interactives, de la liberté de lecture qu&rsquo;elles offrent aux lecteurs.]]></description>
+            </div>Visualiser avec python?&hellip; Pas toujours evident Quand je me suis lancé dans la science des données poour agrémenter mes récits de faits&hellip; mais surtout j&rsquo;étais particlièrement admiratif devant la puissance narrative des visualisations interactives, de la liberté de lecture qu&rsquo;elles offrent aux lecteurs.]]></description>
 </item>
 </channel>
 </rss>
