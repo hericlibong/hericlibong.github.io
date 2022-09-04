@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>flourish - Tag - My New Hugo Site</title>
+        <link>https://hericlibong.github.io/tags/flourish/</link>
+        <description>flourish - Tag - My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/tags/flourish/" rel="self" type="application/rss+xml" /><item>
+    <title>Senegalese Parlement DataChronicles</title>
+    <link>https://hericlibong.github.io/senegalese-parlement-chronicles/</link>
+    <pubDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/senegalese-parlement-chronicles/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/Senegalese%20National%20Assembly.png" referrerpolicy="no-referrer">
+            </div>A DataStories of the Senegalese parliament ]]></description>
+</item>
+</channel>
+</rss>
