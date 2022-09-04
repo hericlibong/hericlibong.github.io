@@ -4,9 +4,9 @@
 
 ##### Visualiser avec python c'est bien mais... <br>
 
-Au départ, je voulais juste écrire un article sur l'épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j'ai rencontré tout un tas de problèmes. Des problèmes de droits d'accès ou de dépassement de taille avec [studiolab](). Des problèmes pratiques, de responsivité en utilisant les méthodes d'hébergement alternatives. <br>
+Au départ, Il s'agissait juste d'écrire un article sur l'épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j'ai rencontré tout un tas de problèmes. Des problèmes de droits d'accès ou de dépassement de taille avec [studiolab](). Des problèmes pratiques, de responsivité en utilisant les méthodes d'hébergement alternatives. <br>
 
-Je savais que les librairies graphiques interactives python étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j'étais à deux doigts de jeter l'éponge et de me tourner vers des solutions Java Script "prêtes à visualiser" du type [Flourish]() ou [Datawarper](). <br>  
+Je savais que les librairies graphiques `Python` étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j'étais à deux doigts de jeter l'éponge et de me tourner vers des solutions Java Script "prêtes à visualiser" du type [Flourish]() ou [Datawarper](). <br>  
 
 <div style="text-align:center;"><iframe src="https://giphy.com/embed/GobVQOj6KdCsE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/show-boss-let-GobVQOj6KdCsE"></a></p><br>
 
@@ -14,10 +14,14 @@ Et puis je me suis souvenu de [DataPane](). C'est une librairie que j'avais déj
 
 [Datapane](https://docs.datapane.com/concepts/datapane-teams/) c'est à la fois une librairie Python qui permet de créer des rapports interactifs et  une plateforme [Open] qui permet de les stocker, de les partager via et sur de nombreux supports. <br>
 
-On peut y intégrer directement des objets python, qu'il s'agisse de texte markdown, des graphiques - [Plotly](https://plotly.com/python/), [Altair](https://altair-viz.github.io/#), [Bokeh](https://bokeh.org/), Matplotlib etc. -, de html, de tables ou des médias. Les rapports peuvent être programmés directement à partir d'un environnement local - Jupyter Notebook, Colab, Airflow etc.
-
+On peut y intégrer directement des objets python, qu'il s'agisse de texte markdown, des graphiques - [Plotly](https://plotly.com/python/), [Altair](https://altair-viz.github.io/#), [Bokeh](https://bokeh.org/), Matplotlib etc. -, de html, de tables ou des médias. 
 <br>
-Ce qui rend Datapane particulièrement attractif, c'est certes, la facilité avec laquelle on peut programmer, partager et intégrer les rapports. Mais aussi, la flexibilité de sa structure et la simplicité de sa syntaxe. Datapane de s'adapter à de nombreux besoins. Et laissent une grande place à l'intuition. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur un notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.
+
+A mon sens, Datapane est un outil particulièrement attractif pour plusieurs raisons
+- D'abord les rapports peuvent être programmés directement à partir d'un environnement local et unique (Jupyter Notebook, Colab, Airflow etc.).
+- Ensuite, la flexibilité de la structure et la simplicité de la syntaxe laissent une grande place à l'intuition. Et permettent à Datapane de répondre à de nombreux besoins. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur Notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.
+- Enfin, la facilité pour partager ou pour intégrer les rapports sur des pages web sur des applications communautaires du type `Slack`  ou `discord`. 
+    
 
 <br>
 
@@ -164,7 +168,7 @@ Mais avant de nous intéresser à la structure du rapport, nous devons créer no
 
 ###### La bannière
 
-Pour la bannière, c'est bien simple, on créé une variable `html_banner` avec du `html` que l'on va passer dans le bloc `dp.Html()`:smile: 
+Pour la bannière, c'est bien simple, on créé une variable `html_banner` avec du `html` que l'on va passer dans le bloc `dp.Html()` :monkey_face:
 <br>
 
 

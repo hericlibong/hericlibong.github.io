@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hericlibong.github.io\/fr\/mon-post-interlangue\/"
-        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  1590 ,
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  1607 ,
         "url": "https:\/\/hericlibong.github.io\/fr\/mon-post-interlangue\/","datePublished": "2022-08-03T15:07:40+00:00","dateModified": "2022-08-03T15:07:40+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Visualiser la 'Variole du singe' avec DataPane </h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/fr/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">inclus dans <a href="/fr/categories/dataviz/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Dataviz</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1590 mots&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1607 mots&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -154,14 +154,19 @@
 </nav></div>
             </div><div class="content" id="content"><hr>
 <h5 id="visualiser-avec-python-cest-bien-mais-br">Visualiser avec python c&rsquo;est bien mais&hellip; <br></h5>
-<p>Au départ, je voulais juste écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j&rsquo;ai rencontré tout un tas de problèmes. Des problèmes de droits d&rsquo;accès ou de dépassement de taille avec <a href="" rel="">studiolab</a>. Des problèmes pratiques, de responsivité en utilisant les méthodes d&rsquo;hébergement alternatives. <br></p>
-<p>Je savais que les librairies graphiques interactives python étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j&rsquo;étais à deux doigts de jeter l&rsquo;éponge et de me tourner vers des solutions Java Script &ldquo;prêtes à visualiser&rdquo; du type <a href="" rel="">Flourish</a> ou <a href="" rel="">Datawarper</a>. <br></p>
+<p>Au départ, Il s&rsquo;agissait juste d&rsquo;écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j&rsquo;ai rencontré tout un tas de problèmes. Des problèmes de droits d&rsquo;accès ou de dépassement de taille avec <a href="" rel="">studiolab</a>. Des problèmes pratiques, de responsivité en utilisant les méthodes d&rsquo;hébergement alternatives. <br></p>
+<p>Je savais que les librairies graphiques <code>Python</code> étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j&rsquo;étais à deux doigts de jeter l&rsquo;éponge et de me tourner vers des solutions Java Script &ldquo;prêtes à visualiser&rdquo; du type <a href="" rel="">Flourish</a> ou <a href="" rel="">Datawarper</a>. <br></p>
 <div style="text-align:center;"><iframe src="https://giphy.com/embed/GobVQOj6KdCsE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/show-boss-let-GobVQOj6KdCsE"></a></p><br>
 <p>Et puis je me suis souvenu de <a href="" rel="">DataPane</a>. C&rsquo;est une librairie que j&rsquo;avais déjà utilisé pour intégrer des visualisations. A l&rsquo;époque, elle ne m&rsquo;avait pas laissé un souvenir très marquant. Mais dans la situation actuelle, j&rsquo;ai jugé bon d&rsquo;y regarder de plus près.<br></p>
 <p><a href="https://docs.datapane.com/concepts/datapane-teams/" target="_blank" rel="noopener noreffer ">Datapane</a> c&rsquo;est à la fois une librairie Python qui permet de créer des rapports interactifs et  une plateforme [Open] qui permet de les stocker, de les partager via et sur de nombreux supports. <br></p>
-<p>On peut y intégrer directement des objets python, qu&rsquo;il s&rsquo;agisse de texte markdown, des graphiques - <a href="https://plotly.com/python/" target="_blank" rel="noopener noreffer ">Plotly</a>, <a href="https://altair-viz.github.io/#" target="_blank" rel="noopener noreffer ">Altair</a>, <a href="https://bokeh.org/" target="_blank" rel="noopener noreffer ">Bokeh</a>, Matplotlib etc. -, de html, de tables ou des médias. Les rapports peuvent être programmés directement à partir d&rsquo;un environnement local - Jupyter Notebook, Colab, Airflow etc.</p>
-<br>
-Ce qui rend Datapane particulièrement attractif, c'est certes, la facilité avec laquelle on peut programmer, partager et intégrer les rapports. Mais aussi, la flexibilité de sa structure et la simplicité de sa syntaxe. Datapane de s'adapter à de nombreux besoins. Et laissent une grande place à l'intuition. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur un notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.
+<p>On peut y intégrer directement des objets python, qu&rsquo;il s&rsquo;agisse de texte markdown, des graphiques - <a href="https://plotly.com/python/" target="_blank" rel="noopener noreffer ">Plotly</a>, <a href="https://altair-viz.github.io/#" target="_blank" rel="noopener noreffer ">Altair</a>, <a href="https://bokeh.org/" target="_blank" rel="noopener noreffer ">Bokeh</a>, Matplotlib etc. -, de html, de tables ou des médias.
+<br></p>
+<p>A mon sens, Datapane est un outil particulièrement attractif pour plusieurs raisons</p>
+<ul>
+<li>D&rsquo;abord les rapports peuvent être programmés directement à partir d&rsquo;un environnement local et unique (Jupyter Notebook, Colab, Airflow etc.).</li>
+<li>Ensuite, la flexibilité de la structure et la simplicité de la syntaxe laissent une grande place à l&rsquo;intuition. Et permettent à Datapane de répondre à de nombreux besoins. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur Notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.</li>
+<li>Enfin, la facilité pour partager ou pour intégrer les rapports sur des pages web sur des applications communautaires du type <code>Slack</code>  ou <code>discord</code>.</li>
+</ul>
 <br>
 <p>Du coup, plutôt que de faire un simple article qui intégrerait quelques visualisations, j&rsquo;ai décidé de faire un rapport interactif de plusieurs pages.
 <br></p>
@@ -338,7 +343,7 @@ Ce qui rend Datapane particulièrement attractif, c'est certes, la facilité ave
 Mais avant de nous intéresser à la structure du rapport, nous devons créer nos objets et préparer nos données.
 <br>
 <h6 id="la-bannière">La bannière</h6>
-<p>Pour la bannière, c&rsquo;est bien simple, on créé une variable <code>html_banner</code> avec du <code>html</code> que l&rsquo;on va passer dans le bloc <code>dp.Html()</code>😄
+<p>Pour la bannière, c&rsquo;est bien simple, on créé une variable <code>html_banner</code> avec du <code>html</code> que l&rsquo;on va passer dans le bloc <code>dp.Html()</code> 🐵
 <br></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

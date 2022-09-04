@@ -4,19 +4,9 @@
         <link>https://hericlibong.github.io/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
-            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</lastBuildDate>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</lastBuildDate>
             <atom:link href="https://hericlibong.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Senegalese Parlement DataChronicles</title>
-    <link>https://hericlibong.github.io/senegalese-parlement-chronicles/</link>
-    <pubDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</pubDate>
-    <author>Heric Libong</author>
-    <guid>https://hericlibong.github.io/senegalese-parlement-chronicles/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/Senegalese%20National%20Assembly.png" referrerpolicy="no-referrer">
-            </div>A DataStories of the Senegalese parliament ]]></description>
-</item>
-<item>
     <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane</title>
     <link>https://hericlibong.github.io/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</pubDate>
@@ -24,17 +14,7 @@
     <guid>https://hericlibong.github.io/mon-post-interlangue/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/monkey.png" referrerpolicy="no-referrer">
-            </div>Titre mon titre let&rsquo;s write something in this post
-IFrame not supported ]]></description>
-</item>
-<item>
-    <title>my fist title</title>
-    <link>https://hericlibong.github.io/myfirstposts/</link>
-    <pubDate>Wed, 03 Aug 2022 04:15:18 &#43;0000</pubDate>
-    <author>Heric Libong</author>
-    <guid>https://hericlibong.github.io/myfirstposts/</guid>
-    <description><![CDATA[this is the first content of the post
-1 2 def function(): return to nnothiing Just 1 ####test]]></description>
+            </div>Visualizing with python is good but&hellip; At the beginning, I just wanted to write an article about the Monkey Pox epidemic illustrated with some visualizations made with the Python graphics library, Plotly.]]></description>
 </item>
 </channel>
 </rss>
