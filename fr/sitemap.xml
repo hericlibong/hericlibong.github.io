@@ -56,15 +56,6 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/categories/dataviz/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://hericlibong.github.io/tags/jupyter-notebook/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="fr"
-                    href="https://hericlibong.github.io/fr/tags/jupyter-notebook/"
-                    /></url><url>
             <loc>https://hericlibong.github.io/fr/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -73,6 +64,15 @@
                     rel="alternate"
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://hericlibong.github.io/tags/jupyter-notebook/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://hericlibong.github.io/fr/tags/jupyter-notebook/"
                     /></url><url>
             <loc>https://hericlibong.github.io/fr/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"

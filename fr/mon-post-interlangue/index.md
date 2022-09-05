@@ -1,8 +1,8 @@
-# Visualiser la 'Variole du singe' avec DataPane 
+# Visualiser la 'Variole du singe' avec DataPane # Partie I 
 
 ---
 
-##### Visualiser avec python c'est bien mais... <br>
+## Visualiser avec python c'est bien mais... <br>
 
 Au départ, Il s'agissait juste d'écrire un article sur l'épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j'ai rencontré tout un tas de problèmes. Des problèmes de droits d'accès ou de dépassement de taille avec [studiolab](). Des problèmes pratiques, de responsivité en utilisant les méthodes d'hébergement alternatives. <br>
 
@@ -54,7 +54,7 @@ A des fins personnelles j'y ai ajouté quelques variables, `"Continents"`, `"Sub
 
 <br>
 
-###### Le détail du travail
+## Le détail du travail
 
 Nous allons faire un rapport de quatre pages : 
 - 1 page d'accueil qui contiendra du texte markdown et affichera les principales statistiques
@@ -65,6 +65,10 @@ Nous allons faire un rapport de quatre pages :
 
 <br>
 
+Cette première pratique sera essentiellement consacrée à la page d’introduction. Ce qui nous permettra également de présenter la structure générale de DataPane que nous rencontrerons tout au long de la programmation du rapport.
+
+
+
 
 {{< admonition type=abstract title="MonkeyPox DataExplorer" open=true >}}
 
@@ -72,7 +76,7 @@ Nous allons faire un rapport de quatre pages :
 
 {{< /admonition >}}
 
-###### Installation et datas
+## Installation et datas
 
 si ce n'est pas déjà fait la première chose est [d'installer Datapane](https://docs.datapane.com/tutorials/basics/install-datapane/) et de l'importer
 
@@ -119,7 +123,7 @@ report.upload(name="datapox")
 
 
 
-##### Page d'Accueil
+### Page d'Accueil
 
 Dans Datapane les rapports sont composés de plusieurs blocs, qui englobent des objets Python, comme  nous l'avons signalé plus haut. Ces blocs - de texte ou de données - peuvent être eux mêmes englobés dans d'autres blocs de mise en page.<br>
 
@@ -182,7 +186,7 @@ html_banner = """<div style="padding: 10px;display: flex;align-items: center;fon
 ```
 <br>
 
-###### text de présentation
+###### Texte Intro
 
 On peut utiliser du markdown pour le passer dans le bloc text `dp.Text()`. Ici, j'ai souhaité que notre texte de présentation contienne des données actualisées en temps réel. Par ex: le nombre total de cas, le pays le plus affecté, la moyenne des contaminations par jour etc.
 
@@ -253,11 +257,14 @@ i.e.**{topten_percent}%** of global cases are concentrated in the 10 countries m
 
 <br>
 
-..Et les valeurs des blocks BigNumber
+### Cartes BigNumber
+
+...Et les valeurs des blocks BigNumber
+
 
 ```python
 
-
+#Bignumber data
 global_cases = df.groupby('date')['cumulative_cases'].sum().iloc[-1]
 global_cases_change = df.groupby('date')['cumulative_cases'].sum().iloc[-1] - df.groupby('date')['cumulative_cases'].sum().iloc[-2]
 nb_countries = len(df['Country'].unique())
@@ -299,4 +306,6 @@ dp.Report(
          dp.Page(title = 'data')
 )
 ```
+
+
 

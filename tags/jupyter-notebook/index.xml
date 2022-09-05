@@ -1,11 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Jupyter Notebook - Tag - My New Hugo Site</title>
+        <title>Jupyter Notebook - Tag - HlStories</title>
         <link>https://hericlibong.github.io/tags/jupyter-notebook/</link>
-        <description>Jupyter Notebook - Tag - My New Hugo Site</description>
+        <description>Jupyter Notebook - Tag - HlStories</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
             <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/tags/jupyter-notebook/" rel="self" type="application/rss+xml" /><item>
-    <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane</title>
+    <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I</title>
     <link>https://hericlibong.github.io/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</pubDate>
     <author>Heric Libong</author>

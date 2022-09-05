@@ -1,7 +1,7 @@
-# Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane
+# Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I
 
 
-#### Visualizing with python is good but... <br>
+## Visualizing with python is good but... <br>
 
  At the beginning, I just wanted to write an article about the Monkey Pox epidemic illustrated with some visualizations made with the Python graphics library, Plotly. But when I had to integrate my interactive graphics to my article, I encountered a lot of problems. Problems of access rights or size overflow with [studiolab](). Practical problems, responsiveness when using alternative hosting methods <br>
 
@@ -51,7 +51,7 @@ For personal use I have added some variables, `Continents`, `SubRegion`, geograp
 
 <br>
 
-###### The detail of the work
+## Details of Work
 
 We are going to make a four page report: 
 - 1 home page that will contain markdown text and display the main statistics
@@ -59,8 +59,12 @@ We are going to make a four page report:
 - 1 page for the map
 - 1 page of tables
 
-
 <br>
+
+
+This first practice will be mainly devoted to the introduction page. This will also allow us to present the general structure of DataPane that we will encounter throughout the programming of the report.
+
+
 
 
 {{< admonition type=abstract title="MonkeyPox DataExplorer" open=true >}}
@@ -69,7 +73,7 @@ We are going to make a four page report:
 
 {{< /admonition >}}
 
-###### Installation and datas
+## Installation and datas
 
 if you haven't already done so, the first thing is to [install Datapane](https://docs.datapane.com/tutorials/basics/install-datapane/) and import it
 
@@ -118,7 +122,7 @@ report.upload(name="datapox")
 
 
 
-##### Home Page
+## Home Page
 
 In Datapane reports are composed of several blocks, which enclose Python objects, as mentioned above. These blocks - of text or data - can themselves be embedded in other layout blocks.<br>
 
@@ -166,7 +170,7 @@ But before we look at the structure of the report, we need to create our objects
 
 <br>
 
-###### La bannière
+### Banner
 
 For the banner, it's very simple, we create a variable `html_banner` with `html` that we will pass in the block `dp.Html()`:monkey_face: 
 <br>
@@ -182,7 +186,7 @@ html_banner = """<div style="padding: 10px;display: flex;align-items: center;fon
 ```
 <br>
 
-###### text de présentation
+### Intro Text
 
 We can use markdown to pass it in the text block `dp.Text()`. Here, I wanted our presentation text to contain real time updated data. For example: the total number of cases, the most affected country, the average number of infections per day etc.
 
@@ -253,11 +257,13 @@ i.e.**{topten_percent}%** of global cases are concentrated in the 10 countries m
 
 <br>
 
+### BigNumber Blocks
+
 ...And the values of the BigNumber blocks
 
 ```python
 
-
+# Set the global value for big Number Cards
 global_cases = df.groupby('date')['cumulative_cases'].sum().iloc[-1]
 global_cases_change = df.groupby('date')['cumulative_cases'].sum().iloc[-1] - df.groupby('date')['cumulative_cases'].sum().iloc[-2]
 nb_countries = len(df['Country'].unique())
