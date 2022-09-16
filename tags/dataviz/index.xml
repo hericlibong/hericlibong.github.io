@@ -1,18 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Dataviz - Tag - My New Hugo Site</title>
+        <title>Dataviz - Tag - HlStories</title>
         <link>https://hericlibong.github.io/tags/dataviz/</link>
-        <description>Dataviz - Tag - My New Hugo Site</description>
+        <description>Dataviz - Tag - HlStories</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
             <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/tags/dataviz/" rel="self" type="application/rss+xml" /><item>
-    <title>Senegalese Parlement DataChronicles</title>
+    <title>Meet your Deputy</title>
     <link>https://hericlibong.github.io/senegalese-parlement-chronicles/</link>
     <pubDate>Sun, 21 Aug 2022 02:47:44 &#43;0000</pubDate>
     <author>Heric Libong</author>
     <guid>https://hericlibong.github.io/senegalese-parlement-chronicles/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/Senegalese%20National%20Assembly.png" referrerpolicy="no-referrer">
-            </div>A DataStories of the Senegalese parliament ]]></description>
+                <img src="/images/senparlement.png" referrerpolicy="no-referrer">
+            </div>Meet Your Deputy Comme beaucoup, j&rsquo;ai été interpellé par les scènes de tensions qui ont accompagné la seance de la rentrée parlementaire au Sénégal du 12 septembre 2022.]]></description>
 </item>
 </channel>
 </rss>

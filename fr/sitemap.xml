@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://hericlibong.github.io/fr/mon-post-interlangue/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/mon-post-interlangue/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/mon-post-interlangue/"
@@ -11,7 +11,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/mon-post-interlangue/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/about/</loc><lastmod>2022-08-03T15:28:53&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/about/</loc><lastmod>2022-08-03T15:28:53&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/about/"
@@ -20,7 +20,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/about/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/plotly/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/plotly/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/plotly/"
@@ -29,7 +29,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/tags/plotly/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/categories/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/categories/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/categories/"
@@ -38,7 +38,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/categories/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/datapane/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/datapane/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/datapane/"
@@ -47,7 +47,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/tags/datapane/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/categories/dataviz/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/categories/dataviz/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/categories/dataviz/"
@@ -56,7 +56,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/categories/dataviz/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/"
@@ -65,7 +65,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/jupyter-notebook/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/jupyter-notebook/"
@@ -74,7 +74,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/tags/jupyter-notebook/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/monkeypox/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/monkeypox/"
@@ -83,7 +83,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/tags/monkeypox/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/posts/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/posts/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/posts/"
@@ -92,7 +92,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/posts/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/python/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/python/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/python/"
@@ -101,7 +101,7 @@
                     hreflang="fr"
                     href="https://hericlibong.github.io/fr/tags/python/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/fr/tags/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+            <loc>https://hericlibong.github.io/fr/tags/</loc><lastmod>2022-08-03T15:07:40&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hericlibong.github.io/tags/"
