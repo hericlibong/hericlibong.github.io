@@ -2,10 +2,26 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://hericlibong.github.io/senegalese-parlement-chronicles/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://hericlibong.github.io/tags/dataviz/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://hericlibong.github.io/tags/flourish/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://hericlibong.github.io/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://hericlibong.github.io/senegalese-parlement-chronicles/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://hericlibong.github.io/tags/datavisualisation/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/datavisualisation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/datavisualisation/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/tags/flourish/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/flourish/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/flourish/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
                         href="https://hericlibong.github.io/fr/"
@@ -14,7 +30,7 @@
                     hreflang="en"
                     href="https://hericlibong.github.io/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/posts/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://hericlibong.github.io/posts/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
                         href="https://hericlibong.github.io/fr/posts/"
@@ -23,7 +39,16 @@
                     hreflang="en"
                     href="https://hericlibong.github.io/posts/"
                     /></url><url>
-            <loc>https://hericlibong.github.io/tags/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
+            <loc>https://hericlibong.github.io/tags/storytelling/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://hericlibong.github.io/fr/tags/storytelling/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hericlibong.github.io/tags/storytelling/"
+                    /></url><url>
+            <loc>https://hericlibong.github.io/tags/</loc><lastmod>2022-08-21T02:47:44&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority><xhtml:link
                         rel="alternate"
                         hreflang="fr"
                         href="https://hericlibong.github.io/fr/tags/"
