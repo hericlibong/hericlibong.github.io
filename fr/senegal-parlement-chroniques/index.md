@@ -1,9 +1,3 @@
----
-noteId: "b4b217f03ab711ed800ccd8fc77e2f37"
-tags: []
-
----
-
 # Rencontre ton député
 
 
@@ -52,3 +46,6 @@ ___
 
 
 {{</ admonition >}}
+
+
+<div class="flourish-embed" data-src="story/1691683"><script src="https://public.flourish.studio/resources/embed.js"></script></div>

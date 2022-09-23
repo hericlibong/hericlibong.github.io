@@ -39,6 +39,9 @@ For this time, I use [Flourish](https://flourish.studio/) for the graphics but i
 {{</ admonition >}}
 
 
+<div class="flourish-embed" data-src="story/1691683"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
 
 
 
