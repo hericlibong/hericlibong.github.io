@@ -1,9 +1,3 @@
----
-noteId: "78be6a3058a011edab38831d46610f55"
-tags: []
-
----
-
 # Projects
 
 

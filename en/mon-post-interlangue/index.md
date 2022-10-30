@@ -1,9 +1,3 @@
----
-noteId: "78bd7fd058a011edab38831d46610f55"
-tags: []
-
----
-
 # Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I
 
 

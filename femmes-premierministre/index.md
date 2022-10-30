@@ -1,9 +1,3 @@
----
-noteId: "78be914258a011edab38831d46610f55"
-tags: []
-
----
-
 # Femmes et premier ministre
 
 ## Femme 1er ministre? rien d'exeptionnel de nos jours

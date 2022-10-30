@@ -1,9 +1,3 @@
----
-noteId: "78be914158a011edab38831d46610f55"
-tags: []
-
----
-
 # Championnat de F1 2022: les dernières batailles en Graphiques interactifs
 
 <br>
@@ -17,9 +11,9 @@ tags: []
 
 {{< image src="/images/leclercvsPerez2.jpeg" caption=" Charles Leclerc, Ferrari et Sergio Perez, Red Bull Racing, lors du Grand Prix de Suzuka 2022. Motorsport Images" >}}
 <br>
-Prétendant au titre en début de saison Charles Leclerc occupait confortablement la tête du championnat après les premiers grands prix. <br> Mais handicapé par les problèmes de fiabilité de la Ferrari, pénalisé par les incohérences stratégiques de sa team et sanctionné par des erreurs de pilotage, il a progressivement vu le titre s'envoler et Sergio Perez le rattraper au classement. 
+Prétendant au titre en début de saison Charles Leclerc occupait confortablement la tête du championnat après les premiers grands prix. <br> Mais handicapé par les problèmes de fiabilité de la Ferrari, pénalisé par les incohérences stratégiques de sa team et sanctionné par des erreurs de pilotage, il a progressivement vu le titre s'envoler et surtout Sergio Perez lui passer devant. 
 <br>
-Séparés par deux points, les deux pilotes se livrent à un chassé/croisé depuis le grand prix de Monaco.
+5 points séparent les deux pilotes qui se livrent à un véritable chassé croisé.
 <br>
  <hr>
 

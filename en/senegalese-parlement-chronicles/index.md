@@ -1,9 +1,3 @@
----
-noteId: "78be914058a011edab38831d46610f55"
-tags: []
-
----
-
 # Meet your Deputy
 
 
