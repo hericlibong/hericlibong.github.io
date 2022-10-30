@@ -1,33 +1,35 @@
-# Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I
+# Visualiser la 'Variole du singe' avec DataPane # Partie I 
 
+---
 
-## Visualizing with python is good but... <br>
+## Visualiser avec python c'est bien mais... <br>
 
- At the beginning, I just wanted to write an article about the Monkey Pox epidemic illustrated with some visualizations made with the Python graphics library, Plotly. But when I had to integrate my interactive graphics to my article, I encountered a lot of problems. Problems of access rights or size overflow with [studiolab](). Practical problems, responsiveness when using alternative hosting methods <br>
+Au départ, Il s'agissait juste d'écrire un article sur l'épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j'ai rencontré tout un tas de problèmes. Des problèmes de droits d'accès ou de dépassement de taille avec [studiolab](). Des problèmes pratiques, de responsivité en utilisant les méthodes d'hébergement alternatives. <br>
 
-I knew that `Python` graphics libraries were robust and efficient, but I also knew that they were not always very convenient to integrate into web pages and to share. I was about to give up and turn to "ready to view" Java Script solutions like [Flourish]() or [Datawarper](). <br>  
+Je savais que les librairies graphiques `Python` étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j'étais à deux doigts de jeter l'éponge et de me tourner vers des solutions Java Script "prêtes à visualiser" du type [Flourish]() ou [Datawarper](). <br>  
 
 <div style="text-align:center;"><iframe src="https://giphy.com/embed/GobVQOj6KdCsE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/show-boss-let-GobVQOj6KdCsE"></a></p><br>
 
+Et puis je me suis souvenu de [DataPane](). C'est une librairie que j'avais déjà utilisé pour intégrer des visualisations. A l'époque, elle ne m'avait pas laissé un souvenir très marquant. Mais dans la situation actuelle, j'ai jugé bon d'y regarder de plus près.<br>
 
-And then I remembered [DataPane](). It's a library I had already used to integrate visualizations. At that time, it didn't leave me a very strong memory. But in the current situation, I thought it would be a good idea to take a closer look. <br>
+[Datapane](https://docs.datapane.com/concepts/datapane-teams/) c'est à la fois une librairie Python qui permet de créer des rapports interactifs et  une plateforme [Open] qui permet de les stocker, de les partager via et sur de nombreux supports. <br>
 
-You can directly integrate python objects, be it markdown text, graphics - [Plotly](https://plotly.com/python/), [Altair](https://altair-viz.github.io/#), [Bokeh](https://bokeh.org/), Matplotlib etc. -html, tables or media. 
+On peut y intégrer directement des objets python, qu'il s'agisse de texte markdown, des graphiques - [Plotly](https://plotly.com/python/), [Altair](https://altair-viz.github.io/#), [Bokeh](https://bokeh.org/), Matplotlib etc. -, de html, de tables ou des médias. 
+<br>
+
+A mon sens, Datapane est un outil particulièrement attractif pour plusieurs raisons
+- D'abord les rapports peuvent être programmés directement à partir d'un environnement local et unique (Jupyter Notebook, Colab, Airflow etc.).
+- Ensuite, la flexibilité de la structure et la simplicité de la syntaxe laissent une grande place à l'intuition. Et permettent à Datapane de répondre à de nombreux besoins. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur Notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.
+- Enfin, la facilité pour partager ou pour intégrer les rapports sur des pages web sur des applications communautaires du type `Slack`  ou `discord`. 
+    
 
 <br>
 
-In my opinion, Datapane is a particularly attractive tool for several reasons
-- First, the reports can be programmed directly from a single local environment (Jupyter Notebook, Colab, Airflow etc.)
-- Second, the flexibility of the structure and the simplicity of the syntax leave a lot of room for intuition. This allows Datapane to meet many needs. You can use DataPane to share a simple visualization programmed on Notebook, to create a dashboard or to build and deploy a complex application.
-- Finally, the ease of sharing or integrating reports on web pages on community applications such as `Slack` or `discord`. 
-
-
+Du coup, plutôt que de faire un simple article qui intégrerait quelques visualisations, j'ai décidé de faire un rapport interactif de plusieurs pages.
 <br>
 
-So, instead of writing an article that would include some visualizations, I decided to make an interactive report of several pages.
-<br>
+[La variole du singe ou MonkeyPox](https://en.wikipedia.org/wiki/Monkeypox) qui se propage actuellement dans le monde de façon m'a semblé être un sujet intéressant.  D'abord, c'est une actualité sanitaire qui nous concerne tous. Ensuite, les données étant régulièrement actualisées, nous pourrons créer un rapport interactif régulièrement mis à jour. 
 
-[Monkeypox](https://en.wikipedia.org/wiki/Monkeypox) which is currently spreading around the world in a way that seemed to me to be an interesting subject.  First, it is a health news that concerns us all. Secondly, since the data is regularly updated, we will be able to create an interactive report that is regularly updated. 
 
 <br>
 
@@ -39,11 +41,12 @@ So, instead of writing an article that would include some visualizations, I deci
 <br>
 
 
-{{< admonition type=info title="About the data" open=false >}}
 
-The data come from the association [GlobalHealth](https://github.com/globaldothealth/monkeypox) which follows the evolution of the spread of the disease since the first cases appeared.
+{{< admonition type=info title="Sur les données utilisées" open=false >}}
 
-For personal use I have added some variables, `Continents`, `SubRegion`, geographic coordinates, `latitude`, `longitude` and deaths, `deaths`. (link to the file)
+Les données proviennent de l'association [GlobalHealth](https://github.com/globaldothealth/monkeypox) qui suit l'évolution de la propagation de la  maladie depuis l'apparition des premiers cas.
+
+A des fins personnelles j'y ai ajouté quelques variables, `"Continents"`, `"SubRegion"`, les coordonnées géographiques, `"latitude"`, `"longitude"` et les décès, `deaths`. (lien du fichier)
 
 {{< /admonition >}}
 
@@ -51,18 +54,18 @@ For personal use I have added some variables, `Continents`, `SubRegion`, geograp
 
 <br>
 
-## Details of Work
+## Le détail du travail
 
-We are going to make a four page report: 
-- 1 home page that will contain markdown text and display the main statistics
-- 1 page of charts with different interactive and comparative graphs
-- 1 page for the map
-- 1 page of tables
+Nous allons faire un rapport de quatre pages : 
+- 1 page d'accueil qui contiendra du texte markdown et affichera les principales statistiques
+- 1 page de charts avec différents graphiques interactifs et comparatifs
+- 1 page pour la carte
+- 1 page de tables
+  
 
 <br>
 
-
-This first practice will be mainly devoted to the introduction page. This will also allow us to present the general structure of DataPane that we will encounter throughout the programming of the report.
+Cette première pratique sera essentiellement consacrée à la page d’introduction. Ce qui nous permettra également de présenter la structure générale de DataPane que nous rencontrerons tout au long de la programmation du rapport.
 
 
 
@@ -73,16 +76,16 @@ This first practice will be mainly devoted to the introduction page. This will a
 
 {{< /admonition >}}
 
-## Installation and datas
+## Installation et datas
 
-if you haven't already done so, the first thing is to [install Datapane](https://docs.datapane.com/tutorials/basics/install-datapane/) and import it
+si ce n'est pas déjà fait la première chose est [d'installer Datapane](https://docs.datapane.com/tutorials/basics/install-datapane/) et de l'importer
 
 ```bash
 pip3 install datapane
 
 ```
 
-and import it with the libraries we will need
+et de l'importer avec les librairies dont nous aurons besoin
 
 ```python
 import pandas as pd
@@ -96,13 +99,11 @@ df
 ```
 :arrow_heading_down:
 
-{{< admonition type=tip title="Read the dataframe with DataTable from Datapane" open=false  >}} 
+{{< admonition type=tip title="Lire le dataframe avec DataTable de Datapane " open=false  >}} 
 
-The dataset is a timeseries of MonkeyPox cases reported from January 2002 to the present. Although the disease started to be mentioned again when the first cases appeared in Europe, it also includes cases reported earlier in Africa in countries where the disease is endemic. 
+Le dataset est une timeserie des cas de MonkeyPox déclarés depuis le mois de janvier 2002 jusqu'à présent. Bien que l'on ait recommencé à évoquer la maladie à l'apparition des premiers cas en Europe, il inclût également les cas déclarés antérieurement en Afrique dans les pays où la maladie est endémique. 
 
-By passing our dataset in the block [DataTable](https://docs.datapane.com/tutorials/blocks/tables-and-data/#table:~:text=flatten%20your%20data.-,DataTable,-The%20DataTable%20block) we can already load and share a first `Report`. This will allow our interlocutor or readers to explore it, to order it, to create conditional filters, to make SQL queries and to import it in different formats. We can also use the block [Table](https://docs.datapane.com/tutorials/blocks/tables-and-data/#:~:text=to%20interactive%20drilldowns.-,Table,-The%20Table%20component) if we just want to display some filtered data. For our box, we will use both.
-
-
+En passant notre jeu de données dans le bloc  [DataTable](https://docs.datapane.com/tutorials/blocks/tables-and-data/#table:~:text=flatten%20your%20data.-,DataTable,-The%20DataTable%20block) nous pouvons déjà charger et partager un premier  `Report`. Ce qui permettra à notre interlocuteur ou aux lecteurs, de l'explorer, de l'ordonner, de créer des filtres conditionels, de faire des requêtes SQL et de l'importer dans différents formats. Nous pouvons également utiliser le bloc [Table](https://docs.datapane.com/tutorials/blocks/tables-and-data/#:~:text=to%20interactive%20drilldowns.-,Table,-The%20Table%20component) si nous souhaitons simplement afficher quelques données filtrées. Pour notre box, nous utiliserons les deux.
 <br>
 
 
@@ -122,18 +123,18 @@ report.upload(name="datapox")
 
 
 
-## Home Page
+### Page d'Accueil
 
-In Datapane reports are composed of several blocks, which enclose Python objects, as mentioned above. These blocks - of text or data - can themselves be embedded in other layout blocks.<br>
+Dans Datapane les rapports sont composés de plusieurs blocs, qui englobent des objets Python, comme  nous l'avons signalé plus haut. Ces blocs - de texte ou de données - peuvent être eux mêmes englobés dans d'autres blocs de mise en page.<br>
 
-The first page is composed of a list of 3 block elements:
-- 1 banner that we will pass in the Html block
-- 1 text block in markdown format in which we will pass the statistical data variables
-- 1 group of 3 BigNumber cards to highlight the main data of the epidemic
+La première page est composée d'une liste de 3 éléments blocs :
+- 1 bannière que nous passerons dans le bloc Html
+- 1 bloc texte de présentation au format markdown dans lequel nous passerons les variables de données statistiques
+- 1  groupe de 3 cartes BigNumber pour mettre en évidence les données principales de l'épidémie
 
-The whole thing is wrapped in layout blocks, dp.Group(), set on 2 columns.
+Le tout englobé dans des blocs de mise en page, dp.Group(), calés sur 2 colonnes.
 
-This will give us the following structure:
+Ce qui nous donnera la structure de base suivante : 
 
 <br>
 
@@ -165,14 +166,13 @@ dp.Report(
 ```
 
 <br>
-
-But before we look at the structure of the report, we need to create our objects and prepare our data.
+Mais avant de nous intéresser à la structure du rapport, nous devons créer nos objets et préparer nos données.
 
 <br>
 
-### Banner
+###### La bannière
 
-For the banner, it's very simple, we create a variable `html_banner` with `html` that we will pass in the block `dp.Html()`:monkey_face: 
+Pour la bannière, c'est bien simple, on créé une variable `html_banner` avec du `html` que l'on va passer dans le bloc `dp.Html()` :monkey_face:
 <br>
 
 
@@ -186,9 +186,9 @@ html_banner = """<div style="padding: 10px;display: flex;align-items: center;fon
 ```
 <br>
 
-### Intro Text
+###### Texte Intro
 
-We can use markdown to pass it in the text block `dp.Text()`. Here, I wanted our presentation text to contain real time updated data. For example: the total number of cases, the most affected country, the average number of infections per day etc.
+On peut utiliser du markdown pour le passer dans le bloc text `dp.Text()`. Ici, j'ai souhaité que notre texte de présentation contienne des données actualisées en temps réel. Par ex: le nombre total de cas, le pays le plus affecté, la moyenne des contaminations par jour etc.
 
 
 
@@ -257,13 +257,14 @@ i.e.**{topten_percent}%** of global cases are concentrated in the 10 countries m
 
 <br>
 
-### BigNumber Blocks
+### Cartes BigNumber
 
-...And the values of the BigNumber blocks
+...Et les valeurs des blocks BigNumber
+
 
 ```python
 
-# Set the global value for big Number Cards
+#Bignumber data
 global_cases = df.groupby('date')['cumulative_cases'].sum().iloc[-1]
 global_cases_change = df.groupby('date')['cumulative_cases'].sum().iloc[-1] - df.groupby('date')['cumulative_cases'].sum().iloc[-2]
 nb_countries = len(df['Country'].unique())
@@ -305,5 +306,6 @@ dp.Report(
          dp.Page(title = 'data')
 )
 ```
+
 
 

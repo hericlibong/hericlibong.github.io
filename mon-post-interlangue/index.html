@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I - HlStories</title><meta name="Description" content="Try the Story-telling with Python&#34;"><meta property="og:title" content="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I" />
-<meta property="og:description" content="Try the Story-telling with Python&#34;" />
+        <title>Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I  - HlChroniques</title><meta name="Description" content="Un article sur le Story-Telling en Python&#34;"><meta property="og:title" content="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I " />
+<meta property="og:description" content="Un article sur le Story-Telling en Python&#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hericlibong.github.io/mon-post-interlangue/" /><meta property="og:image" content="https://hericlibong.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-03T15:07:17+00:00" />
-<meta property="article:modified_time" content="2022-08-03T15:07:17+00:00" /><meta property="og:site_name" content="HlStories" />
+<meta property="article:published_time" content="2022-08-03T15:07:40+00:00" />
+<meta property="article:modified_time" content="2022-08-03T15:07:40+00:00" /><meta property="og:site_name" content="HlChroniques" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hericlibong.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I"/>
-<meta name="twitter:description" content="Try the Story-telling with Python&#34;"/>
+<meta name="twitter:title" content="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I "/>
+<meta name="twitter:description" content="Un article sur le Story-Telling en Python&#34;"/>
 <meta name="application-name" content="HlStories">
 <meta name="apple-mobile-web-app-title" content="HlStories"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hericlibong.github.io/mon-post-interlangue/" /><link rel="next" href="https://hericlibong.github.io/senegalese-parlement-chronicles/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hericlibong.github.io/mon-post-interlangue/" /><link rel="prev" href="https://hericlibong.github.io/f1championnatgraphique/" /><link rel="next" href="https://hericlibong.github.io/senegal-parlement-chroniques/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I",
-        "inLanguage": "en",
+        "headline": "Visualiser la 'Variole du singe' avec DataPane # Partie I ",
+        "inLanguage": "fr",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hericlibong.github.io\/mon-post-interlangue\/"
-        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  1500 ,
-        "url": "https:\/\/hericlibong.github.io\/mon-post-interlangue\/","datePublished": "2022-08-03T15:07:17+00:00","dateModified": "2022-08-03T15:07:17+00:00","publisher": {
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Jupyter Notebook,  Plotly, DataPane, MonkeyPox, Python","wordcount":  1579 ,
+        "url": "https:\/\/hericlibong.github.io\/mon-post-interlangue\/","datePublished": "2022-08-03T15:07:40+00:00","dateModified": "2022-08-03T15:07:40+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Heric Libong"
-            },"description": "Try the Story-telling with Python\""
+            },"description": "Un article sur le Story-Telling en Python\""
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -44,25 +44,25 @@
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="HlStories"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
+            <a href="/" title="HlChroniques"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/" title="About"> About </a><a class="menu-item" href="/project/" title="Projects"> Projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Catégories </a><a class="menu-item" href="/about/" title="A Propos"> A Propos </a><a class="menu-item" href="/projet/" title="Projets"> Projets </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Rechercher des titres, des contenus..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Chercher">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clair">
                             <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Changer de Thème">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                </a><a href="javascript:void(0);" class="menu-item language" title="Choisir la langue">
                     <i class="fa fa-globe" aria-hidden="true"></i>                      
-                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mon-post-interlangue/" selected>English</option><option value="/fr/mon-post-interlangue/">Français</option></select>
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/en/mon-post-interlangue/">English</option><option value="/mon-post-interlangue/" selected>Français</option></select>
                 </a></div>
         </div>
     </div>
@@ -70,7 +70,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="HlStories"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
+                <a href="/" title="HlChroniques"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -78,11 +78,11 @@
         </div>
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
                     <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                        <input type="text" placeholder="Rechercher des titres, des contenus..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Chercher">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clair">
                             <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-mobile">
@@ -90,13 +90,13 @@
                         </span>
                     </div>
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
+                        Annuler
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="About">About</a><a class="menu-item" href="/project/" title="Projects">Projects</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Catégories</a><a class="menu-item" href="/about/" title="A Propos">A Propos</a><a class="menu-item" href="/projet/" title="Projets">Projets</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Changer de Thème">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+            </a><a href="javascript:void(0);" class="menu-item" title="Choisir la langue">
                     <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/mon-post-interlangue/" selected>English</option><option value="/fr/mon-post-interlangue/">Français</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/en/mon-post-interlangue/">English</option><option value="/mon-post-interlangue/" selected>Français</option></select>
                 </a></div>
     </div>
 </header><div class="search-dropdown desktop">
@@ -106,11 +106,11 @@
         <div id="search-dropdown-mobile"></div>
     </div><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
+            <h2 class="toc-title">Contenu</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">included in <a href="/categories/dataviz/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Dataviz</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1500 words&nbsp;
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Visualiser la 'Variole du singe' avec DataPane # Partie I </h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">inclus dans <a href="/categories/dataviz/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Dataviz</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-03">2022-08-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1579 mots&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -119,42 +119,55 @@
         data-srcset="/images/monkey.png, /images/monkey.png 1.5x, /images/monkey.png 2x"
         data-sizes="auto"
         alt="/images/monkey.png"
-        title="Try the Story-telling with Python&#34;" width="1200" height="472" /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="Un article sur le Story-Telling en Python&#34;" width="1200" height="472" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
-                    <span>Contents</span>
+                    <span>Contenu</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ol>
-    <li><a href="#visualizing-with-python-is-good-but-br">Visualizing with python is good but&hellip; <br></a></li>
-    <li><a href="#details-of-work">Details of Work</a></li>
-    <li><a href="#installation-and-datas">Installation and datas</a></li>
-    <li><a href="#home-page">Home Page</a>
+    <li><a href="#visualiser-avec-python-cest-bien-mais-br">Visualiser avec python c&rsquo;est bien mais&hellip; <br></a></li>
+    <li><a href="#le-détail-du-travail">Le détail du travail</a></li>
+    <li><a href="#installation-et-datas">Installation et datas</a>
       <ol>
-        <li><a href="#banner">Banner</a></li>
-        <li><a href="#intro-text">Intro Text</a></li>
-        <li><a href="#bignumber-blocks">BigNumber Blocks</a></li>
+        <li><a href="#page-daccueil">Page d&rsquo;Accueil</a>
+          <ol>
+            <li>
+              <ol>
+                <li>
+                  <ol>
+                    <li><a href="#la-bannière">La bannière</a></li>
+                    <li><a href="#texte-intro">Texte Intro</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#cartes-bignumber">Cartes BigNumber</a></li>
       </ol>
     </li>
   </ol>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="visualizing-with-python-is-good-but-br">Visualizing with python is good but&hellip; <br></h2>
-<p>At the beginning, I just wanted to write an article about the Monkey Pox epidemic illustrated with some visualizations made with the Python graphics library, Plotly. But when I had to integrate my interactive graphics to my article, I encountered a lot of problems. Problems of access rights or size overflow with <a href="" rel="">studiolab</a>. Practical problems, responsiveness when using alternative hosting methods <br></p>
-<p>I knew that <code>Python</code> graphics libraries were robust and efficient, but I also knew that they were not always very convenient to integrate into web pages and to share. I was about to give up and turn to &ldquo;ready to view&rdquo; Java Script solutions like <a href="" rel="">Flourish</a> or <a href="" rel="">Datawarper</a>. <br></p>
+            </div><div class="content" id="content"><hr>
+<h2 id="visualiser-avec-python-cest-bien-mais-br">Visualiser avec python c&rsquo;est bien mais&hellip; <br></h2>
+<p>Au départ, Il s&rsquo;agissait juste d&rsquo;écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly. Mais quand il a fallu intégrer mes graphiques interactifs à mon article, j&rsquo;ai rencontré tout un tas de problèmes. Des problèmes de droits d&rsquo;accès ou de dépassement de taille avec <a href="" rel="">studiolab</a>. Des problèmes pratiques, de responsivité en utilisant les méthodes d&rsquo;hébergement alternatives. <br></p>
+<p>Je savais que les librairies graphiques <code>Python</code> étaient aussi robustes et efficaces que difficiles à intégrer et à partager. Mais là  j&rsquo;étais à deux doigts de jeter l&rsquo;éponge et de me tourner vers des solutions Java Script &ldquo;prêtes à visualiser&rdquo; du type <a href="" rel="">Flourish</a> ou <a href="" rel="">Datawarper</a>. <br></p>
 <div style="text-align:center;"><iframe src="https://giphy.com/embed/GobVQOj6KdCsE" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/show-boss-let-GobVQOj6KdCsE"></a></p><br>
-<p>And then I remembered <a href="" rel="">DataPane</a>. It&rsquo;s a library I had already used to integrate visualizations. At that time, it didn&rsquo;t leave me a very strong memory. But in the current situation, I thought it would be a good idea to take a closer look. <br></p>
-<p>You can directly integrate python objects, be it markdown text, graphics - <a href="https://plotly.com/python/" target="_blank" rel="noopener noreffer ">Plotly</a>, <a href="https://altair-viz.github.io/#" target="_blank" rel="noopener noreffer ">Altair</a>, <a href="https://bokeh.org/" target="_blank" rel="noopener noreffer ">Bokeh</a>, Matplotlib etc. -html, tables or media.</p>
-<br>
-<p>In my opinion, Datapane is a particularly attractive tool for several reasons</p>
+<p>Et puis je me suis souvenu de <a href="" rel="">DataPane</a>. C&rsquo;est une librairie que j&rsquo;avais déjà utilisé pour intégrer des visualisations. A l&rsquo;époque, elle ne m&rsquo;avait pas laissé un souvenir très marquant. Mais dans la situation actuelle, j&rsquo;ai jugé bon d&rsquo;y regarder de plus près.<br></p>
+<p><a href="https://docs.datapane.com/concepts/datapane-teams/" target="_blank" rel="noopener noreffer ">Datapane</a> c&rsquo;est à la fois une librairie Python qui permet de créer des rapports interactifs et  une plateforme [Open] qui permet de les stocker, de les partager via et sur de nombreux supports. <br></p>
+<p>On peut y intégrer directement des objets python, qu&rsquo;il s&rsquo;agisse de texte markdown, des graphiques - <a href="https://plotly.com/python/" target="_blank" rel="noopener noreffer ">Plotly</a>, <a href="https://altair-viz.github.io/#" target="_blank" rel="noopener noreffer ">Altair</a>, <a href="https://bokeh.org/" target="_blank" rel="noopener noreffer ">Bokeh</a>, Matplotlib etc. -, de html, de tables ou des médias.
+<br></p>
+<p>A mon sens, Datapane est un outil particulièrement attractif pour plusieurs raisons</p>
 <ul>
-<li>First, the reports can be programmed directly from a single local environment (Jupyter Notebook, Colab, Airflow etc.)</li>
-<li>Second, the flexibility of the structure and the simplicity of the syntax leave a lot of room for intuition. This allows Datapane to meet many needs. You can use DataPane to share a simple visualization programmed on Notebook, to create a dashboard or to build and deploy a complex application.</li>
-<li>Finally, the ease of sharing or integrating reports on web pages on community applications such as <code>Slack</code> or <code>discord</code>.</li>
+<li>D&rsquo;abord les rapports peuvent être programmés directement à partir d&rsquo;un environnement local et unique (Jupyter Notebook, Colab, Airflow etc.).</li>
+<li>Ensuite, la flexibilité de la structure et la simplicité de la syntaxe laissent une grande place à l&rsquo;intuition. Et permettent à Datapane de répondre à de nombreux besoins. On peut aussi bien utiliser DataPane pour partager une simple visualisation programmée sur Notebook, pour créer un tableau de bord ou pour réaliser et déployer une application complexe.</li>
+<li>Enfin, la facilité pour partager ou pour intégrer les rapports sur des pages web sur des applications communautaires du type <code>Slack</code>  ou <code>discord</code>.</li>
 </ul>
 <br>
-<p>So, instead of writing an article that would include some visualizations, I decided to make an interactive report of several pages.
+<p>Du coup, plutôt que de faire un simple article qui intégrerait quelques visualisations, j&rsquo;ai décidé de faire un rapport interactif de plusieurs pages.
 <br></p>
-<p><a href="https://en.wikipedia.org/wiki/Monkeypox" target="_blank" rel="noopener noreffer ">Monkeypox</a> which is currently spreading around the world in a way that seemed to me to be an interesting subject.  First, it is a health news that concerns us all. Secondly, since the data is regularly updated, we will be able to create an interactive report that is regularly updated.</p>
+<p><a href="https://en.wikipedia.org/wiki/Monkeypox" target="_blank" rel="noopener noreffer ">La variole du singe ou MonkeyPox</a> qui se propage actuellement dans le monde de façon m&rsquo;a semblé être un sujet intéressant.  D&rsquo;abord, c&rsquo;est une actualité sanitaire qui nous concerne tous. Ensuite, les données étant régulièrement actualisées, nous pourrons créer un rapport interactif régulièrement mis à jour.</p>
 <br>
 <div style = "text-align:center; width:25%px">
 <p><img
@@ -169,26 +182,26 @@
 <br>
 <div class="details admonition info">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>About the data<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Sur les données utilisées<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>The data come from the association <a href="https://github.com/globaldothealth/monkeypox" target="_blank" rel="noopener noreffer ">GlobalHealth</a> which follows the evolution of the spread of the disease since the first cases appeared.</p>
-<p>For personal use I have added some variables, <code>Continents</code>, <code>SubRegion</code>, geographic coordinates, <code>latitude</code>, <code>longitude</code> and deaths, <code>deaths</code>. (link to the file)</p>
+            <div class="admonition-content"><p>Les données proviennent de l&rsquo;association <a href="https://github.com/globaldothealth/monkeypox" target="_blank" rel="noopener noreffer ">GlobalHealth</a> qui suit l&rsquo;évolution de la propagation de la  maladie depuis l&rsquo;apparition des premiers cas.</p>
+<p>A des fins personnelles j&rsquo;y ai ajouté quelques variables, <code>&quot;Continents&quot;</code>, <code>&quot;SubRegion&quot;</code>, les coordonnées géographiques, <code>&quot;latitude&quot;</code>, <code>&quot;longitude&quot;</code> et les décès, <code>deaths</code>. (lien du fichier)</p>
 </div>
         </div>
     </div>
 <hr>
 <br>
-<h2 id="details-of-work">Details of Work</h2>
-<p>We are going to make a four page report:</p>
+<h2 id="le-détail-du-travail">Le détail du travail</h2>
+<p>Nous allons faire un rapport de quatre pages :</p>
 <ul>
-<li>1 home page that will contain markdown text and display the main statistics</li>
-<li>1 page of charts with different interactive and comparative graphs</li>
-<li>1 page for the map</li>
-<li>1 page of tables</li>
+<li>1 page d&rsquo;accueil qui contiendra du texte markdown et affichera les principales statistiques</li>
+<li>1 page de charts avec différents graphiques interactifs et comparatifs</li>
+<li>1 page pour la carte</li>
+<li>1 page de tables</li>
 </ul>
 <br>
-<p>This first practice will be mainly devoted to the introduction page. This will also allow us to present the general structure of DataPane that we will encounter throughout the programming of the report.</p>
+<p>Cette première pratique sera essentiellement consacrée à la page d’introduction. Ce qui nous permettra également de présenter la structure générale de DataPane que nous rencontrerons tout au long de la programmation du rapport.</p>
 <div class="details admonition abstract open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>MonkeyPox DataExplorer<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
@@ -198,10 +211,10 @@
 </div>
         </div>
     </div>
-<h2 id="installation-and-datas">Installation and datas</h2>
-<p>if you haven&rsquo;t already done so, the first thing is to <a href="https://docs.datapane.com/tutorials/basics/install-datapane/" target="_blank" rel="noopener noreffer ">install Datapane</a> and import it</p>
+<h2 id="installation-et-datas">Installation et datas</h2>
+<p>si ce n&rsquo;est pas déjà fait la première chose est <a href="https://docs.datapane.com/tutorials/basics/install-datapane/" target="_blank" rel="noopener noreffer ">d&rsquo;installer Datapane</a> et de l&rsquo;importer</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pip3 install datapane
-</span></span></code></pre></div><p>and import it with the libraries we will need</p>
+</span></span></code></pre></div><p>et de l&rsquo;importer avec les librairies dont nous aurons besoin</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">
@@ -213,12 +226,12 @@
 </span></span></code></pre></div><p>⤵️</p>
 <div class="details admonition tip">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Read the dataframe with DataTable from Datapane<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Lire le dataframe avec DataTable de Datapane <i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>The dataset is a timeseries of MonkeyPox cases reported from January 2002 to the present. Although the disease started to be mentioned again when the first cases appeared in Europe, it also includes cases reported earlier in Africa in countries where the disease is endemic.</p>
-<p>By passing our dataset in the block <a href="https://docs.datapane.com/tutorials/blocks/tables-and-data/#table:~:text=flatten%20your%20data.-,DataTable,-The%20DataTable%20block" target="_blank" rel="noopener noreffer ">DataTable</a> we can already load and share a first <code>Report</code>. This will allow our interlocutor or readers to explore it, to order it, to create conditional filters, to make SQL queries and to import it in different formats. We can also use the block <a href="https://docs.datapane.com/tutorials/blocks/tables-and-data/#:~:text=to%20interactive%20drilldowns.-,Table,-The%20Table%20component" target="_blank" rel="noopener noreffer ">Table</a> if we just want to display some filtered data. For our box, we will use both.</p>
-<br>
+            <div class="admonition-content"><p>Le dataset est une timeserie des cas de MonkeyPox déclarés depuis le mois de janvier 2002 jusqu&rsquo;à présent. Bien que l&rsquo;on ait recommencé à évoquer la maladie à l&rsquo;apparition des premiers cas en Europe, il inclût également les cas déclarés antérieurement en Afrique dans les pays où la maladie est endémique.</p>
+<p>En passant notre jeu de données dans le bloc  <a href="https://docs.datapane.com/tutorials/blocks/tables-and-data/#table:~:text=flatten%20your%20data.-,DataTable,-The%20DataTable%20block" target="_blank" rel="noopener noreffer ">DataTable</a> nous pouvons déjà charger et partager un premier  <code>Report</code>. Ce qui permettra à notre interlocuteur ou aux lecteurs, de l&rsquo;explorer, de l&rsquo;ordonner, de créer des filtres conditionels, de faire des requêtes SQL et de l&rsquo;importer dans différents formats. Nous pouvons également utiliser le bloc <a href="https://docs.datapane.com/tutorials/blocks/tables-and-data/#:~:text=to%20interactive%20drilldowns.-,Table,-The%20Table%20component" target="_blank" rel="noopener noreffer ">Table</a> si nous souhaitons simplement afficher quelques données filtrées. Pour notre box, nous utiliserons les deux.
+<br></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl">
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1">#Let&#39;s try to load a DataTable </span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">table</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">DataTable</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -229,16 +242,16 @@
 </div>
         </div>
     </div>
-<h2 id="home-page">Home Page</h2>
-<p>In Datapane reports are composed of several blocks, which enclose Python objects, as mentioned above. These blocks - of text or data - can themselves be embedded in other layout blocks.<br></p>
-<p>The first page is composed of a list of 3 block elements:</p>
+<h3 id="page-daccueil">Page d&rsquo;Accueil</h3>
+<p>Dans Datapane les rapports sont composés de plusieurs blocs, qui englobent des objets Python, comme  nous l&rsquo;avons signalé plus haut. Ces blocs - de texte ou de données - peuvent être eux mêmes englobés dans d&rsquo;autres blocs de mise en page.<br></p>
+<p>La première page est composée d&rsquo;une liste de 3 éléments blocs :</p>
 <ul>
-<li>1 banner that we will pass in the Html block</li>
-<li>1 text block in markdown format in which we will pass the statistical data variables</li>
-<li>1 group of 3 BigNumber cards to highlight the main data of the epidemic</li>
+<li>1 bannière que nous passerons dans le bloc Html</li>
+<li>1 bloc texte de présentation au format markdown dans lequel nous passerons les variables de données statistiques</li>
+<li>1  groupe de 3 cartes BigNumber pour mettre en évidence les données principales de l&rsquo;épidémie</li>
 </ul>
-<p>The whole thing is wrapped in layout blocks, dp.Group(), set on 2 columns.</p>
-<p>This will give us the following structure:</p>
+<p>Le tout englobé dans des blocs de mise en page, dp.Group(), calés sur 2 colonnes.</p>
+<p>Ce qui nous donnera la structure de base suivante :</p>
 <br>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="p">(</span>
@@ -264,10 +277,10 @@
 </span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="n">dp</span><span class="o">.</span><span class="n">Page</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;data&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="p">)</span>
 </span></span></code></pre></div><br>
-<p>But before we look at the structure of the report, we need to create our objects and prepare our data.</p>
+Mais avant de nous intéresser à la structure du rapport, nous devons créer nos objets et préparer nos données.
 <br>
-<h3 id="banner">Banner</h3>
-<p>For the banner, it&rsquo;s very simple, we create a variable <code>html_banner</code> with <code>html</code> that we will pass in the block <code>dp.Html()</code>🐵
+<h6 id="la-bannière">La bannière</h6>
+<p>Pour la bannière, c&rsquo;est bien simple, on créé une variable <code>html_banner</code> avec du <code>html</code> que l&rsquo;on va passer dans le bloc <code>dp.Html()</code> 🐵
 <br></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl">
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">html_banner</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;&lt;div style=&#34;padding: 10px;display: flex;align-items: center;font-size: 40px;color: #312E81;background: #EEF2FF;&#34;&gt;
@@ -276,8 +289,8 @@
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="s2">&lt;/div&gt;
 </span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
 </span></span></code></pre></div><br>
-<h3 id="intro-text">Intro Text</h3>
-<p>We can use markdown to pass it in the text block <code>dp.Text()</code>. Here, I wanted our presentation text to contain real time updated data. For example: the total number of cases, the most affected country, the average number of infections per day etc.</p>
+<h6 id="texte-intro">Texte Intro</h6>
+<p>On peut utiliser du markdown pour le passer dans le bloc text <code>dp.Text()</code>. Ici, j&rsquo;ai souhaité que notre texte de présentation contienne des données actualisées en temps réel. Par ex: le nombre total de cas, le pays le plus affecté, la moyenne des contaminations par jour etc.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"># Set the variables to be included to entry text</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -338,10 +351,10 @@
 </span></span></span><span class="line"><span class="ln">58</span><span class="cl"><span class="s2">
 </span></span></span><span class="line"><span class="ln">59</span><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
 </span></span></code></pre></div><br>
-<h3 id="bignumber-blocks">BigNumber Blocks</h3>
-<p>&hellip;And the values of the BigNumber blocks</p>
+<h3 id="cartes-bignumber">Cartes BigNumber</h3>
+<p>&hellip;Et les valeurs des blocks BigNumber</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"># Set the global value for big Number Cards</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1">#Bignumber data</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">global_cases</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)[</span><span class="s1">&#39;cumulative_cases&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="n">global_cases_change</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)[</span><span class="s1">&#39;cumulative_cases&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)[</span><span class="s1">&#39;cumulative_cases&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="n">nb_countries</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -386,14 +399,14 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-08-03</span>
+                <span>Mis à jour le 2022-08-03</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/mon-post-interlangue/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/mon-post-interlangue/index.md" target="_blank">Lire Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I" data-via="bongli" data-hashtags="Jupyter Notebook, Plotly,DataPane,MonkeyPox,Python"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://hericlibong.github.io/mon-post-interlangue/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I" data-image="/images/monkey.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Partager sur Twitter" data-sharer="twitter" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I " data-via="bongli" data-hashtags="Jupyter Notebook, Plotly,DataPane,MonkeyPox,Python"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Partager sur Linkedin" data-sharer="linkedin" data-url="https://hericlibong.github.io/mon-post-interlangue/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Partager sur WhatsApp" data-sharer="whatsapp" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I " data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Partager sur Hacker News" data-sharer="hackernews" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I "><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Partager sur Line" data-sharer="line" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I "><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Partager sur 微博" data-sharer="weibo" data-url="https://hericlibong.github.io/mon-post-interlangue/" data-title="Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I " data-image="/images/monkey.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -401,24 +414,24 @@
     <div class="post-info-more">
         <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/jupyter-notebook/">Jupyter Notebook</a>,&nbsp;<a href="/tags/plotly/"> Plotly</a>,&nbsp;<a href="/tags/datapane/">DataPane</a>,&nbsp;<a href="/tags/monkeypox/">MonkeyPox</a>,&nbsp;<a href="/tags/python/">Python</a></section>
         <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Retour</a></span>&nbsp;|&nbsp;<span><a href="/">Accueil</a></span>
         </section>
     </div>
 
-    <div class="post-nav">
-            <a href="/senegalese-parlement-chronicles/" class="next" rel="next" title="Meet your Deputy">Meet your Deputy<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/f1championnatgraphique/" class="prev" rel="prev" title="Championnat de F1 2022: les dernières batailles en Graphiques interactifs"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Championnat de F1 2022: les dernières batailles en Graphiques interactifs</a>
+            <a href="/senegal-parlement-chroniques/" class="next" rel="next" title="Rencontre ton député">Rencontre ton député<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Propulsé par <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Thème - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Heric Libong</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Retour en Haut">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            </a><a href="#" id="view-comments" class="fixed-button" title="Afficher les Commentaires">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":25},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copier dans le presse-papiers","maxShownLines":25},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"Aucun résultat trouvé","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

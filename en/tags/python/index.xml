@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python - Tag - HlStories</title>
+        <link>https://hericlibong.github.io/en/tags/python/</link>
+        <description>Python - Tag - HlStories</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/en/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I</title>
+    <link>https://hericlibong.github.io/en/mon-post-interlangue/</link>
+    <pubDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/en/mon-post-interlangue/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/monkey.png" referrerpolicy="no-referrer">
+            </div>Visualizing with python is good but&hellip; At the beginning, I just wanted to write an article about the Monkey Pox epidemic illustrated with some visualizations made with the Python graphics library, Plotly.]]></description>
+</item>
+</channel>
+</rss>
