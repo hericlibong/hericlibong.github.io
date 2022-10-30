@@ -1,8 +1,8 @@
-# Championnat de F1 2022: les dernières batailles en Graphiques interactifs
+# Championnat de F1 2022: Les enjeux de la fin de saison en Graphiques
 
 <br>
 
-**Charles Leclerc (Ferrari) contre Siergo Perez (Red Bull) pour la seconode place pilotes. <br>Georges Russell (Mercedes) contre Carlos Sainz (Ferrari) pour la 4ème place avec Hamilton (Mercedes), en forme et en embuscade, pour tenter de souffler la seconde place constructeurs à Ferrari.<br> Alpine contre McLaren pour tenter d'être le meilleur des "autres". <br> Voici en trois graphiques interactifs animés quelques-uns des enjeux de la fin de saison de Formule 1 2022**
+**Charles Leclerc (Ferrari) contre Siergo Perez (Red Bull) pour la seconode place pilotes. <br>Georges Russell (Mercedes) contre Carlos Sainz (Ferrari) pour la 4ème place avec Hamilton (Mercedes), en forme et en embuscade, pour tenter de souffler la seconde place constructeurs à Ferrari.<br> Alpine contre McLaren pour tenter d'être le meilleur des "autres". <br> Voici en trois graphiques interactifs animés les principaux enjeux de la fin de saison de Formule 1 2022**
 <br><br>
 
 
