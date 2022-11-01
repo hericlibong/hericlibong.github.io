@@ -2,7 +2,7 @@
 
 <br>
 
-**Charles Leclerc (Ferrari) contre Siergo Perez (Red Bull) pour la seconode place pilotes. <br>Georges Russell (Mercedes) contre Carlos Sainz (Ferrari) pour la 4ème place avec Hamilton (Mercedes), en forme et en embuscade, pour tenter de souffler la seconde place constructeurs à Ferrari.<br> Alpine contre McLaren pour tenter d'être le meilleur des "autres". <br> Voici en trois graphiques interactifs animés les principaux enjeux de la fin de saison de Formule 1 2022**
+**Charles Leclerc (Ferrari) contre Siergo Perez (Red Bull) pour la seconde place pilotes. <br>Georges Russell (Mercedes) contre Carlos Sainz (Ferrari) pour la 4ème place avec Hamilton (Mercedes), en forme et en embuscade, pour tenter de souffler la seconde place constructeurs à Ferrari.<br> Alpine contre McLaren pour tenter d'être le meilleur des "autres". <br> Voici en trois graphiques interactifs animés les principaux enjeux de la fin de saison de Formule 1 2022**
 <br><br>
 
 
@@ -11,9 +11,9 @@
 
 {{< image src="/images/leclercvsPerez2.jpeg" caption=" Charles Leclerc, Ferrari et Sergio Perez, Red Bull Racing, lors du Grand Prix de Suzuka 2022. Motorsport Images" >}}
 <br>
-Prétendant au titre en début de saison Charles Leclerc occupait confortablement la tête du championnat après les premiers grands prix. <br> Mais handicapé par les problèmes de fiabilité de la Ferrari, pénalisé par les incohérences stratégiques de sa team et sanctionné par des erreurs de pilotage, il a progressivement vu le titre s'envoler et surtout Sergio Perez lui passer devant. 
+Prétendant au titre en début de saison Charles Leclerc a vu progressivement le titre s'envoler et surtout Sergio Perez le dépasser au classement. 
 <br>
-5 points séparent les deux pilotes qui se livrent à un véritable chassé croisé.
+Il compte désormais 5 points de retard sur le pilote mexicain.
 <br>
  <hr>
 
@@ -22,14 +22,14 @@ Prétendant au titre en début de saison Charles Leclerc occupait confortablemen
 
 <br>
 
-### **Russell, Sainz, Hamilton : une lutte à 3 pour la quatrième place**
+### **Russell, Sainz, Hamilton : une lutte à 3 pour la quatrième place pilote**
 <br>
 
 ![pix](/images/rusaham.jpeg)
 
 <br>
-La lutte pour la quatrième place du classement pilotes est tout aussi serrée que pour la seconde. Depuis le début de la saison, elle est l'objet d'un chassé-croisé entre Carlos Sainz (Ferrari) et Georges Russell (Mercedes) avec un avantage de 16 points pour le Britannique. <br>
-Loin d'être anecdotique, cette bataille pourrait être déterminante pour la seconde place constructeurs. Le regain de forme des Mercedes et notammment de Lewis Hamilton, les déboires de Sainz et son zéro pointé sur les deux derniers Grands Prix, ont permit aux flêches d'argent de revenir à 40 points.<br> L'écart est encore conséquent, mais la tendance est clairement du côté Mercedes qui pourrait souffler la seconde place à Ferrari sur le fil. <br> Ce qui était quasi-inimaginable en début de saison. 
+ Loin d'être anecdotique, la bataille à 3 entre George Russell, Lewis Hamilton et Carlos Sainz derrière le trio de tête, pourrait bien être déterminante pour la seconde place constructeurs.<br> Russell 4ème et Hamilton passé 5ème devant Sainz à Mexico, permettent aux flèches d'argent de revenir à 40 points de Ferrari. <br>L'écart est certes encore conséquent à 2 grands prix de la fin de saison, mais la dynamique est clairement du côté de l'équipe de Brackley.
+ 
 
 <hr>
 
@@ -37,13 +37,18 @@ Loin d'être anecdotique, cette bataille pourrait être déterminante pour la se
 
 <br>
 
-### **Alpine Vs Mc Laren : la bataille pour le meilleur des "autres"**
+<div class="flourish-embed flourish-chart" data-src="visualisation/11629295"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<br>
+
+### **Alpine Vs Mc Laren : pour le meilleur des "autres"**
 <br>
 {{< image src="/images/alpinevsmac.jpeg" caption=" Fernando Alonzo et Lando Norris lors du grand prix de France 2022" >}}
 <br>
 
-La attendue rivalité entre Alpine et McLaren pour la quatrième place constructeurs a bien eu lieu.<br>
-Ponctuée par des problèmes de fiabilité depuis le début de la saison, elle semble tourner à l'avantage d'Alpine qui peut s'appuyer sur une monoplace en nette progression et 2 pilotes motivés. A l'opposé McLaren ne peut réellement s'appuyer que sur Lando Norris tant Daniel Ricciardo semble être déjà passé à autre chose, malgré son regain de panache de Mexico.
+Attendue en début de saison, la rivalité entre Alpine et McLaren pour la quatrième place constructeurs, - les meilleurs des autres - a bien lieu.<br>
+Alpine qui semblait tenir la corde, est rattrapée par des soucis de fiabilité. A l'opposé, Ricciardo qui semblait être déjà passé à autre chose, a bien rebondit. <br> Permettant ainsi à Mc Laren de revenir à 7 points des bleus. 
+
 
 
 <hr>
