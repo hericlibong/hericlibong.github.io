@@ -4,7 +4,7 @@
         <link>https://hericlibong.github.io/posts/</link>
         <description>Tous Posts | HlChroniques</description>
         <generator>Hugo -- gohugo.io</generator><language>fr</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
-            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 26 Oct 2022 23:17:09 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Fri, 11 Nov 2022 09:49:41 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Rencontre ton député</title>
     <link>https://hericlibong.github.io/senegal-parlement-chroniques/</link>
     <pubDate>Thu, 22 Sep 2022 12:25:45 &#43;0000</pubDate>
@@ -23,6 +23,14 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/monkey.png" referrerpolicy="no-referrer">
             </div>Visualiser avec python c&rsquo;est bien mais&hellip; Au départ, Il s&rsquo;agissait juste d&rsquo;écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly.]]></description>
+</item>
+<item>
+    <title>Historique du Grand prix du Brésil en 1 graphique</title>
+    <link>https://hericlibong.github.io/interlagos_histoire/</link>
+    <pubDate>Fri, 11 Nov 2022 09:49:41 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/interlagos_histoire/</guid>
+    <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Championnat de F1 2022: Les enjeux de la fin de saison en Graphiques</title>
