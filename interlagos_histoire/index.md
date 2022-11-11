@@ -1,10 +1,4 @@
----
-noteId: "a64368e061f911ed8ccce18734ee98ab"
-tags: []
-
----
-
-# Historique du Grand prix du Brésil en 1 graphique
+# Chronologie interactive du GP du Brésil
 
 
 <br><br><br>

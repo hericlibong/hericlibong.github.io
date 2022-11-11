@@ -7,16 +7,6 @@
             <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Fri, 11 Nov 2022 09:49:41 &#43;0000</lastBuildDate>
             <atom:link href="https://hericlibong.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Rencontre ton député</title>
-    <link>https://hericlibong.github.io/senegal-parlement-chroniques/</link>
-    <pubDate>Thu, 22 Sep 2022 12:25:45 &#43;0000</pubDate>
-    <author>Heric Libong</author>
-    <guid>https://hericlibong.github.io/senegal-parlement-chroniques/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/senassemble.jpeg" referrerpolicy="no-referrer">
-            </div>Des députés invisibles Comme beaucoup, j&rsquo;ai été interpellé par les scènes de tensions qui ont accompagné la seance de la rentrée parlementaire au Sénégal du 12 septembre 2022.]]></description>
-</item>
-<item>
     <title>Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I </title>
     <link>https://hericlibong.github.io/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:40 &#43;0000</pubDate>
@@ -27,7 +17,7 @@
             </div>Visualiser avec python c&rsquo;est bien mais&hellip; Au départ, Il s&rsquo;agissait juste d&rsquo;écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly.]]></description>
 </item>
 <item>
-    <title>Historique du Grand prix du Brésil en 1 graphique</title>
+    <title>Chronologie interactive du GP du Brésil</title>
     <link>https://hericlibong.github.io/interlagos_histoire/</link>
     <pubDate>Fri, 11 Nov 2022 09:49:41 &#43;0000</pubDate>
     <author>Heric Libong</author>
