@@ -25,7 +25,7 @@ Il détaille :
   Il est actualisé en même temps que la source des données et déployer sur [Heroku](https://www.heroku.com) avec [Dash-tools](https://dash-tools.readthedocs.io/en/latest/index.html)
   <br>
   
-[Code du tableau de bord](https://github.com/hericlibong/Covid-19-Dashboard) 
+[Github](https://github.com/hericlibong/Covid-19-Dashboard) 
 
 {{< /admonition >}}
 

@@ -26,7 +26,7 @@ It is updated at the same time as the data source and deployed on Heroku with [D
    
 <br>
 
-[Code](https://github.com/hericlibong/Covid-19-Dashboard) 
+[Github](https://github.com/hericlibong/Covid-19-Dashboard) 
 
 {{< /admonition >}}
 
