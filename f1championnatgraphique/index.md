@@ -47,7 +47,7 @@ Il compte désormais 6 points de retard sur le pilote mexicain.
 <br>
 
 Attendue en début de saison, la rivalité entre Alpine et McLaren pour la quatrième place constructeurs - les meilleurs des autres -, a bien lieu.<br>
-Compte tenu du manque de forme chronique de Riccardio, elle semblait tendre les bras à Alpine. Mais les problèmes de fiabilité des bleus et les mésententes entre coéquipiers, exarcerbés lors de la course sprint de Sao Paulo, ont clairement rebattues les cartes. <br> Du coup, Alpine qui avait encore 13 points d'avance à Suzuka n'en a plus que 5 à deux Grand Prix de la fin de saison.<br> 
+Compte tenu du manque de forme chronique de Riccardio, elle semblait tendre les bras à Alpine. Mais les problèmes de fiabilité des bleus et les mésententes entre coéquipiers, exarcerbés lors de la course sprint de Sao Paulo, ont clairement rebattues les cartes. <br> Du coup, Alpine qui avait encore 13 points d'avance après le Grand Prix du Japon à Suzuka, n'en a plus que 5 à deux Grand Prix de la fin de saison.<br> 
   
 
 <hr>
