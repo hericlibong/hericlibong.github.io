@@ -13,7 +13,7 @@
 <br>
 Prétendant au titre en début de saison Charles Leclerc a vu progressivement le titre s'envoler et surtout Sergio Perez le dépasser au classement. 
 <br>
-Il compte désormais 5 points de retard sur le pilote mexicain.
+Il compte désormais 6 points de retard sur le pilote mexicain.
 <br>
  <hr>
 
@@ -28,7 +28,7 @@ Il compte désormais 5 points de retard sur le pilote mexicain.
 ![pix](/images/rusaham.jpeg)
 
 <br>
- Loin d'être anecdotique, la bataille entre George Russell, Lewis Hamilton et Carlos Sainz derrière le trio de tête, pourrait bien être déterminante pour la seconde place constructeurs.<br> Russell 4ème et Hamilton passé 5ème devant Sainz à Mexico, permettent aux flèches d'argent de revenir à 40 unités de Ferrari. <br>L'écart est certes encore conséquent à 2 grands prix de la fin de saison, mais la dynamique est clairement du côté de l'équipe de Brackley.
+ Loin d'être anecdotique, la bataille entre George Russell, Lewis Hamilton et Carlos Sainz derrière le trio de tête, pourrait bien être déterminante pour la seconde place constructeurs.<br> Russell 4ème et Hamilton passé 5ème devant Sainz à Mexico, permettent aux flèches d'argent de revenir à 36 unités de Ferrari après la course sprin du Bresil. <br>L'écart est certes encore conséquent à 2 grands prix de la fin de saison, mais la dynamique est clairement du côté de l'équipe de Brackley qui verra ses deux monoplaces partir en première ligne.<br>
  
 
 <hr>
@@ -46,10 +46,9 @@ Il compte désormais 5 points de retard sur le pilote mexicain.
 {{< image src="/images/alpinevsmac.jpeg" caption=" Fernando Alonzo et Lando Norris lors du grand prix de France 2022" >}}
 <br>
 
-Attendue en début de saison, la rivalité entre Alpine et McLaren pour la quatrième place constructeurs, - les meilleurs des autres - a bien lieu.<br>
-Alpine qui semblait tenir la corde, est rattrapée par des soucis de fiabilité. A l'opposé, Ricciardo qui semblait être déjà passé à autre chose, a bien rebondit à Mexico. <br> Permettant ainsi à Mc Laren de revenir à 7 points des bleus. 
-
-
+Attendue en début de saison, la rivalité entre Alpine et McLaren pour la quatrième place constructeurs - les meilleurs des autres -, a bien lieu.<br>
+Compte tenu du manque de forme chronique de Riccardio, elle semblait tendre les bras à Alpine. Mais les problèmes de fiabilité des bleus et les mésententes entre coéquipiers, exarcerbés lors de la course sprint de Sao Paulo, ont clairement rebattues les cartes. <br> Du coup, Alpine qui avait encore 13 points d'avance à Suzuka n'en a plus que 5 à deux Grand Prix de la fin de saison.<br> 
+  
 
 <hr>
 <div class="flourish-embed flourish-chart" data-src="visualisation/11623386"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
