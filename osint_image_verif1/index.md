@@ -1,9 +1,3 @@
----
-noteId: "be934a30847411eda7207d037144ddef"
-tags: []
-
----
-
 # Le Fast Food dans la rue
 
 ##  Présentation <br>
@@ -27,11 +21,10 @@ Il existe plusieurs outils et services en ligne qui peuvent être utilisés pour
 Il est important de se rappeler que la géolocalisation par l'image n'est pas une science exacte et que les résultats peuvent être imprécis. Il est donc important de vérifier et de confirmer les résultats obtenus en utilisant d'autres sources d'information. Cela peut nécessiter une certaine patience et de la persévérance, mais cela peut également être très gratifiant de découvrir l'emplacement d'une image grâce à ses propres efforts d'investigation.
 
 
-
 {{< /admonition >}}
 
-**Le Kebab dans la rue**
-<br>
+### Le Kebab dans la rue
+
 Pour la géolocalisation d'un lieu par l'image, moins il y a d'indices et plus l'investigation sera difficile. C'est une évidence. Et ici, à priori, nous en avons très peu. Une rue qui ressemble à beaucoup de rues d'Europe, et de l'autre côté un fast-food qui de loin, ressemble à un Kebab.
 <br>
 
@@ -40,18 +33,18 @@ Pour la géolocalisation d'un lieu par l'image, moins il y a d'indices et plus l
 <br>
 En général, l'erreur que l'on fait quand on débute est de se ruer sur les moteurs de recherche par image inversée.<br> 
 Et c'est vrai qu' il est assez tentant ici d'être attiré par le logo situé sur le panneau du Kebab du trottoir d'en face et de faire des zooms improbables.<br> La plupart du temps, c'est une perte de temps.<br>
-Dans notre cas, le mieux est de commencer par analyser l'image de manière critique, en prenant en compte tous les éléments visuels qui pourraient être utiles pour déterminer l'emplacement géographique.
+Dans notre cas, le mieux est de commencer par analyser l'image de manière critique, en prenant en compte tous les éléments visuels qui pourraient être utiles pour déterminer l'emplacement géographique.<br>
 
 
 
 ### Le premier indice : le panneau de signalisation
-<br>
 
 [Phillip Blockh](https://twitter.com/bockph), dévellopeur rédactionnel norvégien a procédé de cette pour trouver la solution.<br>
 
 En fait, nous avons ici l'exemple typique d'une investigation en Open Source Intelligence qui inclut à la fois observation, intuition, expériience personnelle,  connaissance des outils Osint et notions de langage de programmation.<br>
 
 L'indice qui tout de suite interpellé le regard de Philipp c'est la Typographie de type [Frutiger](https://fr.wikipedia.org/wiki/Frutiger_(police_d%27%C3%A9criture)) du panneau situé à gauche de la photo qui précise que l'on se trouve sur une voix limitée aux véhicules 28 tonnes, mais qui, selon son expérience, est typique du mode de signalisation que l'on trouve en Suisse.
+<br>
 
 > *Comment j'ai fait : le passionné de typographie en moi a immédiatement reconnu Frutiger sur les panneaux routiers suisses, nous sommes donc en Suisse alémanique. La photo nous montre un kebab près d'une rue où le poids est limité à 28 tonnes.*
 
@@ -65,11 +58,11 @@ Effectivement, Si l'on fait une recherche via les données [EXIF](https://fr.wik
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yup, if I hadn’t recognised the Swiss road signs, I would probably have searched in Germany too. As it was, I thought there was a chance that the photo was taken very close to the border, possibly even from the German side.</p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588280975674441728?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
 
-Intuition, observation, expérience personnelle...Pour l'instant à part la petite recherche EXIF et la vérification de la typographie, on a pas eu besoin d'avoir recours au moindre outil.<br> 
+Pour l'instant à part la petite recherche EXIF et la vérification de la typographie, on a pas eu besoin d'avoir recours au moindre outil.<br> 
 Et nous savons maintenant que notre fast food se trouve très probablement en Suisse Allemande, à moins de 200 mètres d'un panneau indiquant que nous sommes sur une voie limitée aux véhicules de moins 28 tonnes, avec un service de navettes autorisé. C'est encore assez vague, mais ça limite déjà pas mal notre champ de recherches.
+<br>
 
 ### Geolocalisation par les outils 
-<br>
 
 A ce stade il est nécessaire d'automatiser la recherche et d'utiliser les outils OSINT. Phillip a opté pour [Overpass Turbo](https://overpass-turbo.eu/) qui est une application en ligne gratuite que l'on peut utiliser pour interroger et visualiser les données d'OpenStreetMap (OSM). <br>
 Pour infos, 0SM est une base de données de cartographie collaborative qui contient des informations sur les routes, les bâtiments, les points d'intérêt, les limites administratives, etc. pour de nombreux endroits dans le monde.
@@ -80,8 +73,9 @@ Le langage principalement utilisé par Overpass Turbo est l'Overpass QL.<br>
 Philipp a choisi de centrer ses recherches sur le Nord de la Suisse afin de géolocaliser les voies limitées aux 28 tonnes comme points d'intérêt, situées à 200 mètres d'un fast-food.<br>
 
 La requête peut être directement testée sur la platforme suur ce  lien  : https://overpass-turbo.eu/s/1nni
+<br>
 
-<blockquote class="twitter-tweet" ><p lang="en" dir="ltr">Then this Overpass Turbo search with the map focused on northern Switzerland produced few enough results to manually search for a suitable street layout, starting in the bigger cities. <a href="https://t.co/TdtNIUU5sm">pic.twitter.com/TdtNIUU5sm</a></p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588259591225155585?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+<blockquote class="twitter-tweet" ><p lang="en" dir="ltr">Then this Overpass Turbo search with the map focused on northern Switzerland produced few enough results to manually search for a suitable street layout, starting in the bigger cities. <a href="https://t.co/TdtNIUU5sm">pic.twitter.com/TdtNIUU5sm</a></p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588259591225155585?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 {{< admonition type=note title=" Quelques mots sur le code Overpass Turbo" open=false >}}
 
@@ -97,18 +91,29 @@ La page [tag info d'OpenStreeMap](https://taginfo.openstreetmap.org/)fournit de 
 {{< /admonition >}}
 
 
-
 Il est important de noter que Overpass Turbo ne peut être utilisé que pour interroger et visualiser les données de l'API OSM, et non pour géolocaliser directement une image.<br> Pour géolocaliser une image, il faudra utiliser d'autres outils et sources d'information en plus des données de l'API OSM.<br>
 
+{{< image src="/images/openstreetmap.jpeg" caption= "image google earth view au sol de l'endroit recherché" >}}
+<br>
+
 Philip s'est servi d'open street view en passant manuellement, rue par rue. On peut procéder de la sorte, quand il y a peu de points à visualiser, comme dans le cas présent.<br> Mais quand il y a de nombreux points à consulter il est nécessaire d'automatiser sa recherche.<br> 
-[Google Earth Pro Desktop](https://www.google.com/earth/versions/) permet d'importer des données d'Overpass au format KML de les afficher sur la carte et de programmer une  visite touristique. 
+[Google Earth Pro Desktop](https://www.google.com/earth/versions/) permet d'importer des données d'Overpass au format KML de les afficher sur la carte et de programmer une  visite touristique.<br>
 
-D'autres outils de cartographie en ligne, comme Mapbox ou Leaflet, permetttent également d'afficher des données géospatiales sur une carte interactive, de les importer au format KML en offrant des fonctionnalités de personnalisation et de style supplémentaires.
+Au final, notre fast-food est situé à Berne en Suisse à la Falkenplace exactement au Falkenpl. 10A, 3012 Berne, Suisse.<br>
 
-
+{{< image src="/images/swiss.png" caption=" Vue aérienne de la Falkenplace sur Google Earth Pro" >}}
 <br>
-{{< image src="/images/swiss.png" caption=" Vue aérienne des données sur Google Earth Pro" >}}
-<br>
+D'autres outils de cartographie en ligne, comme Mapbox ou Leaflet, permetttent également d'afficher des données géospatiales sur une carte interactive, de les importer au format KML en offrant des fonctionnalités de personnalisation et de style supplémentaires.<br>
+
+Bien entendu, le code utilisé sur Overpass n'est pas unique. Comme on peut le voir ici, le même résultat peut être obtenu en construisant le code différement.
+
+https://overpass-turbo.eu/s/1pp2
+
+### Conclusion
+
+Cette recherche est l'exemple même d'une investigation qui allie observation, analyse de l'image, intuition,  expérience personnelle, connaissance des outils et notions de code.<br>
+En ce qui me concerne, j'ai appris que les panneaux de  signalisation  pouvaient  d'avérer  essentiels dans  le cadre d'une géolocalisation et que les typographies varient selon les [régions](https://en.wikipedia.org/wiki/List_of_public_signage_typefaces). 
+
 
 
 

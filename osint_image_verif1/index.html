@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hericlibong.github.io\/osint_image_verif1\/"
-        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Image Geolocalisation, Twitter, Verif!cation Quiz Bot","wordcount":  1593 ,
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Image Geolocalisation, Twitter, Verif!cation Quiz Bot","wordcount":  1700 ,
         "url": "https:\/\/hericlibong.github.io\/osint_image_verif1\/","datePublished": "2022-12-07T00:40:16+00:00","dateModified": "2022-12-07T00:40:16+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
@@ -108,9 +108,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contenu</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Le Fast Food dans la rue</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Le Fast Food dans la rue</h1><h2 class="single-subtitle">Geolocalisation par l&#39;image avec Overpass Turbo</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">inclus dans <a href="/categories/osint/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Osint</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-07">2022-12-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1593 mots&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-07">2022-12-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1700 mots&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -128,8 +128,10 @@
   <ol>
     <li><a href="#présentation-br">Présentation <br></a>
       <ol>
+        <li><a href="#le-kebab-dans-la-rue">Le Kebab dans la rue</a></li>
         <li><a href="#le-premier-indice--le-panneau-de-signalisation">Le premier indice : le panneau de signalisation</a></li>
         <li><a href="#geolocalisation-par-les-outils">Geolocalisation par les outils</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ol>
     </li>
   </ol>
@@ -154,20 +156,19 @@ Dans la mesure du possible, j&rsquo;envisage également contacter certains inves
 </div>
         </div>
     </div>
-<p><strong>Le Kebab dans la rue</strong>
-<br>
-Pour la géolocalisation d&rsquo;un lieu par l&rsquo;image, moins il y a d&rsquo;indices et plus l&rsquo;investigation sera difficile. C&rsquo;est une évidence. Et ici, à priori, nous en avons très peu. Une rue qui ressemble à beaucoup de rues d&rsquo;Europe, et de l&rsquo;autre côté un fast-food qui de loin, ressemble à un Kebab.
+<h3 id="le-kebab-dans-la-rue">Le Kebab dans la rue</h3>
+<p>Pour la géolocalisation d&rsquo;un lieu par l&rsquo;image, moins il y a d&rsquo;indices et plus l&rsquo;investigation sera difficile. C&rsquo;est une évidence. Et ici, à priori, nous en avons très peu. Une rue qui ressemble à beaucoup de rues d&rsquo;Europe, et de l&rsquo;autre côté un fast-food qui de loin, ressemble à un Kebab.
 <br></p>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/quiztime?ref_src=twsrc%5Etfw">@quiztime</a> Germany is always nice this time of the year. Please geolocate this picture. Bonus points if you don&#39;t use Google Lens 😀<br>🔁 to invite others<br>🤝 cooperation is welcome<br>✅ Solutions below👇🏻 the GIF-tweet<br>💬 Explain how you did it <a href="https://t.co/w6whSYBZSZ">pic.twitter.com/w6whSYBZSZ</a></p>&mdash; Youri (@y_vdw) <a href="https://twitter.com/y_vdw/status/1588211088696512514?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
 En général, l'erreur que l'on fait quand on débute est de se ruer sur les moteurs de recherche par image inversée.<br> 
 Et c'est vrai qu' il est assez tentant ici d'être attiré par le logo situé sur le panneau du Kebab du trottoir d'en face et de faire des zooms improbables.<br> La plupart du temps, c'est une perte de temps.<br>
-Dans notre cas, le mieux est de commencer par analyser l'image de manière critique, en prenant en compte tous les éléments visuels qui pourraient être utiles pour déterminer l'emplacement géographique.
+Dans notre cas, le mieux est de commencer par analyser l'image de manière critique, en prenant en compte tous les éléments visuels qui pourraient être utiles pour déterminer l'emplacement géographique.<br>
 <h3 id="le-premier-indice--le-panneau-de-signalisation">Le premier indice : le panneau de signalisation</h3>
-<br>
 <p><a href="https://twitter.com/bockph" target="_blank" rel="noopener noreffer ">Phillip Blockh</a>, dévellopeur rédactionnel norvégien a procédé de cette pour trouver la solution.<br></p>
 <p>En fait, nous avons ici l&rsquo;exemple typique d&rsquo;une investigation en Open Source Intelligence qui inclut à la fois observation, intuition, expériience personnelle,  connaissance des outils Osint et notions de langage de programmation.<br></p>
-<p>L&rsquo;indice qui tout de suite interpellé le regard de Philipp c&rsquo;est la Typographie de type <a href="https://fr.wikipedia.org/wiki/Frutiger_%28police_d%27%C3%A9criture%29" target="_blank" rel="noopener noreffer ">Frutiger</a> du panneau situé à gauche de la photo qui précise que l&rsquo;on se trouve sur une voix limitée aux véhicules 28 tonnes, mais qui, selon son expérience, est typique du mode de signalisation que l&rsquo;on trouve en Suisse.</p>
+<p>L&rsquo;indice qui tout de suite interpellé le regard de Philipp c&rsquo;est la Typographie de type <a href="https://fr.wikipedia.org/wiki/Frutiger_%28police_d%27%C3%A9criture%29" target="_blank" rel="noopener noreffer ">Frutiger</a> du panneau situé à gauche de la photo qui précise que l&rsquo;on se trouve sur une voix limitée aux véhicules 28 tonnes, mais qui, selon son expérience, est typique du mode de signalisation que l&rsquo;on trouve en Suisse.
+<br></p>
 <blockquote>
 <p><em>Comment j&rsquo;ai fait : le passionné de typographie en moi a immédiatement reconnu Frutiger sur les panneaux routiers suisses, nous sommes donc en Suisse alémanique. La photo nous montre un kebab près d&rsquo;une rue où le poids est limité à 28 tonnes.</em></p>
 </blockquote>
@@ -177,18 +178,19 @@ Dans notre cas, le mieux est de commencer par analyser l'image de manière criti
 <br>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yup, if I hadn’t recognised the Swiss road signs, I would probably have searched in Germany too. As it was, I thought there was a chance that the photo was taken very close to the border, possibly even from the German side.</p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588280975674441728?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
-<p>Intuition, observation, expérience personnelle&hellip;Pour l&rsquo;instant à part la petite recherche EXIF et la vérification de la typographie, on a pas eu besoin d&rsquo;avoir recours au moindre outil.<br>
-Et nous savons maintenant que notre fast food se trouve très probablement en Suisse Allemande, à moins de 200 mètres d&rsquo;un panneau indiquant que nous sommes sur une voie limitée aux véhicules de moins 28 tonnes, avec un service de navettes autorisé. C&rsquo;est encore assez vague, mais ça limite déjà pas mal notre champ de recherches.</p>
+<p>Pour l&rsquo;instant à part la petite recherche EXIF et la vérification de la typographie, on a pas eu besoin d&rsquo;avoir recours au moindre outil.<br>
+Et nous savons maintenant que notre fast food se trouve très probablement en Suisse Allemande, à moins de 200 mètres d&rsquo;un panneau indiquant que nous sommes sur une voie limitée aux véhicules de moins 28 tonnes, avec un service de navettes autorisé. C&rsquo;est encore assez vague, mais ça limite déjà pas mal notre champ de recherches.
+<br></p>
 <h3 id="geolocalisation-par-les-outils">Geolocalisation par les outils</h3>
-<br>
 <p>A ce stade il est nécessaire d&rsquo;automatiser la recherche et d&rsquo;utiliser les outils OSINT. Phillip a opté pour <a href="https://overpass-turbo.eu/" target="_blank" rel="noopener noreffer ">Overpass Turbo</a> qui est une application en ligne gratuite que l&rsquo;on peut utiliser pour interroger et visualiser les données d&rsquo;OpenStreetMap (OSM). <br>
 Pour infos, 0SM est une base de données de cartographie collaborative qui contient des informations sur les routes, les bâtiments, les points d&rsquo;intérêt, les limites administratives, etc. pour de nombreux endroits dans le monde.
 <br>
 Overpass Turbo peut effectuer des requêtes spécifiques sur ces données pour un lieu précis ou pour une zone géographique.<br>
 Le langage principalement utilisé par Overpass Turbo est l&rsquo;Overpass QL.<br></p>
 <p>Philipp a choisi de centrer ses recherches sur le Nord de la Suisse afin de géolocaliser les voies limitées aux 28 tonnes comme points d&rsquo;intérêt, situées à 200 mètres d&rsquo;un fast-food.<br></p>
-<p>La requête peut être directement testée sur la platforme suur ce  lien  : <a href="https://overpass-turbo.eu/s/1nni" target="_blank" rel="noopener noreffer ">https://overpass-turbo.eu/s/1nni</a></p>
-<blockquote class="twitter-tweet" ><p lang="en" dir="ltr">Then this Overpass Turbo search with the map focused on northern Switzerland produced few enough results to manually search for a suitable street layout, starting in the bigger cities. <a href="https://t.co/TdtNIUU5sm">pic.twitter.com/TdtNIUU5sm</a></p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588259591225155585?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+<p>La requête peut être directement testée sur la platforme suur ce  lien  : <a href="https://overpass-turbo.eu/s/1nni" target="_blank" rel="noopener noreffer ">https://overpass-turbo.eu/s/1nni</a>
+<br></p>
+<blockquote class="twitter-tweet" ><p lang="en" dir="ltr">Then this Overpass Turbo search with the map focused on northern Switzerland produced few enough results to manually search for a suitable street layout, starting in the bigger cities. <a href="https://t.co/TdtNIUU5sm">pic.twitter.com/TdtNIUU5sm</a></p>&mdash; Philipp Bock (@bockph) <a href="https://twitter.com/bockph/status/1588259591225155585?ref_src=twsrc%5Etfw">November 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <div class="details admonition note">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i> Quelques mots sur le code Overpass Turbo<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
@@ -204,11 +206,21 @@ La page <a href="https://taginfo.openstreetmap.org/" target="_blank" rel="noopen
         </div>
     </div>
 <p>Il est important de noter que Overpass Turbo ne peut être utilisé que pour interroger et visualiser les données de l&rsquo;API OSM, et non pour géolocaliser directement une image.<br> Pour géolocaliser une image, il faudra utiliser d&rsquo;autres outils et sources d&rsquo;information en plus des données de l&rsquo;API OSM.<br></p>
+<p><figure><a class="lightgallery" href="/images/openstreetmap.jpeg" title="/images/openstreetmap.jpeg" data-thumbnail="/images/openstreetmap.jpeg" data-sub-html="<h2>image google earth view au sol de l&rsquo;endroit recherché</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/openstreetmap.jpeg"
+            data-srcset="/images/openstreetmap.jpeg, /images/openstreetmap.jpeg 1.5x, /images/openstreetmap.jpeg 2x"
+            data-sizes="auto"
+            alt="/images/openstreetmap.jpeg" width="3176" height="1782" />
+    </a><figcaption class="image-caption">image google earth view au sol de l&rsquo;endroit recherché</figcaption>
+    </figure>
+<br></p>
 <p>Philip s&rsquo;est servi d&rsquo;open street view en passant manuellement, rue par rue. On peut procéder de la sorte, quand il y a peu de points à visualiser, comme dans le cas présent.<br> Mais quand il y a de nombreux points à consulter il est nécessaire d&rsquo;automatiser sa recherche.<br>
-<a href="https://www.google.com/earth/versions/" target="_blank" rel="noopener noreffer ">Google Earth Pro Desktop</a> permet d&rsquo;importer des données d&rsquo;Overpass au format KML de les afficher sur la carte et de programmer une  visite touristique.</p>
-<p>D&rsquo;autres outils de cartographie en ligne, comme Mapbox ou Leaflet, permetttent également d&rsquo;afficher des données géospatiales sur une carte interactive, de les importer au format KML en offrant des fonctionnalités de personnalisation et de style supplémentaires.</p>
-<br>
-<figure><a class="lightgallery" href="/images/swiss.png" title="/images/swiss.png" data-thumbnail="/images/swiss.png" data-sub-html="<h2>Vue aérienne des données sur Google Earth Pro</h2>">
+<a href="https://www.google.com/earth/versions/" target="_blank" rel="noopener noreffer ">Google Earth Pro Desktop</a> permet d&rsquo;importer des données d&rsquo;Overpass au format KML de les afficher sur la carte et de programmer une  visite touristique.<br></p>
+<p>Au final, notre fast-food est situé à Berne en Suisse à la Falkenplace exactement au Falkenpl. 10A, 3012 Berne, Suisse.<br></p>
+<p><figure><a class="lightgallery" href="/images/swiss.png" title="/images/swiss.png" data-thumbnail="/images/swiss.png" data-sub-html="<h2>Vue aérienne de la Falkenplace sur Google Earth Pro</h2>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -216,9 +228,15 @@ La page <a href="https://taginfo.openstreetmap.org/" target="_blank" rel="noopen
             data-srcset="/images/swiss.png, /images/swiss.png 1.5x, /images/swiss.png 2x"
             data-sizes="auto"
             alt="/images/swiss.png" width="1133" height="756" />
-    </a><figcaption class="image-caption">Vue aérienne des données sur Google Earth Pro</figcaption>
+    </a><figcaption class="image-caption">Vue aérienne de la Falkenplace sur Google Earth Pro</figcaption>
     </figure>
 <br>
+D&rsquo;autres outils de cartographie en ligne, comme Mapbox ou Leaflet, permetttent également d&rsquo;afficher des données géospatiales sur une carte interactive, de les importer au format KML en offrant des fonctionnalités de personnalisation et de style supplémentaires.<br></p>
+<p>Bien entendu, le code utilisé sur Overpass n&rsquo;est pas unique. Comme on peut le voir ici, le même résultat peut être obtenu en construisant le code différement.</p>
+<p><a href="https://overpass-turbo.eu/s/1pp2" target="_blank" rel="noopener noreffer ">https://overpass-turbo.eu/s/1pp2</a></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Cette recherche est l&rsquo;exemple même d&rsquo;une investigation qui allie observation, analyse de l&rsquo;image, intuition,  expérience personnelle, connaissance des outils et notions de code.<br>
+En ce qui me concerne, j&rsquo;ai appris que les panneaux de  signalisation  pouvaient  d&rsquo;avérer  essentiels dans  le cadre d&rsquo;une géolocalisation et que les typographies varient selon les <a href="https://en.wikipedia.org/wiki/List_of_public_signage_typefaces" target="_blank" rel="noopener noreffer ">régions</a>.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
