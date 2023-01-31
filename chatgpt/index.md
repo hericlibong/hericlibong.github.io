@@ -1,9 +1,3 @@
----
-noteId: "43a81920a17c11edb4a9336e1e7e8a1a"
-tags: []
-
----
-
 # Chatgpt
 
 

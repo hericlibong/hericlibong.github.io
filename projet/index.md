@@ -4,7 +4,7 @@
 # African CovidDashboard
 <br>
 
-[![dashboard](/images/screen.jpeg)](https://africovidapp.herokuapp.com/)
+[![dashboard](/images/screen.jpeg)](https://command-geology-hall-jevf.onrender)
 
 
 {{< admonition type=note title=" A propos du tableau de bord" open=false >}}
@@ -22,7 +22,7 @@ Il détaille :
 - les cas enregistrés les 30 derniers jours
 - Une carte pour géo localiser chaque pays
   <br>
-  Il est actualisé en même temps que la source des données et déployer sur [Heroku](https://www.heroku.com) avec [Dash-tools](https://dash-tools.readthedocs.io/en/latest/index.html)
+  Il est actualisé en même temps que la source des données et déployer sur Render avec [Dash-tools](https://dash-tools.readthedocs.io/en/latest/index.html)
   <br>
   
 [Github](https://github.com/hericlibong/Covid-19-Dashboard) 
