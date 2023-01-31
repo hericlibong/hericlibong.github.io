@@ -4,7 +4,7 @@
         <link>https://hericlibong.github.io/posts/</link>
         <description>Tous Posts | HlChroniques</description>
         <generator>Hugo -- gohugo.io</generator><language>fr</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
-            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 07 Dec 2022 00:40:16 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Mon, 02 Jan 2023 22:29:38 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Visualiser la &#39;Variole du singe&#39; avec DataPane # Partie I </title>
     <link>https://hericlibong.github.io/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:40 &#43;0000</pubDate>
@@ -13,6 +13,15 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/monkey.png" referrerpolicy="no-referrer">
             </div>Visualiser avec python c&rsquo;est bien mais&hellip; Au départ, Il s&rsquo;agissait juste d&rsquo;écrire un article sur l&rsquo;épidémie de la Variole du Singe illustré de quelques visualisations réalisées avec la librairie graphique Python, Plotly.]]></description>
+</item>
+<item>
+    <title>Chatgpt</title>
+    <link>https://hericlibong.github.io/chatgpt/</link>
+    <pubDate>Mon, 02 Jan 2023 22:29:38 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/chatgpt/</guid>
+    <description><![CDATA[Voici comment procéder pour réaliser cette requête avec Overpass Turbo :
+Accédez à la plateforme Overpass Turbo à l&rsquo;adresse suivante : https://overpass-turbo.]]></description>
 </item>
 <item>
     <title>Le Fast Food dans la rue</title>

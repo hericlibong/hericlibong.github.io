@@ -13,7 +13,7 @@ tags: []
 
 
 
-[![dash](/assets/images/screencapture-africovidapp-herokuapp-2022-10-17-12_55_46.png)](https://africovidapp.herokuapp.com/)
+[![dash](/assets/images/screencapture-africovidapp-herokuapp-2022-10-17-12_55_46.png)](https://command-geology-hall-jevf.onrender)
 
 {{< admonition type=note title=" About the Dashboard" open=false >}}
 
