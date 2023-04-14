@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API - HlStories</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" />
+<meta property="og:description" content="Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" /><meta property="og:image" content="https://hericlibong.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-08T06:47:51+00:00" />
+<meta property="article:modified_time" content="2023-04-08T06:47:51+00:00" /><meta property="og:site_name" content="HlStories" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hericlibong.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API"/>
+<meta name="twitter:description" content="Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API."/>
+<meta name="application-name" content="HlStories">
+<meta name="apple-mobile-web-app-title" content="HlStories"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" /><link rel="prev" href="https://hericlibong.github.io/en/scraping_data_without_scraping_librairie/" /><link rel="next" href="https://hericlibong.github.io/en/senegalese-parlement-chronicles/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Scraping the Fifa men's ranking with Scrapy and the hidden API",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hericlibong.github.io\/en\/scraping_fifa_men_ranking\/"
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Scrapy, Web Scraping, API, Python","wordcount":  1015 ,
+        "url": "https:\/\/hericlibong.github.io\/en\/scraping_fifa_men_ranking\/","datePublished": "2023-04-08T06:47:51+00:00","dateModified": "2023-04-08T06:47:51+00:00","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Heric Libong"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/en/" title="HlStories"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/en/posts/"> Posts </a><a class="menu-item" href="/en/tags/"> Tags </a><a class="menu-item" href="/en/categories/"> Categories </a><a class="menu-item" href="/en/about/" title="About"> About </a><a class="menu-item" href="/en/project/" title="Projects"> Projects </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/en/scraping_fifa_men_ranking/" selected>English</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/en/" title="HlStories"><span class="header-title-pre"><i class='fa fa-file-code-o' aria-hidden='true'></i></span>HlStories</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/en/posts/" title="">Posts</a><a class="menu-item" href="/en/tags/" title="">Tags</a><a class="menu-item" href="/en/categories/" title="">Categories</a><a class="menu-item" href="/en/about/" title="About">About</a><a class="menu-item" href="/en/project/" title="Projects">Projects</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/en/scraping_fifa_men_ranking/" selected>English</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Scraping the Fifa men's ranking with Scrapy and the hidden API</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/en/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">included in <a href="/en/categories/scraping/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Scraping</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-08">2023-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1015 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/ranking-fifa.jpeg"
+        data-srcset="/images/ranking-fifa.jpeg, /images/ranking-fifa.jpeg 1.5x, /images/ranking-fifa.jpeg 2x"
+        data-sizes="auto"
+        alt="/images/ranking-fifa.jpeg"
+        title="/images/ranking-fifa.jpeg" width="1050" height="700" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#get-data-with-scrapy">Get data with Scrapy</a></li>
+        <li><a href="#get-all-data-from-all-pages">Get all data from all pages</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#start_urls">Start_urls</a></li>
+        <li><a href="#parse-function">Parse function</a></li>
+        <li><a href="#parse_ranking_data">Parse_ranking_data</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav></div>
+            </div><div class="content" id="content"><p>Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API. Firstly to avoid blockages and to get structured data quickly. But above all it is to avoid endless and complex codes.<br>
+Obviously not all sites have one. But when there is one and it allows access to the data you are looking for, it makes the work much easier.<br>
+Already, concerning the Fifa site, I found it abnormal that such an institution does not have a public API for data that requires a certain precision and that concerns everyone.<br>
+If you open the browser inspector and go to the XHR tab in the network section you can find a request get status 200, the API link.<br>
+Clicking on <a href="https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=id13974" target="_blank" rel="noopener noreffer ">https://www.fifa.com/api/ranking-overview?locale=en&dateId=id13974</a> we can see the table data representing the latest ranking published on 6 April 2023<br></p>
+<a class="lightgallery" href="/images/data3.png" title="/images/data3.png" data-thumbnail="/images/data3.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/data3.png"
+            data-srcset="/images/data3.png, /images/data3.png 1.5x, /images/data3.png 2x"
+            data-sizes="auto"
+            alt="/images/data3.png" width="630" height="518" />
+    </a>
+<p>We can do the same thing for the ranking of another date and we will have the same data return with the corresponding date.<br>
+Our goal is, of course, to retrieve data from all pages. But for now, let&rsquo;s see how to parse the data from the last ranking using Scrapy.<br></p>
+<h3 id="get-data-with-scrapy">Get data with Scrapy</h3>
+<p>For this project we can use Scrapy outside its environment, from a single file. But I propose to open a scrapy project and use the whole : <br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy startproject &lt;projectname&gt;
+</span></span></code></pre></div><br>
+Going inside the spider and launch a default template spider  :
+<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy genspider &lt;filename&gt; &lt;site.com&gt;
+</span></span></code></pre></div><br>
+<p>As far as I am concerned, I have named the file : <code>menranking</code>.
+The goal here is to extract the data from the HTTP response and return it as a list.
+The url returns <code>json</code> data thus first :</p>
+<ul>
+<li>We import <code>json</code> <br>
+Then :</li>
+<li>we enter the correct domain name: fifa.com</li>
+<li>We enter the url of the endpoint in <code>starts_url</code></li>
+<li>In the <code>parse</code> function we load the contents of the HTTP response into the <code>data</code> variable as a Python dictionary.</li>
+</ul>
+<br>
+<script src="https://gist.github.com/hericlibong/feade151ff2661a47654f7c7061cc30e.js"></script>
+<br>
+<p>After launching our spider:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py
+</span></span></code></pre></div><br>
+<p>This code instantly returns the latest ranking data as it is returned from our access point.
+As far as I&rsquo;m concerned, I don&rsquo;t need to retrieve the full data.
+I only want to use :</p>
+<ul>
+<li>The country of the team (name)</li>
+<li>the total of points</li>
+<li>the rank</li>
+<li>the link of the flag</li>
+<li>the confederation in which evolves the team</li>
+</ul>
+<br>
+<p>Get the right key</p>
+<br>
+<script src="https://gist.github.com/hericlibong/1936af1b5cf5108b875702b021ae6cc0.js"></script>
+<br>
+However, we note that we do not have the date of publication of the ranking. This absence may cause us problems. We will see later how to solve it.
+<h3 id="get-all-data-from-all-pages">Get all data from all pages</h3>
+<p>The main challenge when extracting hidden API data is to find the <code>pagination keys</code>. Usually they are in the metadata at the beginning or sometimes at the end of the list of data returned on the page. They are set up according to internal standards and give indications of dates, page numbers, id numbers etc., but allow to refer to the next page.<br>
+The problem is that, in our case, there is no metadata. Furthermore, as noted above, no date is specified. So at first sight, we do not have a key that links the dates of the rankings to the identifiers, thus to the different data pages.<br>
+My first thought was to use the urls and create a variable with the IDs. But this would not have allowed us to go very far because the ID numbers do not have a logical sequence.<br>
+I then thought of iterating over a large series of id numbers from 1 to 13889.  But that would have taken far too long. But one of the principles of collecting data from a hidden API is speed.<br></p>
+<h3 id="solution">Solution</h3>
+<p>The simplest solution is to examine the <code>source code</code> of the page. In chrome, by doing an automatic line break we can see that the dates and corresponding IDs are all a list of dictionaries : <br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="s2">&#34;dates&#34;</span><span class="p">:[{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13974&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;6 Apr 2023&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13869&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;22 Dec 2022&#34;</span><span class="p">}</span><span class="o">...</span><span class="p">{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id2&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;8 Aug 1993&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id1&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;31 Dec 1992&#34;</span><span class="p">}]</span>
+</span></span></code></pre></div><br>
+<a class="lightgallery" href="/images/source_code.png" title="/images/source_code.png" data-thumbnail="/images/source_code.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/source_code.png"
+            data-srcset="/images/source_code.png, /images/source_code.png 1.5x, /images/source_code.png 2x"
+            data-sizes="auto"
+            alt="/images/source_code.png" width="1101" height="632" />
+    </a>
+<br>
+<p>So all that remains is to isolate this list, make it a json content and write a function to send it to the API url. To test it, you can first write this function in a separate file : <code>test.py</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">scrapy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="k">class</span> <span class="nc">MySpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;myspider&#39;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.fifa.com/fifa-world-ranking/men?dateId=id13974&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">        <span class="n">script_content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//script[contains(., &#34;dates&#34;)]/text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract_first</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">script_content</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">date_list</span><span class="p">[</span><span class="s1">&#39;props&#39;</span><span class="p">][</span><span class="s1">&#39;pageProps&#39;</span><span class="p">][</span><span class="s1">&#39;pageData&#39;</span><span class="p">][</span><span class="s1">&#39;ranking&#39;</span><span class="p">][</span><span class="s1">&#39;dates&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">date_list</span><span class="p">)</span>
+</span></span></code></pre></div><br>
+<ul>
+<li>First, We extracts the content of the first script tag in the response that contains the string <code>&quot;dates&quot;</code> with all the json content of the page.</li>
+<li>We transformed it into a Python dictionary</li>
+<li>Extract the list of dates from the dictionary</li>
+</ul>
+<p>To extract the list of dates, I used <a href="https://jsonformatter.curiousconcept.com/#" target="_blank" rel="noopener noreffer ">json formater</a> which is a free online tool that allows to identify the keys quite quickly.<br>
+Just copy all the json content, paste it into the window and click on the process button
+<r></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/jsonformatter.png"
+        data-srcset="/images/jsonformatter.png, /images/jsonformatter.png 1.5x, /images/jsonformatter.png 2x"
+        data-sizes="auto"
+        alt="/images/jsonformatter.png"
+        title="jsonformarterpicture" width="631" height="295" /></p>
+<br>
+<br>
+<h3 id="start_urls">Start_urls</h3>
+<p>We can now integrate this function into our code to retrieve all the API pages and therefore all the FIFA rankings since its creation in 1992
+picture</p>
+<script src="https://gist.github.com/hericlibong/7fb055d3d38102414478ad2f1cb21bf4.js"></script>
+<p>First we import datetime to work on the date format of the page&rsquo;s source code list.
+We change the start_urls. We enter the url of the ranking page instead of the API endpoint, in order to extract our list of dates from the source code of the page
+<br></p>
+<h3 id="parse-function">Parse function</h3>
+<br>
+<p>We pass our method for extracting the list of dates and ids from the source code into the function
+We create the loop with the list of dates and id by iterating over the API url.
+we put the date in yyyy-mm-dd format
+We send a request to the API with the date and the URL as parameters</p>
+<script src="https://gist.github.com/hericlibong/93857c703da18b63b30956d0ef03dfed.js"></script>
+<br>
+<h3 id="parse_ranking_data">Parse_ranking_data</h3>
+<script src="https://gist.github.com/hericlibong/b163ab8a2ce568610bc3fd6f5aefe28d.js"></script>
+<p>From now on, we have everything we need for both:</p>
+<ul>
+<li>iterate over ids</li>
+<li>integrate the dates in the correct format to each corresponding ranking.</li>
+</ul>
+<p>For this we will need:</p>
+<ul>
+<li>import datetime to put the dates in the correct format</li>
+<li>import the list that we copied on the source page</li>
+<li>create a new function.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py -o data.json
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py -o data.csv
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-04-08</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/en/scraping_fifa_men_ranking/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" data-title="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" data-via="bongli" data-hashtags="Scrapy,Web Scraping,API,Python"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" data-title="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" data-title="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" data-title="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" data-title="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" data-image="/images/ranking-fifa.jpeg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/en/tags/scrapy/">Scrapy</a>,&nbsp;<a href="/en/tags/web-scraping/">Web Scraping</a>,&nbsp;<a href="/en/tags/api/">API</a>,&nbsp;<a href="/en/tags/python/">Python</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/en/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/en/scraping_data_without_scraping_librairie/" class="prev" rel="prev" title="Easy Data extraction : Hidden API with Scrapy "><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Easy Data extraction : Hidden API with Scrapy </a>
+            <a href="/en/senegalese-parlement-chronicles/" class="next" rel="next" title="Meet your Deputy">Meet your Deputy<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/en/" target="_blank">Heric Libong</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":25},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

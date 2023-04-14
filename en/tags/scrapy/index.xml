@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Scrapy - Tag - HlStories</title>
+        <link>https://hericlibong.github.io/en/tags/scrapy/</link>
+        <description>Scrapy - Tag - HlStories</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Sat, 08 Apr 2023 06:47:51 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/en/tags/scrapy/" rel="self" type="application/rss+xml" /><item>
+    <title>Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API</title>
+    <link>https://hericlibong.github.io/en/scraping_fifa_men_ranking/</link>
+    <pubDate>Sat, 08 Apr 2023 06:47:51 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/en/scraping_fifa_men_ranking/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/ranking-fifa.jpeg" referrerpolicy="no-referrer">
+            </div>Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API.]]></description>
+</item>
+</channel>
+</rss>

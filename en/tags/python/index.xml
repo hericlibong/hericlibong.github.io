@@ -4,7 +4,17 @@
         <link>https://hericlibong.github.io/en/tags/python/</link>
         <description>Python - Tag - HlStories</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hericlibong@gmail.com (Heric Libong)</managingEditor>
-            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/en/tags/python/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>hericlibong@gmail.com (Heric Libong)</webMaster><lastBuildDate>Sat, 08 Apr 2023 06:47:51 &#43;0000</lastBuildDate><atom:link href="https://hericlibong.github.io/en/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API</title>
+    <link>https://hericlibong.github.io/en/scraping_fifa_men_ranking/</link>
+    <pubDate>Sat, 08 Apr 2023 06:47:51 &#43;0000</pubDate>
+    <author>Heric Libong</author>
+    <guid>https://hericlibong.github.io/en/scraping_fifa_men_ranking/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/ranking-fifa.jpeg" referrerpolicy="no-referrer">
+            </div>Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API.]]></description>
+</item>
+<item>
     <title>Explore MonkeyPox Data with Jupyter Notebook, Plotly and Datapane #Part I</title>
     <link>https://hericlibong.github.io/en/mon-post-interlangue/</link>
     <pubDate>Wed, 03 Aug 2022 15:07:17 &#43;0000</pubDate>
