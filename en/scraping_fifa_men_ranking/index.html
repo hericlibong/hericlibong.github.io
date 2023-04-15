@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API - HlStories</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" />
-<meta property="og:description" content="Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API." />
+        <title>Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API - HlStories</title><meta name="Description" content="Collect the 1992–2023 Fifa rankings in seconds using the internal API of the Fifa website"><meta property="og:title" content="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API" />
+<meta property="og:description" content="Collect the 1992–2023 Fifa rankings in seconds using the internal API of the Fifa website" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hericlibong.github.io/en/scraping_fifa_men_ranking/" /><meta property="og:image" content="https://hericlibong.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-08T06:47:51+00:00" />
@@ -15,7 +15,7 @@
 <meta name="twitter:image" content="https://hericlibong.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Scraping the Fifa men&#39;s ranking with Scrapy and the hidden API"/>
-<meta name="twitter:description" content="Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API."/>
+<meta name="twitter:description" content="Collect the 1992–2023 Fifa rankings in seconds using the internal API of the Fifa website"/>
 <meta name="application-name" content="HlStories">
 <meta name="apple-mobile-web-app-title" content="HlStories"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,13 +30,13 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hericlibong.github.io\/en\/scraping_fifa_men_ranking\/"
-        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Scrapy, Web Scraping, API, Python","wordcount":  1015 ,
+        },"image": ["https:\/\/hericlibong.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Scrapy, Web Scraping, API, Python","wordcount":  1415 ,
         "url": "https:\/\/hericlibong.github.io\/en\/scraping_fifa_men_ranking\/","datePublished": "2023-04-08T06:47:51+00:00","dateModified": "2023-04-08T06:47:51+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/hericlibong.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Heric Libong"
-            },"description": ""
+            },"description": "Collect the 1992–2023 Fifa rankings in seconds using the internal API of the Fifa website"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -107,11 +107,11 @@
     </div><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Scraping the Fifa men's ranking with Scrapy and the hidden API</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/en/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Heric Libong</a></span>&nbsp;<span class="post-category">included in <a href="/en/categories/scraping/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Scraping</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-08">2023-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1015 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-08">2023-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1415 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -119,7 +119,7 @@
         data-srcset="/images/ranking-fifa.jpeg, /images/ranking-fifa.jpeg 1.5x, /images/ranking-fifa.jpeg 2x"
         data-sizes="auto"
         alt="/images/ranking-fifa.jpeg"
-        title="/images/ranking-fifa.jpeg" width="1050" height="700" /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="Collect the 1992–2023 Fifa rankings in seconds using the internal API of the Fifa website" width="1050" height="700" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -128,92 +128,118 @@
   <ol>
     <li>
       <ol>
+        <li><a href="#find-hidden-api">Find Hidden API</a></li>
         <li><a href="#get-data-with-scrapy">Get data with Scrapy</a></li>
         <li><a href="#get-all-data-from-all-pages">Get all data from all pages</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#start_urls">Start_urls</a></li>
-        <li><a href="#parse-function">Parse function</a></li>
-        <li><a href="#parse_ranking_data">Parse_ranking_data</a></li>
       </ol>
     </li>
   </ol>
 </nav></div>
-            </div><div class="content" id="content"><p>Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API. Firstly to avoid blockages and to get structured data quickly. But above all it is to avoid endless and complex codes.<br>
-Obviously not all sites have one. But when there is one and it allows access to the data you are looking for, it makes the work much easier.<br>
-Already, concerning the Fifa site, I found it abnormal that such an institution does not have a public API for data that requires a certain precision and that concerns everyone.<br>
-If you open the browser inspector and go to the XHR tab in the network section you can find a request get status 200, the API link.<br>
-Clicking on <a href="https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=id13974" target="_blank" rel="noopener noreffer ">https://www.fifa.com/api/ranking-overview?locale=en&dateId=id13974</a> we can see the table data representing the latest ranking published on 6 April 2023<br></p>
-<a class="lightgallery" href="/images/data3.png" title="/images/data3.png" data-thumbnail="/images/data3.png">
+            </div><div class="content" id="content"><p>After the publication of the latest FIFA ranking on April 6th, I visited the association’s website to examine their procedures and potentially obtain the historical ranking since its creation in 1992. While I had access to their procedures, I could not find any public API or an easy way to download the data from their tables. Consequently, I decided to collect the data myself.<br></p>
+<h3 id="find-hidden-api">Find Hidden API</h3>
+<p>When it comes to extracting data from a dynamic website, my first approach is to search for a hidden API. Not only does this allow me to avoid getting blocked, but it also enables me to quickly obtain structured data without relying on long and complex code. Although not all sites have a hidden API, finding one that allows access to the data can greatly simplify the task.<br>
+<br></p>
+<p>So, I immediately opened the browser inspector and… Bingo! After refreshing the page, I found an API URL in the XHR tab, which returns the complete current ranking data in a <a href="https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=id13974" target="_blank" rel="noopener noreffer ">JSON format list</a>.</p>
+<a class="lightgallery" href="/images/fifa1.webp" title="/images/fifa1.webp" data-thumbnail="/images/fifa1.webp">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/data3.png"
-            data-srcset="/images/data3.png, /images/data3.png 1.5x, /images/data3.png 2x"
+            data-src="/images/fifa1.webp"
+            data-srcset="/images/fifa1.webp, /images/fifa1.webp 1.5x, /images/fifa1.webp 2x"
             data-sizes="auto"
-            alt="/images/data3.png" width="630" height="518" />
+            alt="/images/fifa1.webp" width="1400" height="532" />
     </a>
-<p>We can do the same thing for the ranking of another date and we will have the same data return with the corresponding date.<br>
-Our goal is, of course, to retrieve data from all pages. But for now, let&rsquo;s see how to parse the data from the last ranking using Scrapy.<br></p>
+<p>If we perform the same process by selecting a different date from the drop-down menu, we observe that the page consistently returns the same type of data. Our objective, therefore, will be to retrieve all of these pages. But for now, let’s focus on how to retrieve the latest ranking data using Scrapy.</p>
 <h3 id="get-data-with-scrapy">Get data with Scrapy</h3>
-<p>For this project we can use Scrapy outside its environment, from a single file. But I propose to open a scrapy project and use the whole : <br></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy startproject &lt;projectname&gt;
+<p>have chosen to use Scrapy because it is my preferred scraping library and it provides a powerful and flexible framework for web scraping tasks. For this project, it can be used outside of its environment, from a simple file, but to speed up the process, we will create a Scrapy project with the default template spider package :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">pip install scrapy
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy startproject &lt;projectname&gt;
 </span></span></code></pre></div><br>
-Going inside the spider and launch a default template spider  :
+In the spider folder :
 <br>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy genspider &lt;filename&gt; &lt;site.com&gt;
 </span></span></code></pre></div><br>
-<p>As far as I am concerned, I have named the file : <code>menranking</code>.
-The goal here is to extract the data from the HTTP response and return it as a list.
-The url returns <code>json</code> data thus first :</p>
+<p>The first objective is to extract the data from the HTTP response and return it as a list, as we see it on the API endpoint link. Since the URL returns JSON data, we need to:</p>
 <ul>
-<li>We import <code>json</code> <br>
-Then :</li>
-<li>we enter the correct domain name: fifa.com</li>
-<li>We enter the url of the endpoint in <code>starts_url</code></li>
-<li>In the <code>parse</code> function we load the contents of the HTTP response into the <code>data</code> variable as a Python dictionary.</li>
+<li>Import the json library</li>
+<li>Enter the correct domain name: fifa.com</li>
+<li>Enter the endpoint URL into the starts_url variable</li>
+<li>In the parse function, load the content of the HTTP response into the data variable as a Python dictionary</li>
+<li>Loop through the rankings of all teams and return the data.</li>
 </ul>
 <br>
-<script src="https://gist.github.com/hericlibong/feade151ff2661a47654f7c7061cc30e.js"></script>
-<br>
-<p>After launching our spider:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">scrapy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">json</span>  <span class="c1">#The URL returns data in JSON format.</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">class</span> <span class="nc">MenrankingSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;menranking&#39;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fifa.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=id13974&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">)</span> <span class="c1">#loads the contents of the HTTP response into the `data` variable as a Python dictionary.</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="k">for</span> <span class="n">ranking_data</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;rankings&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">            <span class="k">yield</span> <span class="n">ranking_data</span>
+</span></span></code></pre></div><br>
+<p>In the terminal</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py
 </span></span></code></pre></div><br>
-<p>This code instantly returns the latest ranking data as it is returned from our access point.
-As far as I&rsquo;m concerned, I don&rsquo;t need to retrieve the full data.
-I only want to use :</p>
-<ul>
-<li>The country of the team (name)</li>
-<li>the total of points</li>
-<li>the rank</li>
-<li>the link of the flag</li>
-<li>the confederation in which evolves the team</li>
-</ul>
-<br>
-<p>Get the right key</p>
-<br>
-<script src="https://gist.github.com/hericlibong/1936af1b5cf5108b875702b021ae6cc0.js"></script>
-<br>
-However, we note that we do not have the date of publication of the ranking. This absence may cause us problems. We will see later how to solve it.
-<h3 id="get-all-data-from-all-pages">Get all data from all pages</h3>
-<p>The main challenge when extracting hidden API data is to find the <code>pagination keys</code>. Usually they are in the metadata at the beginning or sometimes at the end of the list of data returned on the page. They are set up according to internal standards and give indications of dates, page numbers, id numbers etc., but allow to refer to the next page.<br>
-The problem is that, in our case, there is no metadata. Furthermore, as noted above, no date is specified. So at first sight, we do not have a key that links the dates of the rankings to the identifiers, thus to the different data pages.<br>
-My first thought was to use the urls and create a variable with the IDs. But this would not have allowed us to go very far because the ID numbers do not have a logical sequence.<br>
-I then thought of iterating over a large series of id numbers from 1 to 13889.  But that would have taken far too long. But one of the principles of collecting data from a hidden API is speed.<br></p>
-<h3 id="solution">Solution</h3>
-<p>The simplest solution is to examine the <code>source code</code> of the page. In chrome, by doing an automatic line break we can see that the dates and corresponding IDs are all a list of dictionaries : <br></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="s2">&#34;dates&#34;</span><span class="p">:[{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13974&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;6 Apr 2023&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13869&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;22 Dec 2022&#34;</span><span class="p">}</span><span class="o">...</span><span class="p">{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id2&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;8 Aug 1993&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id1&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;31 Dec 1992&#34;</span><span class="p">}]</span>
-</span></span></code></pre></div><br>
-<a class="lightgallery" href="/images/source_code.png" title="/images/source_code.png" data-thumbnail="/images/source_code.png">
+<p>The code instantly returns all the data from the endpoint.</p>
+<a class="lightgallery" href="/images/fifa2.webp" title="/images/fifa2.webp" data-thumbnail="/images/fifa2.webp">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/source_code.png"
-            data-srcset="/images/source_code.png, /images/source_code.png 1.5x, /images/source_code.png 2x"
+            data-src="/images/fifa2.webp"
+            data-srcset="/images/fifa2.webp, /images/fifa2.webp 1.5x, /images/fifa2.webp 2x"
             data-sizes="auto"
-            alt="/images/source_code.png" width="1101" height="632" />
+            alt="/images/fifa2.webp" width="1400" height="771" />
     </a>
+<p>From there, we can select the data we want to keep for exporting in different formats. For me, I only need:</p>
+<ul>
+<li>the country name of the team</li>
+<li>the total points</li>
+<li>the previous points</li>
+<li>the rank</li>
+<li>the previous rank</li>
+<li>the flag link</li>
+<li>the country URL</li>
+<li>the confederation.</li>
+</ul>
 <br>
-<p>So all that remains is to isolate this list, make it a json content and write a function to send it to the API url. To test it, you can first write this function in a separate file : <code>test.py</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">scrapy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">json</span>  <span class="c1">#The URL returns data in JSON format.</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="k">class</span> <span class="nc">MenrankingSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;menranking&#39;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fifa.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=id13974&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">)</span> <span class="c1">#loads the contents of the HTTP response into the `data` variable as a Python dictionary.</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;https://www.fifa.com&#39;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="k">for</span> <span class="n">ranking_data</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;rankings&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">            <span class="k">yield</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">                <span class="s1">&#39;country&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">                <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;rank&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">                <span class="s1">&#39;previousRank&#39;</span> <span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;previousRank&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">                <span class="s1">&#39;totalPoints&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;totalPoints&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">                <span class="s1">&#39;previousPoints&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;previousPoints&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">                <span class="s1">&#39;flagUrl&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;flag&#39;</span><span class="p">][</span><span class="s1">&#39;src&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">                <span class="s1">&#39;countryUrl&#39;</span><span class="p">:</span> <span class="n">base_url</span> <span class="o">+</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;countryURL&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">                <span class="s1">&#39;conf&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;tag&#39;</span><span class="p">][</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> 
+</span></span><span class="line"><span class="ln">22</span><span class="cl">            <span class="p">}</span>
+</span></span></code></pre></div><br>
+Again, the data is returned instantly. However, we notice that we do not have the publication date of the ranking. We will see later how to fix this.
+<br>
+<h3 id="get-all-data-from-all-pages">Get all data from all pages</h3>
+<p>The main challenge when extracting data from a hidden API is to find the keys that allow you to navigate from one page to another. These are usually found in the metadata, at the beginning or sometimes at the end of the list of data returned by the endpoint, and vary depending on the API.</p>
+<p>It can be a page number, the total number of pages, an ID number, or even a boolean indicating that there is a next page.</p>
+<p>The issue here is that there are no metadata available. Moreover, as we mentioned earlier, no date is specified. Thus, at first glance, we do not have a key that links the ranking dates to the IDs, and hence to the different data pages.</p>
+<p>My solution — there may be others — consisted of examining the page’s source code. In the middle of the code, it was found that the corresponding dates and identifiers were all a list of dictionaries containing a key-value pair with “id” for the ID number, and “text” for the date.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="s2">&#34;dates&#34;</span><span class="p">:[{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13974&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;6 Apr 2023&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id13869&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;22 Dec 2022&#34;</span><span class="p">}</span><span class="o">...</span><span class="p">{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id2&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;8 Aug 1993&#34;</span><span class="p">},{</span><span class="s2">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;id1&#34;</span><span class="p">,</span><span class="s2">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;31 Dec 1992&#34;</span><span class="p">}]</span>
+</span></span></code></pre></div><br>
+<p>We just need to extract this list, turn it into a JSON content, and write a function to send it to the API URL. We can first test this by writing the function in a separate file, for example: test.py.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">scrapy</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">
@@ -222,20 +248,26 @@ I then thought of iterating over a large series of id numbers from 1 to 13889.  
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.fifa.com/fifa-world-ranking/men?dateId=id13974&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">        <span class="n">script_content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//script[contains(., &#34;dates&#34;)]/text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract_first</span><span class="p">()</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">script_content</span><span class="p">)</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">date_list</span><span class="p">[</span><span class="s1">&#39;props&#39;</span><span class="p">][</span><span class="s1">&#39;pageProps&#39;</span><span class="p">][</span><span class="s1">&#39;pageData&#39;</span><span class="p">][</span><span class="s1">&#39;ranking&#39;</span><span class="p">][</span><span class="s1">&#39;dates&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        
-</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">date_list</span><span class="p">)</span>
-</span></span></code></pre></div><br>
-<ul>
-<li>First, We extracts the content of the first script tag in the response that contains the string <code>&quot;dates&quot;</code> with all the json content of the page.</li>
-<li>We transformed it into a Python dictionary</li>
-<li>Extract the list of dates from the dictionary</li>
-</ul>
-<p>To extract the list of dates, I used <a href="https://jsonformatter.curiousconcept.com/#" target="_blank" rel="noopener noreffer ">json formater</a> which is a free online tool that allows to identify the keys quite quickly.<br>
-Just copy all the json content, paste it into the window and click on the process button
-<r></p>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">        <span class="c1">#extracts content of the first script tag in the response that contains the string `&#34;dates&#34;` with all the json content of the page.</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="n">script_content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//script[contains(., &#34;dates&#34;)]/text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract_first</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="c1">#transform it into a Python dictionary</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">script_content</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="c1">#extract the list of dates from the dictionary</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">date_list</span><span class="p">[</span><span class="s1">&#39;props&#39;</span><span class="p">][</span><span class="s1">&#39;pageProps&#39;</span><span class="p">][</span><span class="s1">&#39;pageData&#39;</span><span class="p">][</span><span class="s1">&#39;ranking&#39;</span><span class="p">][</span><span class="s1">&#39;dates&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">        
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">date_list</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">
+</span></span><span class="line"><span class="ln">2</span><span class="cl">scrapy runspider test.py
+</span></span></code></pre></div><a class="lightgallery" href="/images/fifa3.webp" title="/images/fifa3.webp" data-thumbnail="/images/fifa3.webp">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/fifa3.webp"
+            data-srcset="/images/fifa3.webp, /images/fifa3.webp 1.5x, /images/fifa3.webp 2x"
+            data-sizes="auto"
+            alt="/images/fifa3.webp" width="1400" height="834" />
+    </a>
+<p>In order to extract the list of dates, I used <a href="https://jsonformatter.curiousconcept.com/#" target="_blank" rel="noopener noreffer ">json formatter</a>, a free online tool that makes it easy to quickly identify the correct keys. Simply copy and paste the entire JSON content into the window and click the “Process” button.”</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -244,39 +276,73 @@ Just copy all the json content, paste it into the window and click on the proces
         data-sizes="auto"
         alt="/images/jsonformatter.png"
         title="jsonformarterpicture" width="631" height="295" /></p>
-<br>
-<br>
-<h3 id="start_urls">Start_urls</h3>
-<p>We can now integrate this function into our code to retrieve all the API pages and therefore all the FIFA rankings since its creation in 1992
-picture</p>
-<script src="https://gist.github.com/hericlibong/7fb055d3d38102414478ad2f1cb21bf4.js"></script>
-<p>First we import datetime to work on the date format of the page&rsquo;s source code list.
-We change the start_urls. We enter the url of the ranking page instead of the API endpoint, in order to extract our list of dates from the source code of the page
-<br></p>
-<h3 id="parse-function">Parse function</h3>
-<br>
-<p>We pass our method for extracting the list of dates and ids from the source code into the function
-We create the loop with the list of dates and id by iterating over the API url.
-we put the date in yyyy-mm-dd format
-We send a request to the API with the date and the URL as parameters</p>
-<script src="https://gist.github.com/hericlibong/93857c703da18b63b30956d0ef03dfed.js"></script>
-<br>
-<h3 id="parse_ranking_data">Parse_ranking_data</h3>
-<script src="https://gist.github.com/hericlibong/b163ab8a2ce568610bc3fd6f5aefe28d.js"></script>
-<p>From now on, we have everything we need for both:</p>
+<p>We can now integrate this function and modify our code to retrieve all API pages and therefore all FIFA rankings since its creation in 1992. Let’s proceed step by step:</p>
 <ul>
-<li>iterate over ids</li>
-<li>integrate the dates in the correct format to each corresponding ranking.</li>
+<li>Import datetime module, which will be used in later steps to work with the date format in the page&rsquo;s source code.</li>
+<li>Change the starting URL to the current men’s ranking page, which will be used to extract the date and ID information needed to scrape all rankings data (Note that we can choose any page because the data we are interested in is the dates and the identification number of the source code).</li>
 </ul>
-<p>For this we will need:</p>
-<ul>
-<li>import datetime to put the dates in the correct format</li>
-<li>import the list that we copied on the source page</li>
-<li>create a new function.</li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">scrapy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="k">class</span> <span class="nc">MenrankingSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;menranking&#39;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fifa.com&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="c1"># changing the starting url by using the one of the ranking page and not the one of the API</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.fifa.com/fifa-world-ranking/men?dateId=id13974&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><ul>
+<li>Add our method for extracting the list of dates and code source IDs to the parse function</li>
+<li>Create a loop with the list of dates and IDs by iterating over the API URL.</li>
+<li>Format the date as ‘yyyy-mm-dd’.</li>
+<li>Send the request with the date as a parameter.</li>
 </ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="n">script_content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;//script[contains(., &#34;dates&#34;)]/text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract_first</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">script_content</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="n">date_list</span> <span class="o">=</span> <span class="n">date_list</span><span class="p">[</span><span class="s1">&#39;props&#39;</span><span class="p">][</span><span class="s1">&#39;pageProps&#39;</span><span class="p">][</span><span class="s1">&#39;pageData&#39;</span><span class="p">][</span><span class="s1">&#39;ranking&#39;</span><span class="p">][</span><span class="s1">&#39;dates&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="k">for</span> <span class="n">item_id</span> <span class="ow">in</span> <span class="n">date_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">            <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;https://www.fifa.com/api/ranking-overview?locale=en&amp;dateId=</span><span class="si">{</span><span class="n">item_id</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            <span class="n">date_text</span> <span class="o">=</span> <span class="n">item_id</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Sept&#39;</span><span class="p">,</span> <span class="s1">&#39;sep&#39;</span><span class="p">)</span> <span class="c1"># Set the date to the correct format</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            <span class="n">date_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_text</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> %b %Y&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            <span class="n">date</span> <span class="o">=</span> <span class="n">date_obj</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">            <span class="k">yield</span> <span class="n">scrapy</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">parse_ranking_data</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">date</span><span class="p">})</span>
+</span></span></code></pre></div><p>Finally, we create a new function parse_ranking_data which is a modified version of the initial parse function, with the addition of the date as metadata for each request.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">def</span> <span class="nf">parse_ranking_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">)</span> 
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;https://www.fifa.com&#39;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="k">for</span> <span class="n">ranking_data</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;rankings&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">            <span class="k">yield</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">                <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">meta</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">                <span class="s1">&#39;country&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">                <span class="s1">&#39;rank&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;rank&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">                <span class="s1">&#39;previousRank&#39;</span> <span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;previousRank&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">                <span class="s1">&#39;totalPoints&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;totalPoints&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">                <span class="s1">&#39;previousPoints&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;previousPoints&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">                <span class="s1">&#39;flagUrl&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;flag&#39;</span><span class="p">][</span><span class="s1">&#39;src&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">                <span class="s1">&#39;countryUrl&#39;</span><span class="p">:</span> <span class="n">base_url</span> <span class="o">+</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;rankingItem&#39;</span><span class="p">][</span><span class="s1">&#39;countryURL&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">                <span class="s1">&#39;conf&#39;</span><span class="p">:</span> <span class="n">ranking_data</span><span class="p">[</span><span class="s1">&#39;tag&#39;</span><span class="p">][</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> 
+</span></span><span class="line"><span class="ln">15</span><span class="cl">            <span class="p">}</span>
+</span></span></code></pre></div><br>
+<p>Now, we can use scrapy’s export functions to get the data in a json file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py -o data.json
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py -o data.csv
-</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+</span></span></code></pre></div><p>or in csv</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">scrapy runspider filename.py -o data.csv
+</span></span></code></pre></div><br>
+<p>And 20 secondes later</p>
+<a class="lightgallery" href="/images/fifa4.webp" title="/images/fifa4.webp" data-thumbnail="/images/fifa4.webp">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/fifa4.webp"
+            data-srcset="/images/fifa4.webp, /images/fifa4.webp 1.5x, /images/fifa4.webp 2x"
+            data-sizes="auto"
+            alt="/images/fifa4.webp" width="1400" height="697" />
+    </a>
+<br>
+<p>In conclusion, fetching data through a hidden API can be a convenient, efficient, and fast way to extract data. However, it’s important to note that each API is unique and can have its own quirks and drawbacks. As our example of retrieving data from the FIFA ranking shows, it is necessary to adapt to each API, and not to neglect any track in order to make the most of it and obtain the desired data.</p>
+<p>full code <a href="https://github.com/hericlibong/FifaRankingScraper/blob/main/historicalmenranking/historicalmenranking/spiders/menranking.py" target="_blank" rel="noopener noreffer ">here</a></p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

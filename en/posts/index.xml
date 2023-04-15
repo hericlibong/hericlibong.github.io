@@ -22,7 +22,7 @@
     <guid>https://hericlibong.github.io/en/scraping_fifa_men_ranking/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/ranking-fifa.jpeg" referrerpolicy="no-referrer">
-            </div>Whenever I start to extract data from a dynamic site, my first step is to look for a hidden API.]]></description>
+            </div>After the publication of the latest FIFA ranking on April 6th, I visited the association’s website to examine their procedures and potentially obtain the historical ranking since its creation in 1992.]]></description>
 </item>
 <item>
     <title>Easy Data extraction : Hidden API with Scrapy </title>
