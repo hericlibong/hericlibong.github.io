@@ -13,3 +13,24 @@ h1 {
 p {
     font-size: 1.2em;
 }
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media li {
+    display: inline;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media a:hover {
+    color: #007acc; /* Couleur de survol */
+  }
+  

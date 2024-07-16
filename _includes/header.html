@@ -1,0 +1,27 @@
+<header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <nav>
+      <ul>
+        {% for page in site.pages %}
+          {% if page.header_pages %}
+            <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    <ul class="social-media">
+      {% if site.social_links.twitter %}
+        <li><a href="{{ site.social_links.twitter }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+      {% endif %}
+      {% if site.social_links.linkedin %}
+        <li><a href="{{ site.social_links.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      {% endif %}
+      {% if site.social_links.github %}
+        <li><a href="{{ site.social_links.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      {% endif %}
+      {% if site.social_links.facebook %}
+        <li><a href="{{ site.social_links.facebook }}" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      {% endif %}
+    </ul>
+  </header>
+  
