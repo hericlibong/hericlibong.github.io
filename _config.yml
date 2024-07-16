@@ -16,10 +16,10 @@ header_pages:
   - about.md
   - blog.md
 
-# Include the post in the home layout
+# Include the posts in the home layout
 defaults:
   - scope:
-    path: ""
-    type: "posts"
-  values:
-    layout: post
+      path: ""
+      type: posts
+    values:
+      layout: post
