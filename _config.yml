@@ -14,3 +14,4 @@ markdown: kramdown
 # Navigation links
 header_pages:
   - about.md
+  - blog.md
