@@ -1,8 +1,5 @@
 theme: minima
 
-minima:
-  skin: dark
-
 # Site settings
 title: Heric Libong's GitHub Page
 email: hericlibong@gmail.com
@@ -10,9 +7,6 @@ description: >-
   This is Heric Libong's personal website, built with GitHub Pages and the Minima theme.
 baseurl: ""
 url: "https://hericlibong.github.io"
-social_media_links:
-  - label: "GitHub"
-    url: "https://github.com/hericlibong"
 
 # Build settings
 markdown: kramdown
@@ -29,6 +23,11 @@ defaults:
       type: posts
     values:
       layout: post
+
+# Social media links
+social_links:
+  github: https://github.com/hericlibong
+
 
 # Enable future posts
 future: true
