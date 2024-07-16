@@ -24,5 +24,9 @@ defaults:
     values:
       layout: post
 
+# Enable future posts
+future: true
+
+
 # Forcing a rebuild
 # This is a comment to force rebuild
