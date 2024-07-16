@@ -14,7 +14,7 @@ p {
     font-size: 1.2em;
 }
 
-.social-media {
+/* .social-media {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -31,6 +31,6 @@ p {
   }
   
   .social-media a:hover {
-    color: #007acc; /* Couleur de survol */
-  }
+    color: #007acc; 
+  } */
   
