@@ -10,3 +10,5 @@ permalink: /about/
 I 'm Heric Libong , and this is my personal website. Here you'll find more information about my projects and interests.
 
 ![avatar picture](images/avatar.jpeg)
+
+[Mon github](https://github.com/hericlibong)
