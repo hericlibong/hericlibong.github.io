@@ -15,6 +15,7 @@ $fileTitle = $fileTitle.TrimStart('-')
 # Crée le nom du fichier avec la date actuelle et le titre
 $fileName = "${date.ToString("yyyy-MM-dd")}-${fileTitle}.md"
 
+
 # Chemin du dossier _posts
 $postsPath = Join-Path -Path (Get-Location) -ChildPath "_posts"
 
