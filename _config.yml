@@ -9,6 +9,9 @@ description: >-
   This is Heric Libong's personal website, built with GitHub Pages and the Minima theme.
 baseurl: ""
 url: "https://hericlibong.github.io"
+social_media_links:
+  - label: "GitHub"
+    url: "https://github.com/hericlibong"
 
 # Build settings
 markdown: kramdown
