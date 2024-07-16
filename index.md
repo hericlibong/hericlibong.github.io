@@ -1,10 +1,11 @@
 ---
-title: Welcome to Heric Libong's GitHub Page
+layout: home
+title: Home
 ---
 
-This is a simple static site hosted with GitHub Pages.
+# Welcome to Heric Libong's GitHub Page!
 
-![Profile Picture](images/avatar.jpeg)
+This is a simple static site hosted with GitHub Pages. Here you'll find my latest blog posts.
 
 
 
