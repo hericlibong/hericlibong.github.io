@@ -1,1 +1,16 @@
 theme: minima
+
+# Site settings
+title: Heric Libong's GitHub Page
+email: your-email@example.com
+description: >- 
+  This is Heric Libong's personal website, built with GitHub Pages and the Minima theme.
+baseurl: ""
+url: "https://hericlibong.github.io"
+
+# Build settings
+markdown: kramdown
+
+# Navigation links
+header_pages:
+  - about.md
