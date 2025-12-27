@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Data Stories | LDev
 
 # Your name to show in the footer
-author: Some Person
+author: Heric Libong
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -52,15 +52,15 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
-#  medium: yourname
+# facebook: deanattali
+  github: hericlibong
+# twitter: daattali
+# patreon: DeanAttali
+# youtube: "@daattali"
+# whatsapp: 15551212
+  medium: @rico69
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
+  linkedin: hhericlibong
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -73,7 +73,7 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-#  bluesky: yourname
+   bluesky: @ricojazz.bsky.social
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
@@ -94,11 +94,12 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   linkedin: true
   vk: false
   reddit: false
+  bluesky: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
