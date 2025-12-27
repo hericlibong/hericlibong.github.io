@@ -11,6 +11,8 @@
 
 # Name of website
 title: Data Stories | LDev
+url: "https://hericlibong.github.io"
+baseurl: ""
 
 # Your name to show in the footer
 author: Heric Libong
