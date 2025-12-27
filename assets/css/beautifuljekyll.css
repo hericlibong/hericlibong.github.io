@@ -24,6 +24,115 @@ layout: null
   --mid-col: #808080;
 }
 
+/* --- Profile Sidebar --- */
+
+#profile-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: var(--page-col);
+  padding: 2rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--navbar-border-col);
+  z-index: 1000;
+}
+
+#profile-sidebar .profile-content {
+  margin-top: 5rem; /* To account for navbar height */
+  text-align: center;
+}
+
+#profile-sidebar .sidebar-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--hover-col);
+}
+
+#profile-sidebar .sidebar-author {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-col);
+}
+
+#profile-sidebar .sidebar-bio {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: var(--mid-col);
+}
+
+#profile-sidebar .sidebar-social-networks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+
+#profile-sidebar .sidebar-social-networks li {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#profile-sidebar .sidebar-social-networks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: var(--text-col);
+  text-decoration: none;
+  border: 1px solid var(--navbar-border-col);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+#profile-sidebar .sidebar-social-networks a:hover {
+  background-color: var(--hover-col);
+  color: var(--page-col);
+  border-color: var(--hover-col);
+}
+
+#profile-sidebar .sidebar-social-networks .fa-stack {
+  font-size: 1.5rem;
+}
+
+#content-area {
+  margin-left: 30%;
+  padding: 2rem;
+}
+
+@media (max-width: 767px) {
+  #profile-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--navbar-border-col);
+  }
+  
+  #profile-sidebar .profile-content {
+    margin-top: 1rem;
+  }
+  
+  #content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  #profile-sidebar .social-networks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* --- General --- */
 
 html {
