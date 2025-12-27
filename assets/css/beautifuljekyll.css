@@ -105,7 +105,7 @@ layout: null
 
 #content-area {
   margin-left: 30%;
-  padding: 2rem;
+  padding: 0 4vw;
 }
 
 @media (max-width: 767px) {
@@ -590,13 +590,15 @@ footer .footer-custom-content {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .posts-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -608,26 +610,23 @@ footer .footer-custom-content {
 }
 
 .post-preview {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  border: 1px solid #eee;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
+  background: transparent;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .post-preview {
-    padding: 2.1875rem;
+    padding-bottom: 25px;
   }
 }
 
 .post-preview:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .post-preview a {
