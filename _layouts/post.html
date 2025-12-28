@@ -40,6 +40,11 @@ layout: base
       {% endif %}
 
       <div class="blog-post">
+        {% if page.feature-image %}
+        <div class="article-feature-image">
+          <img src="{{ page.feature-image }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
         {{ content }}
       </div>
 
