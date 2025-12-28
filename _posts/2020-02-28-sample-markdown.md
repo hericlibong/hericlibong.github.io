@@ -2,6 +2,7 @@
 layout: post
 title: Sample blog post to learn markdown tips
 subtitle: There's lots to learn!
+feature-image: https://picsum.photos/600/400?random=2
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

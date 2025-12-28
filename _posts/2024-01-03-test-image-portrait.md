@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Projet Portrait"
-feature-image: "https://picsum.photos/400/600"
+subtitle: "Étude des compositions verticales en photographie"
+feature-image: "https://picsum.photos/600/400?random=4"
+tags: [photographie, portrait, composition]
+author: Marie Martin
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
