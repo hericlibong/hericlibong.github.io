@@ -2,7 +2,7 @@
 layout: post
 title: "Projet Paysage"
 subtitle: "Exploration des paysages naturels et urbains"
-feature-image: "https://picsum.photos/600/400?random=3"
+feature-image: "https://picsum.photos/seed/projet-paysage/600/400"
 tags: [photographie, nature, urbain]
 author: Jean Dupont
 ---
