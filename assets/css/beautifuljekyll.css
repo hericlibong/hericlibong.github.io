@@ -684,6 +684,27 @@ footer .footer-custom-content {
   max-height: 100%;
   max-width: 100%;
 }
+
+/* Feature image - full width for grid layout */
+.post-preview .feature-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  filter: grayscale(20%);
+  border-radius: 4px;
+}
+
+.post-preview .feature-image:hover {
+  filter: grayscale(0%);
+}
+
+.post-preview .feature-image-container {
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
 .post-preview .post-image-short {
   margin-top: -2.1875rem;
 }

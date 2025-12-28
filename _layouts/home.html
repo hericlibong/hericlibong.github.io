@@ -47,6 +47,14 @@ layout: default
         {% endif %}
       </a>
 
+      {% if post.feature-image %}
+      <div class="feature-image-container">
+        <a href="{{ post.url | absolute_url }}">
+          <img class="feature-image" src="{{ post.feature-image | absolute_url }}" alt="Feature image for {{ post.title }}">
+        </a>
+      </div>
+      {% endif %}
+
       {% if post.author %}
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
