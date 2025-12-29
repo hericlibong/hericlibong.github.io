@@ -59,9 +59,10 @@
 
 #profile-sidebar .sidebar-bio {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 2rem;
   color: var(--mid-col);
+  text-align: left;
 }
 
 #profile-sidebar .sidebar-social-networks {

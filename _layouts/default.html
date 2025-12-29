@@ -10,7 +10,12 @@ layout: base
       <div class="profile-content">
         <img src="{{ site.avatar }}" alt="{{ site.author }}" class="sidebar-avatar">
         <h2 class="sidebar-author">{{ site.author }}</h2>
-        <p class="sidebar-bio">{{ site.bio }}</p>
+        <div class="sidebar-bio">
+          {% capture author_bio %}
+            {% include author-bio.md %}
+          {% endcapture %}
+          {{ author_bio | strip }}
+        </div>
         {% include social-networks-links.html sidebar=true %}
       </div>
     </aside>
