@@ -164,6 +164,12 @@
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
   {% if favicon_exists == 1 %}
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+  {% else %}
+  <!-- Favicon using profile image -->
+  <link rel="icon" type="image/png" href="{{ '/assets/img/heric_profil.png' | relative_url }}" />
+  <!-- Apple touch icons -->
+  <link rel="apple-touch-icon" href="{{ '/assets/img/heric_profil.png' | relative_url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/heric_profil.png' | relative_url }}" />
   {% endif %}
 
   {% if page.head-extra %}
