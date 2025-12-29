@@ -17,6 +17,17 @@ title: Data Stories | LDev
 author: Heric Libong
 bio: "Ton court texte de présentation ici"
 url: "https://hericlibong.github.io"
+
+# Skills for the sidebar
+skills:
+  - Python
+  - SQL
+  - Tableau
+  - Power BI
+  - Git
+  - R
+  - Excel
+  - Data Visualization
 baseurl: ""
 
 ###############################################

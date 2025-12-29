@@ -16,6 +16,18 @@ layout: base
           {% endcapture %}
           {{ author_bio | strip }}
         </div>
+        
+        <!-- Skills section will be added here -->
+        <div class="sidebar-skills">
+          {% if site.skills %}
+          <div class="sidebar-skills-title">Compétences</div>
+          <div class="sidebar-skills-list">
+            {% for skill in site.skills %}
+            <span class="skill-badge">{{ skill }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
         {% include social-networks-links.html sidebar=true %}
       </div>
     </aside>
