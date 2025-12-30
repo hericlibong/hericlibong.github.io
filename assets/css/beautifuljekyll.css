@@ -694,6 +694,34 @@ footer .footer-custom-content {
   margin: 0 0 0.625rem;
   font-family: var(--body-font);
 }
+
+/* Content type badge */
+.content-type {
+  display: inline-block;
+  background-color: var(--navbar-col);
+  color: var(--text-col);
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+
+/* Project detail page - full width but with comfortable reading width */
+.full-width .blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.full-width .feature-image-container {
+  margin: 2rem auto;
+}
+
+.full-width .feature-image-container img {
+  max-width: 100%;
+  height: auto;
+}
 .post-heading .post-meta {
   display: inline-block;
 }

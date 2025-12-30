@@ -23,23 +23,29 @@ skills:
   - Python
   - SQL
   - Tableau
-  - Power BI
+  - D3.js
   - Git
-  - R
-  - Excel
-  - Data Visualization
+  - Flourish
+  - DataWarper
 baseurl: ""
+
+# Collections configuration
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
+  Articles: "/articles"
+  Projets: "/projects"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #

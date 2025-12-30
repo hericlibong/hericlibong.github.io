@@ -1,0 +1,46 @@
+---
+layout: default
+full-width: true
+---
+
+<article class="blog-post">
+  <header class="blog-post-header">
+    <h1 class="blog-post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2 class="blog-post-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    
+    <div class="blog-post-meta">
+      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      {{ page.date | date: date_format }}
+      {% if page.author %}
+        • <strong>{{ page.author }}</strong>
+      {% endif %}
+    </div>
+  </header>
+  
+  {% if page.feature-image %}
+  <div class="feature-image-container" style="margin: 2rem 0;">
+    <img class="feature-image" src="{{ page.feature-image | absolute_url }}" alt="Feature image for {{ page.title }}" style="width: 100%; height: auto; border-radius: 4px;">
+  </div>
+  {% endif %}
+  
+  <div class="blog-post-content">
+    {{ content }}
+  </div>
+  
+  {% if page.tags.size > 0 %}
+  <footer class="blog-post-footer">
+    <div class="blog-tags">
+      <span>Tags:</span>
+      <ul class="d-inline list-inline" role="list">
+        {% for tag in page.tags %}
+        <li class="list-inline-item">
+          <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </footer>
+  {% endif %}
+</article>

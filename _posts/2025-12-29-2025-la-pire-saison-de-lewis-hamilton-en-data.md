@@ -3,7 +3,7 @@ layout: post
 title: "2025: la pire saison de Lewis Hamilton en data"
 subtitle: "Un examen en chiffres et en graphiques intercatifs de la saison de Lewis Hamilton chez Ferrari"
 feature-image: "https://videos.openai.com/az/vg-assets/task_01kdncyj3fenva9w6ezr8wkwhk%2F1767023595_img_0.webp?se=2026-01-01T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=cfbc986b-d2bc-4088-8b71-4f962129715b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-29T01%3A09%3A20Z&ske=2026-01-05T01%3A14%3A20Z&sks=b&skv=2024-08-04&sig=smkb6gtJSXSdIDSF52YIAVugAXSI8PGlYVII3QClAvs%3D&ac=oaivgprodscus2"
-tags: [Hamilton, F1, Dataviz]
+tags: [Hamilton, F1, Dataviz, Flourish]
 author: Héric Libong
 ---
 
