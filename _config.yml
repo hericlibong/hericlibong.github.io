@@ -27,6 +27,9 @@ skills:
   - Git
   - Flourish
   - DataWarper
+
+# AI Assistant Configuration
+mistral_api_url: "https://data-stories-assistant.hericlibong.workers.dev"
 baseurl: ""
 
 # Collections configuration
