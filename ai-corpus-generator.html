@@ -1,0 +1,32 @@
+---
+layout: raw
+permalink: /assets/data/ai_corpus.json
+---
+[
+  {%- for post in site.posts -%}
+    {
+      "id": "{{ post.title | slugify }}",
+      "title": {{ post.title | jsonify }},
+      "content": {{ post.content | strip_html | jsonify }},
+      "type": "article",
+      "tags": {{ post.tags | jsonify }},
+      "author": {{ post.author | default: site.author | jsonify }},
+      "date": "{{ post.date | date: '%Y-%m-%d' }}",
+      "url": {{ post.url | absolute_url | jsonify }}
+    }{% unless forloop.last and site.projects.size == 0 %},{% endunless %}
+  {%- endfor -%}
+  {%- if site.projects.size > 0 -%}
+    {%- for project in site.projects -%}
+      {
+        "id": "{{ project.title | slugify }}",
+        "title": {{ project.title | jsonify }},
+        "content": {{ project.content | strip_html | jsonify }},
+        "type": "project",
+        "tags": {{ project.tags | jsonify }},
+        "author": {{ project.author | default: site.author | jsonify }},
+        "date": "{{ project.date | date: '%Y-%m-%d' }}",
+        "url": {{ project.url | absolute_url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  {%- endif -%}
+]
