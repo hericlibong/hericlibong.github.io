@@ -7,10 +7,10 @@ tags: [dataviz, F1, D3.js, python]
 author: Héric Libong
 ---
 
+Cette visualisation propose une lecture synthétique de la saison 2025 de Formule 1 à travers les **points marqués course après course**.
 
 ## Une saison de Formule 1 en D3.js
 
-Cette visualisation propose une lecture synthétique de la saison 2025 de Formule 1 à travers les **points marqués course après course**.
 Plutôt que de s’arrêter au classement final, elle permet d’observer **comment le championnat se construit dans le temps**, Grand Prix après Grand Prix.
 
 Chaque colonne correspond à une course du calendrier, chaque ligne à un pilote, classé selon son total de points cumulés sur la saison. La couleur indique le nombre de points marqués lors de chaque épreuve, selon le barème officiel de la Formule 1, avec l’intégration des formats Sprint lorsque ceux-ci sont présents.
