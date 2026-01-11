@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Heatmap des points par Grand Prix"
+title: "La saison 2025 de Formule 1 en Heatmap"
 subtitle: "Récap de la saison de formule 2025"
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768164591/image-10_ibrd7v.jpg"
-tags: [dataviz, F1, D3.js, python]
+tags: [dataviz, F1, D3.js, python, heatmap]
 author: Héric Libong
 ---
 
