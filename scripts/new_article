@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Script wrapper pour créer un nouvel article
+# Ce script est conçu pour être utilisé comme alias
+# Usage: new_article "Titre de l'article"
+
+# Récupérer le titre
+TITLE="$*"
+
+if [ -z "$TITLE" ]; then
+    echo "Erreur: Vous devez fournir un titre pour l'article"
+    echo "Usage: new_article Titre de l'article"
+    exit 1
+fi
+
+# Chemin vers le script new_post.sh (relatif au répertoire du projet)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# Exécuter le script new_post.sh
+"$PROJECT_ROOT/scripts/new_post.sh" "$TITLE"
