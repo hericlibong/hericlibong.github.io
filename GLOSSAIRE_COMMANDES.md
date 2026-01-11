@@ -4,6 +4,7 @@ Ce document répertorie les commandes essentielles pour travailler avec le proje
 
 ## Table des Matières
 - [Création d'articles](#création-darticles)
+- [Création de projets](#création-de-projets)
 - [Serveur local](#serveur-local)
 - [Gestion du projet](#gestion-du-projet)
 - [Autres commandes utiles](#autres-commandes-utiles)
@@ -27,6 +28,22 @@ source setup_aliases.sh
 
 # Création de l'article
 new_article "Titre de votre article"
+```
+
+## Création de projets
+
+### Créer un nouveau projet (méthode directe)
+```bash
+./scripts/new_project.sh "Titre de votre projet"
+```
+
+### Créer un nouveau projet (via l'alias)
+```bash
+# Configuration préalable des alias
+source setup_aliases.sh
+
+# Création du projet
+new_project "Titre de votre projet"
 ```
 
 ## Serveur local
@@ -97,10 +114,17 @@ echo "source /chemin/vers/le/projet/setup_aliases.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+## Liste des alias disponibles
+
+- `new_article "Titre"` : Créer un nouvel article
+- `new_project "Titre"` : Créer un nouveau projet
+- `jekyll_serve` : Lancer le serveur local avec rechargement automatique
+
 ## Structure du projet
 
 - `_posts/` : Contient tous les articles
-- `_templates/` : Contient les templates pour les nouveaux articles
+- `_projects/` : Contient tous les projets
+- `_templates/` : Contient les templates pour les nouveaux articles et projets
 - `scripts/` : Contient les scripts utilitaires
 - `setup_aliases.sh` : Script pour configurer les alias
 

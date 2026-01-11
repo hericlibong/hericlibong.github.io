@@ -25,6 +25,28 @@ new_article() {
     "$script_path" "$title"
 }
 
+# Alias pour créer un nouveau projet
+new_project() {
+    local title="$*"
+    if [ -z "$title" ]; then
+        echo "Erreur: Vous devez fournir un titre pour le projet"
+        echo "Usage: new_project Titre du projet"
+        return 1
+    fi
+    
+    # Chemin vers le script new_project.sh
+    local script_path="$(dirname "${BASH_SOURCE[0]}")/scripts/new_project.sh"
+    
+    # Vérifier si le script existe
+    if [ ! -f "$script_path" ]; then
+        echo "Erreur: Le script $script_path n'existe pas"
+        return 1
+    fi
+    
+    # Exécuter le script avec le titre fourni
+    "$script_path" "$title"
+}
+
 # Alias pour lancer le serveur Jekyll
 jekyll_serve() {
     bundle exec jekyll serve --livereload
