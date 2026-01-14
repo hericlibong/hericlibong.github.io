@@ -1,0 +1,108 @@
+---
+layout: default
+---
+
+<!-- Show page title for category page -->
+<h1>{{ page.title }}</h1>
+
+<div class="posts-grid">
+  <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+  <ul class="posts-list list-unstyled" role="list">
+    {% for item in site.posts %}
+      {% if item.tags contains 'F1' %}
+    <li class="post-preview">
+    <article>
+
+      {%- capture thumbnail -%}
+        {% if item.thumbnail-img %}
+          {{ item.thumbnail-img }}
+        {% elsif item.cover-img %}
+          {% if item.cover-img.first %}
+            {{ item.cover-img[0].first.first }}
+          {% else %}
+            {{ item.cover-img }}
+          {% endif %}
+        {% elsif item.feature-image %}
+          {{ item.feature-image }}
+        {% endif %}
+      {%- endcapture -%}
+
+      {% if thumbnail != "" %}
+        <div class="feature-image-container">
+          <a href="{{ item.url | absolute_url }}">
+            <img class="feature-image" src="{{ thumbnail | absolute_url }}" alt="Feature image for {{ item.title }}">
+          </a>
+        </div>
+      {% endif %}
+
+      <a href="{{ item.url | absolute_url }}">
+        <h2 class="post-title">{{ item.title | strip_html }}</h2>
+        {% if item.subtitle %}
+        <h3 class="post-subtitle">
+          {{ item.subtitle | strip_html }}
+        </h3>
+        {% endif %}
+      </a>
+      
+      {% if item.author %}
+      <span>By <strong>{{ item.author | strip_html }}</strong></span>
+      {% endif %}
+      <p class="post-meta">
+        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+        Posted on {{ item.date | date: date_format }}
+      </p>
+      
+      <div class="post-entry">
+        {% assign excerpt_length = site.excerpt_length | default: 50 %}
+        {% capture post_excerpt %}
+          {% if item.excerpt %}
+            {{ item.excerpt | strip_html }}
+          {% else %}
+            {{ item.content | strip_html }}
+          {% endif %}
+        {% endcapture %}
+        {{ post_excerpt | truncatewords: excerpt_length }}
+        {% if post_excerpt != item.content %}
+          <a href="{{ item.url | absolute_url }}" class="post-read-more">[Read More]</a>
+        {% endif %}
+      </div>
+      
+      {% if site.feed_show_tags != false and item.tags.size > 0 %}
+      <div class="blog-tags">
+        <span>Tags:</span>
+        <ul class="d-inline list-inline" role="list">
+          {% for tag in item.tags %}
+          <li class="list-inline-item">
+            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </article>
+    </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pagination main-pager">
+  {% if paginator.previous_page %}
+  <li class="page-item previous">
+    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+      <i class="fas fa-arrow-left" alt="Newer Posts"></i>
+      <span class="d-none d-sm-inline-block">Newer Posts</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="page-item next">
+    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+      <span class="d-none d-sm-inline-block">Older Posts</span>
+      <i class="fas fa-arrow-right" alt="Older Posts"></i>
+    </a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
