@@ -44,6 +44,7 @@ collections:
 
 navbar-links:
   Articles: "/articles"
+  BeautifullF1: "/beautifullf1"
   Projets: "/projects"
   About Me: "aboutme"
   Resources:
