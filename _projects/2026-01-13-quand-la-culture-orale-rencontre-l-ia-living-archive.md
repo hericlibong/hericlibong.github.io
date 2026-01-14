@@ -3,7 +3,7 @@ layout: project
 title: "Quand la culture orale rencontre l’IA : Living Archive"
 subtitle: "Un projet né d’un hackathon : reconstruire un panthéon africain et le rendre explorables sous forme d’archive vivante (en développement)."
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768346013/Capture_d_%C3%A9cran_du_2026-01-14_00-12-16_lxpqlg.png"
-tags: [Mythologie, Afrique, Culture orale, IA générative, Narration interactive, Base de connaissances, Culture, Éducation, Vibe coding, Prototype]
+tags: [Mythologie, Afrique, IA gen, Python, FastAPI, Culture, Google Cloud, Anntigravity, Vibe coding]
 author: Héric Libong
 date: "2026-01-13"
 ---
