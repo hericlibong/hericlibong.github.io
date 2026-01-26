@@ -2,7 +2,17 @@
 layout: raw
 permalink: /assets/data/ai_corpus.json
 ---
+{%- capture author_long_bio -%}{% include author_bio.md %}{%- endcapture -%}
 [
+  {
+    "type": "author_profile",
+    "name": {{ site.author | jsonify }},
+    "bio": {{ site.bio | jsonify }},
+    "long_bio": {{ author_long_bio | strip | jsonify }},
+    "skills": {{ site.skills | jsonify }},
+    "social": {{ site.social-network-links | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }{% if site.posts.size > 0 or site.projects.size > 0 %},{% endif %}
   {%- for post in site.posts -%}
     {
       "id": "{{ post.title | slugify }}",
@@ -11,6 +21,7 @@ permalink: /assets/data/ai_corpus.json
       "type": "article",
       "tags": {{ post.tags | jsonify }},
       "author": {{ post.author | default: site.author | jsonify }},
+      "author_bio": {{ post.author_bio | default: site.bio | jsonify }},
       "date": "{{ post.date | date: '%Y-%m-%d' }}",
       "url": {{ post.url | absolute_url | jsonify }}
     }{% unless forloop.last and site.projects.size == 0 %},{% endunless %}
@@ -24,6 +35,7 @@ permalink: /assets/data/ai_corpus.json
         "type": "project",
         "tags": {{ project.tags | jsonify }},
         "author": {{ project.author | default: site.author | jsonify }},
+        "author_bio": {{ project.author_bio | default: site.bio | jsonify }},
         "date": "{{ project.date | date: '%Y-%m-%d' }}",
         "url": {{ project.url | absolute_url | jsonify }}
       }{% unless forloop.last %},{% endunless %}
