@@ -35,4 +35,5 @@ date: "2026-01-13"
 🚧 **En développement actif**. Le socle (base d’entités + interface + génération de visuels) est en place. Les prochaines étapes portent sur l’enrichissement narratif (récits interactifs), l’audio, et la consolidation de l’API et de la documentation.
 
 ## Liens utiles
+- demo Hugging Face : [african_mythology_V2](https://ricolajazz-african-mythology-living-archive.hf.space/)
 - Repo GitHub : [african_mythology_V2](https://github.com/hericlibong/african_mythology_V2)
