@@ -30,20 +30,28 @@ source setup_aliases.sh
 new_article "Titre de votre article"
 ```
 
-## Création de projets
+## Création de projets et hackathons
 
 ### Créer un nouveau projet (méthode directe)
 ```bash
 ./scripts/new_project.sh "Titre de votre projet"
 ```
 
-### Créer un nouveau projet (via l'alias)
+### Créer un nouveau hackathon (méthode directe)
+```bash
+./scripts/new_hackathon.sh "Titre du hackathon"
+```
+
+### Créer via les alias
 ```bash
 # Configuration préalable des alias
 source setup_aliases.sh
 
 # Création du projet
 new_project "Titre de votre projet"
+
+# Création du hackathon
+new_hackathon "Titre du hackathon"
 ```
 
 ## Serveur local

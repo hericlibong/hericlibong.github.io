@@ -45,7 +45,9 @@ collections:
 navbar-links:
   Articles: "/articles"
   BeautifullF1: "/beautifullf1"
-  Projets: "/projects"
+  Projets:
+    - Tous les projets: "/projects"
+    - Hackathons: "/projects#hackathons"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"

@@ -33,6 +33,7 @@ permalink: /assets/data/ai_corpus.json
         "title": {{ project.title | jsonify }},
         "content": {{ project.content | strip_html | jsonify }},
         "type": "project",
+        "category": {{ project.category | default: "standard" | jsonify }},
         "tags": {{ project.tags | jsonify }},
         "author": {{ project.author | default: site.author | jsonify }},
         "author_bio": {{ project.author_bio | default: site.bio | jsonify }},

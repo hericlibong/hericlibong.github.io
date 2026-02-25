@@ -47,13 +47,37 @@ new_project() {
     "$script_path" "$title"
 }
 
+# Alias pour créer un nouveau hackathon
+new_hackathon() {
+    local title="$*"
+    if [ -z "$title" ]; then
+        echo "Erreur: Vous devez fournir un titre pour le hackathon"
+        echo "Usage: new_hackathon Titre du hackathon"
+        return 1
+    fi
+    
+    # Chemin vers le script new_hackathon.sh
+    local script_path="$(dirname "${BASH_SOURCE[0]}")/scripts/new_hackathon.sh"
+    
+    # Vérifier si le script existe
+    if [ ! -f "$script_path" ]; then
+        echo "Erreur: Le script $script_path n'existe pas"
+        return 1
+    fi
+    
+    # Exécuter le script avec le titre fourni
+    "$script_path" "$title"
+}
+
 # Alias pour lancer le serveur Jekyll
 jekyll_serve() {
     bundle exec jekyll serve --livereload
 }
 
 echo "✅ Alias configurés :"
-echo "  - new_article "Titre" : Créer un nouvel article"
+echo "  - new_article Titre : Créer un nouvel article"
+echo "  - new_project Titre : Créer un nouveau projet"
+echo "  - new_hackathon Titre : Créer un nouveau hackathon"
 echo "  - jekyll_serve : Lancer le serveur local"
 echo ""
 echo "Pour activer ces alias dans votre session actuelle, exécutez :"
