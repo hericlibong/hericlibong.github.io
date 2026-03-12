@@ -11,7 +11,7 @@ layout: default
 {% if page.permalink contains '/articles/' %}
   {% assign display_content = site.posts %}
 {% elsif page.permalink contains '/projects/' %}
-  {% assign display_content = site.projects %}
+  {% assign display_content = site.projects | sort: 'date' | reverse %}
 {% else %}
   {% assign all_content = site.posts | concat: site.projects %}
   {% assign display_content = all_content | sort: 'date' | reverse %}
