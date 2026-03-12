@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Infograph2Data : transformer des infographies en datasets exploitables grâce à l’IA"
-subtitle: "Ces visualisations contiennent des données précieuses, mais elles sont souvent **impossibles à réutiliser directement**, car les chiffres ne sont pas accessibles sous forme structurée."
+subtitle: "Ces visualisations contiennent des données précieuses, mais elles sont souvent impossibles à réutiliser directement, car les chiffres ne sont pas accessibles sous forme structurée."
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1773274364/githubhackathon_jas5rt.png"
 tags: [hackathon, innovation, data, ai]
 author: Héric Libong
