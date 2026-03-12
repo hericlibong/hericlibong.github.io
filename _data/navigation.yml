@@ -1,0 +1,41 @@
+fr:
+  - label: "Articles"
+    url: "/articles/"
+  - label: "BeautifullF1"
+    url: "/beautifullf1/"
+    icon: "checkered"
+  - label: "Projets"
+    children:
+      - label: "Tous les projets"
+        url: "/projects/"
+      - label: "Hackathons"
+        url: "/projects/#hackathons"
+  - label: "À propos"
+    url: "/aboutme/"
+  - label: "Ressources"
+    children:
+      - label: "Beautiful Jekyll"
+        url: "https://beautifuljekyll.com"
+      - label: "Apprendre Markdown"
+        url: "https://www.markdowntutorial.com/"
+
+en:
+  - label: "Articles"
+    url: "/en/articles/"
+  - label: "BeautifullF1"
+    url: "/en/beautifullf1/"
+    icon: "checkered"
+  - label: "Projects"
+    children:
+      - label: "All projects"
+        url: "/en/projects/"
+      - label: "Hackathons"
+        url: "/en/projects/#hackathons"
+  - label: "About"
+    url: "/en/aboutme/"
+  - label: "Resources"
+    children:
+      - label: "Beautiful Jekyll"
+        url: "https://beautifuljekyll.com"
+      - label: "Learn Markdown"
+        url: "https://www.markdowntutorial.com/"

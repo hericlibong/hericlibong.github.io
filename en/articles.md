@@ -1,5 +1,9 @@
 ---
-layout: default
+layout: home
+title: Articles
+permalink: /en/articles/
+lang: en
+translation_key: articles-index
 ---
 {% assign current_lang = page.lang | default: "fr" %}
 {% assign i18n = site.data.site_text[current_lang] %}
@@ -8,11 +12,11 @@ layout: default
   {% assign tags_path = '/en/tags' %}
 {% endif %}
 
+{% assign posts = site.posts | where: "lang", current_lang %}
+
 <div class="posts-grid">
   <ul class="posts-list list-unstyled" role="list">
-    {% assign localized_posts = site.posts | where: "lang", current_lang %}
-    {% for post in localized_posts %}
-      {% if post.tags contains 'F1' %}
+    {% for post in posts %}
     <li class="post-preview">
       <article>
         <a href="{{ post.url | absolute_url }}">
@@ -42,12 +46,9 @@ layout: default
         
         <div class="post-entry">
           {% assign excerpt_length = site.excerpt_length | default: 50 %}
-          {% if post.excerpt %}
-            {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
-          {% else %}
-            {{ post.content | strip_html | truncatewords: excerpt_length }}
-          {% endif %}
-          {% if post.content != post.excerpt %}
+          {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
+          {% assign excerpt_word_count = post.excerpt | number_of_words %}
+          {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
             <a href="{{ post.url | absolute_url }}" class="post-read-more">{{ i18n.ui.read_more }}</a>
           {% endif %}
         </div>
@@ -66,7 +67,6 @@ layout: default
         {% endif %}
       </article>
     </li>
-      {% endif %}
     {% endfor %}
   </ul>
 </div>

@@ -1,20 +1,21 @@
 ---
 layout: null
-lang: fr
+lang: en
+permalink: /en/feed.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     {% if site.title %}
-    <title>{{ site.title | xml_escape }}</title>
+    <title>{{ site.title | xml_escape }} (EN)</title>
     {% endif %}
     {% if site.rss-description %}
     <description>{{ site.rss-description | xml_escape }}</description>
     {% endif %}
-    <link>{{ '/' | absolute_url }}</link>
-    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    <link>{{ '/en/' | absolute_url }}</link>
+    <atom:link href="{{ 'en/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% assign excerpt_length = site.excerpt_length | default: 50 %}
-    {% assign current_lang = page.lang | default: "fr" %}
+    {% assign current_lang = page.lang | default: "en" %}
     {% assign localized_posts = site.posts | where: "lang", current_lang %}
     {% for post in localized_posts limit:20 %}
       <item>

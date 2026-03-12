@@ -5,6 +5,8 @@ subtitle: "40 ans d’histoire du Grand Prix d’Australie, de la fournaise d’
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768390082/formula1Australia_lrseei.avif"
 tags: [F1, Historique, Australie GP, Flourish, Python]
 author: Héric Libong
+lang: fr
+translation_key: post-australia-gp-history
 ---
 
 **40 ans d'histoire du Grand Prix d'Australie, de la fournaise d'Adélaïde au tracé urbain de Melbourne**. La timeline interactive révèle la cyclicité de ce sport : on y distingue nettement l'ère des pionniers, puis la domination écrasante de Michael Schumacher au tournant des années 2000, véritable point de bascule marqué par l'hégémonie de la Scuderia. Chaque point du graphique n'est pas qu'une statistique, c'est une photographie de l'instant, rappelant souvent que la position de départ est prémonitoire sur ces circuits exigeants.
@@ -23,6 +25,5 @@ Sources des données :
     Historique et structure : Jolpi.ca (Ergast mirror)
 
     Métadonnées et visuels : OpenF1
-
 
 

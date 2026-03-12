@@ -1,9 +1,10 @@
 ---
 layout: null
-lang: fr
+lang: en
+permalink: /en/assets/data/searchcorpus.json
 ---
 [
-{% assign corpus_lang = page.lang | default: "fr" %}
+{% assign corpus_lang = page.lang | default: "en" %}
 {% assign localized_posts = site.posts | where: "lang", corpus_lang %}
 {% assign localized_pages = site.html_pages | where: "lang", corpus_lang %}
 {% for post in localized_posts %}

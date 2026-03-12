@@ -1,4 +1,10 @@
 <li class="post-preview">
+  {% assign current_lang = page.lang | default: include.project.lang | default: "fr" %}
+  {% assign i18n = site.data.site_text[current_lang] %}
+  {% assign tags_path = '/tags' %}
+  {% if current_lang == "en" %}
+    {% assign tags_path = '/en/tags' %}
+  {% endif %}
   <article>
     <a href="{{ include.project.url | absolute_url }}">
       <h2 class="post-title">{{ include.project.title | strip_html }}</h2>
@@ -18,11 +24,11 @@
     {% endif %}
     
     {% if include.project.author %}
-    <span>By <strong>{{ include.project.author | strip_html }}</strong></span>
+    <span>{{ i18n.ui.by }} <strong>{{ include.project.author | strip_html }}</strong></span>
     {% endif %}
     <p class="post-meta">
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-      Posted on {{ include.project.date | date: date_format }}
+      {{ i18n.ui.posted_on }} {{ include.project.date | date: date_format }}
     </p>
     
     <div class="post-entry">
@@ -30,17 +36,17 @@
       {{ include.project.excerpt | strip_html | truncatewords: excerpt_length }}
       {% assign excerpt_word_count = include.project.excerpt | number_of_words %}
       {% if include.project.content != include.project.excerpt or excerpt_word_count > excerpt_length %}
-        <a href="{{ include.project.url | absolute_url }}" class="post-read-more">[Read More]</a>
+        <a href="{{ include.project.url | absolute_url }}" class="post-read-more">{{ i18n.ui.read_more }}</a>
       {% endif %}
     </div>
     
     {% if site.feed_show_tags != false and include.project.tags.size > 0 %}
     <div class="blog-tags">
-      <span>Tags:</span>
+      <span>{{ i18n.ui.tags }}</span>
       <ul class="d-inline list-inline" role="list">
         {% for tag in include.project.tags %}
         <li class="list-inline-item">
-          <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+          <a href="{{ tags_path | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
         </li>
         {% endfor %}
       </ul>

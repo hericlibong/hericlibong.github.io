@@ -3,6 +3,12 @@ layout: base
 ---
 
 {% include header.html type="post" %}
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign i18n = site.data.site_text[current_lang] %}
+{% assign tags_path = '/tags' %}
+{% if current_lang == "en" %}
+  {% assign tags_path = '/en/tags' %}
+{% endif %}
 
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
@@ -50,9 +56,9 @@ layout: base
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          <span>Tags:</span>
+          <span>{{ i18n.ui.tags }}</span>
           {% for tag in page.tags %}
-            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ tags_path | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
         </div>
       {% endif %}
@@ -70,19 +76,19 @@ layout: base
       {% endif %}
 
       <ul class="pagination blog-pager">
-        {% if page.previous.url %}
+        {% if page.previous.url and page.previous.lang == current_lang %}
         <li class="page-item previous">
           <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">
-            <i class="fas fa-arrow-left" alt="Previous Post"></i>
-            <span class="d-none d-sm-inline-block">Previous Post</span>
+            <i class="fas fa-arrow-left" alt="{{ i18n.ui.previous_post }}"></i>
+            <span class="d-none d-sm-inline-block">{{ i18n.ui.previous_post }}</span>
           </a>
         </li>
         {% endif %}
-        {% if page.next.url %}
+        {% if page.next.url and page.next.lang == current_lang %}
         <li class="page-item next">
           <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
+            <span class="d-none d-sm-inline-block">{{ i18n.ui.next_post }}</span>
+            <i class="fas fa-arrow-right" alt="{{ i18n.ui.next_post }}"></i>
           </a>
         </li>
         {% endif %}

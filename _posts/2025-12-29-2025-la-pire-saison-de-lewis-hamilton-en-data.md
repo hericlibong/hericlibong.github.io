@@ -5,6 +5,8 @@ subtitle: "Un examen en chiffres et en graphiques intercatifs de la saison de Le
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768145671/20251229_1653_Racer_Prepares_Helmet_remix_01kdncynjsecjsfdawk66pq5fx_1_sf9aef.png"
 tags: [Hamilton, F1, Dataviz, Flourish]
 author: Héric Libong
+lang: fr
+translation_key: post-hamilton-2025
 ---
 
 À la fin du Grand Prix de Las Vegas, Lewis Hamilton ne s’est pas caché : « C’est la pire saison de tous les temps. Peu importe combien j’essaie, ça continue d’empirer », lâche-t-il au micro de Sky Sports F1.

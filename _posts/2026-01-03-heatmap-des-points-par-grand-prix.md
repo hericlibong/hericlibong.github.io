@@ -5,6 +5,8 @@ subtitle: "Récap de la saison de formule 2025"
 feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768164591/image-10_ibrd7v.jpg"
 tags: [dataviz, F1, D3.js, python, heatmap]
 author: Héric Libong
+lang: fr
+translation_key: post-f1-heatmap-2025
 ---
 
 Cette visualisation propose une lecture synthétique de la saison 2025 de Formule 1 à travers les **points marqués course après course**.
@@ -62,7 +64,6 @@ Les données sont issues d’un CSV enrichi, construit à partir de plusieurs so
   [https://openf1.org/](https://openf1.org/)
 
 Les informations affichées au survol (positions de départ et d’arrivée, cumul de points, moyennes, etc.) servent à contextualiser chaque cellule sans alourdir la lecture principale.
-
 
 
 

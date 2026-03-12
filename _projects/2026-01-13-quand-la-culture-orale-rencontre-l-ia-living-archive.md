@@ -6,6 +6,8 @@ feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1768346013/Ca
 tags: [Mythologie, Afrique, IA gen, Python, FastAPI, Culture, Google Cloud, Anntigravity, Vibe coding]
 author: Héric Libong
 date: "2026-01-13"
+lang: fr
+translation_key: project-living-archive
 ---
 
 ## Description

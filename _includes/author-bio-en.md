@@ -1,0 +1,1 @@
+I'm passionate about data and digital storytelling. With several years of experience in data analysis and visualization, I focus on turning complex information into clear and engaging narratives. My interests include data analysis and visualization, web development and modern technologies, and digital storytelling.

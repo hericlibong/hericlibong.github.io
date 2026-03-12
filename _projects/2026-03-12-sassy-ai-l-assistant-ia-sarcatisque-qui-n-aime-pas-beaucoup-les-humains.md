@@ -6,6 +6,8 @@ feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1773314382/sa
 tags: [chatbot, openai, fastapi, python, javascript, spec-kit, github-copilot, gpt-codex, hugging-face, docker]
 author: Héric Libong
 date: "2026-03-12"
+lang: fr
+translation_key: project-sassy-ai
 ---
 
 ## **Description** : 

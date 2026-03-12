@@ -1,4 +1,5 @@
 <head>
+  {% assign current_lang = page.lang | default: "fr" %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -55,7 +56,11 @@
   {% endif %}
 
   {% if site.rss-description %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  {% assign feed_path = '/feed.xml' %}
+  {% if current_lang == "en" %}
+    {% assign feed_path = '/en/feed.xml' %}
+  {% endif %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ feed_path | absolute_url }}">
   {% endif %}
 
   {% include gtag.html %}
@@ -138,6 +143,27 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
+  {% endif %}
+  {% assign alt_lang = 'en' %}
+  {% if current_lang == 'en' %}
+    {% assign alt_lang = 'fr' %}
+  {% endif %}
+  {% assign alt_url = nil %}
+  {% if page.translation_key %}
+    {% assign alt_page = site.pages | where: "translation_key", page.translation_key | where: "lang", alt_lang | first %}
+    {% if alt_page == nil %}
+      {% assign alt_page = site.posts | where: "translation_key", page.translation_key | where: "lang", alt_lang | first %}
+    {% endif %}
+    {% if alt_page == nil %}
+      {% assign alt_page = site.projects | where: "translation_key", page.translation_key | where: "lang", alt_lang | first %}
+    {% endif %}
+    {% if alt_page %}
+      {% assign alt_url = alt_page.url | absolute_url %}
+    {% endif %}
+  {% endif %}
+  <link rel="alternate" hreflang="{{ current_lang }}" href="{{ page.url | absolute_url | strip_index }}">
+  {% if alt_url %}
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | strip_index }}">
   {% endif %}
 
   {% if img != "" and img != site.avatar %}

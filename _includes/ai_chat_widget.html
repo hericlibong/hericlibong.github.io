@@ -1,4 +1,6 @@
 <!-- AI Chat Widget -->
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign chat_i18n = site.data.site_text[current_lang].chatbot %}
 <aside
   id="ai-chat-widget"
   class="ai-chat-widget"
@@ -11,32 +13,32 @@
     <div class="ai-chat-brand">
       <div class="ai-chat-avatar" aria-hidden="true">🤖</div>
       <div class="ai-chat-brand-text">
-        <div id="ai-chat-title" class="ai-chat-title">Data Stories AI</div>
-        <div class="ai-chat-subtitle">Assistant portfolio</div>
+        <div id="ai-chat-title" class="ai-chat-title">{{ chat_i18n.title }}</div>
+        <div class="ai-chat-subtitle">{{ chat_i18n.subtitle }}</div>
       </div>
     </div>
-    <button type="button" class="ai-chat-close" onclick="toggleChatWidget()" aria-label="Fermer le chatbot">×</button>
+    <button type="button" class="ai-chat-close" onclick="toggleChatWidget()" aria-label="{{ chat_i18n.close_label }}">×</button>
   </header>
 
   <div class="ai-chat-body">
     <div class="ai-chat-messages" id="ai-chat-messages" aria-live="polite" aria-label="Conversation">
       <article class="ai-chat-message ai-assistant">
         <div class="ai-chat-message-content">
-          Bonjour ! Je suis votre assistant Data Stories. Je peux répondre à vos questions sur les articles, projets et le parcours de l'auteur. Comment puis-je vous aider ?
+          {{ chat_i18n.hello }}
         </div>
       </article>
     </div>
 
     <form class="ai-chat-input-area" onsubmit="sendChatMessage(event)">
-      <label class="ai-chat-sr-only" for="ai-chat-input">Votre message</label>
+      <label class="ai-chat-sr-only" for="ai-chat-input">{{ chat_i18n.input_label }}</label>
       <input
         type="text"
         id="ai-chat-input"
         class="ai-chat-input"
-        placeholder="Posez votre question sur les données, projets, etc..."
+        placeholder="{{ chat_i18n.input_placeholder }}"
         autocomplete="off"
       >
-      <button type="submit" class="ai-chat-send" id="ai-chat-send" aria-label="Envoyer le message">
+      <button type="submit" class="ai-chat-send" id="ai-chat-send" aria-label="{{ chat_i18n.send_label }}">
         <span aria-hidden="true">➤</span>
       </button>
     </form>
@@ -47,11 +49,11 @@
   type="button"
   class="ai-chat-toggle"
   onclick="toggleChatWidget()"
-  aria-label="Ouvrir Data Stories AI"
+  aria-label="{{ chat_i18n.open_label }}"
   aria-expanded="false"
 >
   <span class="ai-chat-toggle-icon" aria-hidden="true">🤖</span>
-  <span class="ai-chat-toggle-text">Data Stories AI</span>
+  <span class="ai-chat-toggle-text">{{ chat_i18n.title }}</span>
 </button>
 
 <style>
@@ -478,7 +480,7 @@ async function sendChatMessage(event) {
 async function callAIWorker(message) {
   try {
     const workerUrl = "{{ site.mistral_api_url }}";
-    const corpusUrl = "{{ site.url | absolute_url }}/assets/data/ai_corpus.json";
+    const corpusUrl = "{{ site.url | absolute_url }}{% if current_lang == 'en' %}/en{% endif %}/assets/data/ai_corpus.json";
 
     const response = await fetch(workerUrl, {
       method: 'POST',
@@ -498,12 +500,12 @@ async function callAIWorker(message) {
     if (data.success && data.response) {
       const normalizedResponse = normalizeAssistantResponse(data.response);
       await addChatMessage(
-        normalizedResponse || "Je n'ai pas trouvé d'éléments exploitables dans cette réponse.",
+        normalizedResponse || "{{ chat_i18n.no_response }}",
         'ai-assistant'
       );
     } else {
       await addChatMessage(
-        data.error || "Désolé, je n'ai pas pu obtenir de réponse. Veuillez réessayer.",
+        data.error || "{{ chat_i18n.worker_error }}",
         'ai-assistant',
         { skipAnimation: true }
       );
@@ -512,7 +514,7 @@ async function callAIWorker(message) {
     console.error('Error calling AI Worker:', error);
     removeTypingIndicator();
     await addChatMessage(
-      "Une erreur est survenue. Veuillez vérifier votre connexion ou réessayer plus tard.",
+      "{{ chat_i18n.network_error }}",
       'ai-assistant',
       { skipAnimation: true }
     );

@@ -7,6 +7,8 @@ tags: [hackathon, innovation, data, ai]
 author: Héric Libong
 date: "2026-03-11"
 category: hackathon
+lang: fr
+translation_key: project-infograph2data
 ---
 
 

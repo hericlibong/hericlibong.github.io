@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign i18n = site.data.site_text[current_lang] %}
+{% assign tags_path = '/tags' %}
+{% if current_lang == "en" %}
+  {% assign tags_path = '/en/tags' %}
+{% endif %}
 
 <!-- Don't show page title on listing pages -->
 {% unless page.permalink contains '/articles/' or page.permalink contains '/projects/' %}
@@ -9,11 +15,13 @@ layout: default
 
 <!-- Use specific content source based on page type -->
 {% if page.permalink contains '/articles/' %}
-  {% assign display_content = site.posts %}
+  {% assign display_content = site.posts | where: "lang", current_lang %}
 {% elsif page.permalink contains '/projects/' %}
-  {% assign display_content = site.projects | sort: 'date' | reverse %}
+  {% assign display_content = site.projects | where: "lang", current_lang | sort: 'date' | reverse %}
 {% else %}
-  {% assign all_content = site.posts | concat: site.projects %}
+  {% assign localized_posts = site.posts | where: "lang", current_lang %}
+  {% assign localized_projects = site.projects | where: "lang", current_lang %}
+  {% assign all_content = localized_posts | concat: localized_projects %}
   {% assign display_content = all_content | sort: 'date' | reverse %}
 {% endif %}
 
@@ -67,11 +75,11 @@ layout: default
       {% endif %}
 
       {% if item.author %}
-        <span>By <strong>{{ item.author | strip_html }}</strong></span>
+        <span>{{ i18n.ui.by }} <strong>{{ item.author | strip_html }}</strong></span>
       {% endif %}
       <p class="post-meta">
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        Posted on {{ item.date | date: date_format }}
+        {{ i18n.ui.posted_on }} {{ item.date | date: date_format }}
         • 
         <span class="content-type">{{ item.layout | capitalize }}</span>
       </p>
@@ -98,19 +106,19 @@ layout: default
         {{ item.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = item.excerpt | number_of_words %}
         {% if item.content != item.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ item.url | absolute_url }}" class="post-read-more">[Read More]</a>
+          <a href="{{ item.url | absolute_url }}" class="post-read-more">{{ i18n.ui.read_more }}</a>
         {% endif %}
       </div>
       {% endunless %}
 
       {% if site.feed_show_tags != false and item.tags.size > 0 %}
       <div class="blog-tags">
-        <span>Tags:</span>
+        <span>{{ i18n.ui.tags }}</span>
         <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in item.tags %}
           <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ tags_path | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -128,16 +136,16 @@ layout: default
   {% if paginator.previous_page %}
   <li class="page-item previous">
     <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
-      <i class="fas fa-arrow-left" alt="Newer Posts"></i>
-      <span class="d-none d-sm-inline-block">Newer Posts</span>
+      <i class="fas fa-arrow-left" alt="{{ i18n.ui.newer_posts }}"></i>
+      <span class="d-none d-sm-inline-block">{{ i18n.ui.newer_posts }}</span>
     </a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="page-item next">
     <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
-      <span class="d-none d-sm-inline-block">Older Posts</span>
-      <i class="fas fa-arrow-right" alt="Older Posts"></i>
+      <span class="d-none d-sm-inline-block">{{ i18n.ui.older_posts }}</span>
+      <i class="fas fa-arrow-right" alt="{{ i18n.ui.older_posts }}"></i>
     </a>
   </li>
   {% endif %}

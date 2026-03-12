@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 'Index des tags'
-lang: fr
+title: 'Tag Index'
+permalink: /en/tags/
+lang: en
 translation_key: tags-page
 ---
 {% assign current_lang = page.lang | default: "fr" %}

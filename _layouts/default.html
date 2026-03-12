@@ -3,6 +3,8 @@ layout: base
 ---
 
 <div class="intro-header"></div>
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign i18n = site.data.site_text[current_lang] %}
 
 <div class="container-fluid">
   <div class="row">
@@ -12,7 +14,11 @@ layout: base
         <h2 class="sidebar-author">{{ site.author }}</h2>
         <div class="sidebar-bio">
           {% capture author_bio %}
-            {% include author-bio.md %}
+            {% if current_lang == "en" %}
+              {% include author-bio-en.md %}
+            {% else %}
+              {% include author-bio.md %}
+            {% endif %}
           {% endcapture %}
           {{ author_bio | strip }}
         </div>
@@ -23,7 +29,7 @@ layout: base
         <!-- Skills section -->
         <div class="sidebar-skills">
           {% if site.skills %}
-          <div class="sidebar-skills-title">Compétences</div>
+          <div class="sidebar-skills-title">{{ i18n.ui.skills }}</div>
           <div class="sidebar-skills-list">
             {% for skill in site.skills %}
             <span class="skill-badge">{{ skill }}</span>

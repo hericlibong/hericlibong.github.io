@@ -1,9 +1,15 @@
 {% if site.post_search %}
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign i18n = site.data.site_text[current_lang] %}
+{% assign search_corpus = '/assets/data/searchcorpus.json' %}
+{% if current_lang == "en" %}
+  {% assign search_corpus = '/en/assets/data/searchcorpus.json' %}
+{% endif %}
 
 <div id="beautifuljekyll-search-overlay">
 
-  <div id="nav-search-exit" title="Exit search">✕</div>
-  <input type="text" id="nav-search-input" placeholder="Search">
+  <div id="nav-search-exit" title="{{ i18n.search.close_title }}">✕</div>
+  <input type="text" id="nav-search-input" placeholder="{{ i18n.search.placeholder }}">
   <ul id="search-results-container"></ul>
   
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
@@ -11,7 +17,7 @@
     SimpleJekyllSearch({
       searchInput: document.getElementById('nav-search-input'),
       resultsContainer: document.getElementById('search-results-container'),
-      json: '{{ site.baseurl }}/assets/data/searchcorpus.json' 
+      json: '{{ search_corpus | relative_url }}'
     });
   </script>
 </div>

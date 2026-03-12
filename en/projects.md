@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Projets
-permalink: /projects/
-lang: fr
+title: Projects
+permalink: /en/projects/
+lang: en
 translation_key: projects-index
 ---
 {% assign current_lang = page.lang | default: "fr" %}
