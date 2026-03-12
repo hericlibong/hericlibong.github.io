@@ -5,6 +5,7 @@ Ce document répertorie les commandes essentielles pour travailler avec le proje
 ## Table des Matières
 - [Création d'articles](#création-darticles)
 - [Création de projets](#création-de-projets)
+- [Traduction FR → EN (semi-automatique)](#traduction-fr--en-semi-automatique)
 - [Serveur local](#serveur-local)
 - [Gestion du projet](#gestion-du-projet)
 - [Autres commandes utiles](#autres-commandes-utiles)
@@ -53,6 +54,31 @@ new_project "Titre de votre projet"
 # Création du hackathon
 new_hackathon "Titre du hackathon"
 ```
+
+## Traduction FR → EN (semi-automatique)
+
+### Générer le squelette EN depuis un article FR
+```bash
+python scripts/generate_en_translation.py _posts/AAAA-MM-JJ-titre-fr.md
+```
+
+### Générer le squelette EN depuis un projet FR
+```bash
+python scripts/generate_en_translation.py _projects/AAAA-MM-JJ-titre-fr.md
+```
+
+### Vérifier sans écrire de fichier (dry-run)
+```bash
+python scripts/generate_en_translation.py _posts/AAAA-MM-JJ-titre-fr.md --dry-run
+```
+
+### Ce que fait la commande
+- crée le fichier EN correspondant dans le bon dossier (`_posts` ou `_projects`)
+- conserve les métadonnées utiles
+- force `lang: en`
+- conserve/génère `translation_key`
+- génère un `permalink` sous `/en/...`
+- bloque si une traduction EN existe déjà (doublon fichier ou `translation_key`)
 
 ## Serveur local
 

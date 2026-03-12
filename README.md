@@ -8,6 +8,33 @@
 
 **If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali). You'll also gain access to office hours and more features! ❤**
 
+## Local workflow: FR → EN translation skeleton
+
+This repository includes a helper script to generate an English translation skeleton from an existing French content file.
+
+Command:
+
+```bash
+python scripts/generate_en_translation.py <path-to-fr-file>
+```
+
+Examples:
+
+```bash
+# Article
+python scripts/generate_en_translation.py _posts/2026-01-03-heatmap-des-points-par-grand-prix.md
+
+# Project
+python scripts/generate_en_translation.py _projects/2026-01-13-quand-la-culture-orale-rencontre-l-ia-living-archive.md
+```
+
+What it does:
+- creates the EN file in the same content folder (`_posts` or `_projects`)
+- sets `lang: en`
+- reuses/creates `translation_key`
+- sets an `/en/...` permalink convention
+- refuses creation if an EN version already exists (file or same `translation_key`)
+
 ## Table of contents
 
 - [Features](#features)
@@ -236,4 +263,3 @@ You can also contribute by becoming an [official sponsor](https://github.com/spo
 This template was not made *entirely* from scratch. I'd like to give special thanks to [Jekyll Now](https://github.com/barryclark/jekyll-now) and [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from whom I've taken several ideas initially.
 
 I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
-
