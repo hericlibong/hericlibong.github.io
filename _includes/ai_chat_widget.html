@@ -190,17 +190,51 @@
 }
 
 .ai-chat-message-content p,
-.ai-chat-message-content ul {
+.ai-chat-message-content ul,
+.ai-chat-message-content ol,
+.ai-chat-message-content h1,
+.ai-chat-message-content h2,
+.ai-chat-message-content h3,
+.ai-chat-message-content h4 {
   margin: 0.45rem 0 0;
 }
 
 .ai-chat-message-content p:first-child,
-.ai-chat-message-content ul:first-child {
+.ai-chat-message-content ul:first-child,
+.ai-chat-message-content ol:first-child,
+.ai-chat-message-content h1:first-child,
+.ai-chat-message-content h2:first-child,
+.ai-chat-message-content h3:first-child,
+.ai-chat-message-content h4:first-child {
   margin-top: 0;
 }
 
 .ai-chat-message-content ul {
   padding-left: 1.2rem;
+}
+
+.ai-chat-message-content ol {
+  padding-left: 1.3rem;
+}
+
+.ai-chat-message-content h1,
+.ai-chat-message-content h2,
+.ai-chat-message-content h3,
+.ai-chat-message-content h4 {
+  font-family: var(--header-font);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.ai-chat-message-content h1 { font-size: 1.05rem; }
+.ai-chat-message-content h2 { font-size: 1rem; }
+.ai-chat-message-content h3,
+.ai-chat-message-content h4 { font-size: 0.95rem; }
+
+.ai-chat-message-content .ai-chat-divider {
+  border: 0;
+  border-top: 1px solid #d3e3f6;
+  margin: 0.5rem 0;
 }
 
 .ai-chat-message-content code {
@@ -388,9 +422,9 @@
 const AI_CHAT_CONFIG = {
   enableMarkdown: true,
   wordByWord: {
-    enabled: false,
-    wordsPerTick: 2,
-    tickMs: 28
+    enabled: true,
+    wordsPerTick: 1,
+    tickMs: 52
   }
 };
 
@@ -413,6 +447,8 @@ function toggleChatWidget() {
   if (isOpen) {
     scrollChatToBottom(true);
     window.setTimeout(() => input && input.focus(), 60);
+  } else {
+    cancelActiveAnimation(true);
   }
 }
 
@@ -426,6 +462,7 @@ async function sendChatMessage(event) {
   const message = input.value.trim();
   if (!message) return;
 
+  cancelActiveAnimation(true);
   addChatMessage(message, 'ai-user', { skipAnimation: true });
   input.value = '';
   input.focus();
@@ -459,7 +496,11 @@ async function callAIWorker(message) {
 
     removeTypingIndicator();
     if (data.success && data.response) {
-      await addChatMessage(data.response, 'ai-assistant');
+      const normalizedResponse = normalizeAssistantResponse(data.response);
+      await addChatMessage(
+        normalizedResponse || "Je n'ai pas trouvé d'éléments exploitables dans cette réponse.",
+        'ai-assistant'
+      );
     } else {
       await addChatMessage(
         data.error || "Désolé, je n'ai pas pu obtenir de réponse. Veuillez réessayer.",
@@ -519,21 +560,27 @@ function shouldAnimateAssistantMessage(options) {
 }
 
 function animateAssistantMessage(message, contentElement, shouldAutoScroll) {
-  if (aiChatState.activeAnimation) {
-    aiChatState.activeAnimation.cancelled = true;
-  }
-
-  const animationState = { cancelled: false };
+  cancelActiveAnimation(true);
+  const animationText = markdownToAnimationText(message);
+  const animationState = {
+    cancelled: false,
+    renderFinal: false,
+    message: message,
+    contentElement: contentElement
+  };
   aiChatState.activeAnimation = animationState;
 
-  const tokens = splitMessageIntoTokens(message);
+  const tokens = splitMessageIntoTokens(animationText);
   let currentIndex = 0;
   let currentText = '';
 
   return new Promise((resolve) => {
     const step = () => {
       if (animationState.cancelled) {
-        contentElement.innerHTML = renderMessageHtml(message, true);
+        if (animationState.renderFinal && animationState.contentElement) {
+          animationState.contentElement.innerHTML = renderMessageHtml(animationState.message, true);
+        }
+        if (aiChatState.activeAnimation === animationState) aiChatState.activeAnimation = null;
         return resolve();
       }
 
@@ -547,13 +594,14 @@ function animateAssistantMessage(message, contentElement, shouldAutoScroll) {
         currentIndex += 1;
       }
 
-      contentElement.innerHTML = renderMessageHtml(currentText, true);
+      contentElement.innerHTML = renderAnimationHtml(currentText);
       scrollChatToBottom(shouldAutoScroll);
 
       if (currentIndex < tokens.length) {
         window.setTimeout(step, AI_CHAT_CONFIG.wordByWord.tickMs);
       } else {
         contentElement.innerHTML = renderMessageHtml(message, true);
+        if (aiChatState.activeAnimation === animationState) aiChatState.activeAnimation = null;
         resolve();
       }
     };
@@ -563,7 +611,7 @@ function animateAssistantMessage(message, contentElement, shouldAutoScroll) {
 }
 
 function splitMessageIntoTokens(message) {
-  return message.match(/\S+\s*|\s+/g) || [message];
+  return message.match(/\S+\s*|\n+/g) || [message];
 }
 
 function renderMessageHtml(message, allowMarkdown) {
@@ -574,18 +622,60 @@ function renderMessageHtml(message, allowMarkdown) {
   return markdownToSafeHtml(message);
 }
 
+function renderAnimationHtml(message) {
+  return escapeHtml(message).replace(/\n/g, '<br>');
+}
+
+function cancelActiveAnimation(renderFinal) {
+  if (!aiChatState.activeAnimation) return;
+  aiChatState.activeAnimation.renderFinal = Boolean(renderFinal);
+  aiChatState.activeAnimation.cancelled = true;
+}
+
+function normalizeAssistantResponse(raw) {
+  let text = String(raw ?? '')
+    .replace(/\r\n/g, '\n')
+    .replace(/\u00A0/g, ' ')
+    .trim();
+
+  text = text.replace(/^```(?:markdown|md|text)?\s*/i, '');
+  text = text.replace(/\s*```$/i, '');
+  text = text.replace(/^[-*_]{3,}\s*$/gm, '');
+  text = text.replace(/\n{3,}/g, '\n\n');
+
+  return text.trim();
+}
+
+function markdownToAnimationText(rawText) {
+  let text = normalizeAssistantResponse(rawText);
+  text = text.replace(/```[\w-]*\n([\s\S]*?)```/g, '$1');
+  text = text.replace(/^#{1,6}\s+/gm, '');
+  text = text.replace(/^>\s?/gm, '');
+  text = text.replace(/^[-*]\s+/gm, '• ');
+  text = text.replace(/^\d+\.\s+/gm, '');
+  text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '$1');
+  text = text.replace(/`([^`]+)`/g, '$1');
+  text = text.replace(/\*\*([^*]+)\*\*/g, '$1');
+  text = text.replace(/\*([^*]+)\*/g, '$1');
+  text = text.replace(/\n{3,}/g, '\n\n');
+  return text.trim();
+}
+
 function markdownToSafeHtml(rawText) {
-  const text = rawText.replace(/\r\n/g, '\n');
+  const text = normalizeAssistantResponse(rawText).replace(/\r\n/g, '\n');
   const lines = text.split('\n');
   const chunks = [];
   let listBuffer = [];
+  let listType = '';
 
   const flushList = () => {
     if (!listBuffer.length) return;
+    const tagName = listType || 'ul';
     chunks.push(
-      `<ul>${listBuffer.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join('')}</ul>`
+      `<${tagName}>${listBuffer.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join('')}</${tagName}>`
     );
     listBuffer = [];
+    listType = '';
   };
 
   lines.forEach((line) => {
@@ -595,8 +685,27 @@ function markdownToSafeHtml(rawText) {
       return;
     }
 
-    if (/^[-*]\s+/.test(trimmed)) {
-      listBuffer.push(trimmed.replace(/^[-*]\s+/, ''));
+    if (/^[-*_]{3,}$/.test(trimmed)) {
+      flushList();
+      chunks.push('<hr class="ai-chat-divider">');
+      return;
+    }
+
+    const headingMatch = trimmed.match(/^(#{1,4})\s+(.+)$/);
+    if (headingMatch) {
+      flushList();
+      const level = headingMatch[1].length;
+      chunks.push(`<h${level}>${renderInlineMarkdown(headingMatch[2])}</h${level}>`);
+      return;
+    }
+
+    const unorderedMatch = trimmed.match(/^[-*]\s+(.+)$/);
+    const orderedMatch = trimmed.match(/^\d+\.\s+(.+)$/);
+    if (unorderedMatch || orderedMatch) {
+      const currentType = orderedMatch ? 'ol' : 'ul';
+      if (listType && listType !== currentType) flushList();
+      listType = currentType;
+      listBuffer.push((orderedMatch || unorderedMatch)[1]);
       return;
     }
 
