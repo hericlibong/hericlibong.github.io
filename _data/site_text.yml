@@ -20,6 +20,9 @@ fr:
     f1_personal_projects: "📁 Projets personnels"
     f1_hackathons: "🚀 Mes hackathons"
     f1_hackathon_subtitle: "Défis relevés, innovation et prototypes en temps limité."
+    formation_ia_title: "Formation IA"
+    formation_ia_subtitle: "Modules et ressources pour apprendre l'IA"
+    formation_ia_empty: "Aucun module publié pour l'instant."
   search:
     placeholder: "Recherche"
     close_title: "Fermer la recherche"
@@ -58,6 +61,9 @@ en:
     f1_personal_projects: "📁 Personal projects"
     f1_hackathons: "🚀 My hackathons"
     f1_hackathon_subtitle: "Challenges tackled, innovation, and prototypes built in limited time."
+    formation_ia_title: "AI Training"
+    formation_ia_subtitle: "Modules and resources to learn AI"
+    formation_ia_empty: "No module published yet."
   search:
     placeholder: "Search"
     close_title: "Exit search"

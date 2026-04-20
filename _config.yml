@@ -39,6 +39,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  formation_ia:
+    output: true
+    permalink: /formation-ia/:path/
 
 ###############################################
 # --- List of links in the navigation bar --- #

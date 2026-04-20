@@ -19,6 +19,9 @@
     {% if translated_page == nil %}
       {% assign translated_page = site.projects | where: "translation_key", page.translation_key | where: "lang", target_lang | first %}
     {% endif %}
+    {% if translated_page == nil %}
+      {% assign translated_page = site.formation_ia | where: "translation_key", page.translation_key | where: "lang", target_lang | first %}
+    {% endif %}
     {% if translated_page %}
       {% assign switch_url = translated_page.url | relative_url %}
     {% endif %}

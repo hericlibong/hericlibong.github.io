@@ -1,6 +1,8 @@
 fr:
   - label: "Articles"
     url: "/articles/"
+  - label: "Formation IA"
+    url: "/formation-ia/"
   - label: "BeautifullF1"
     url: "/beautifullf1/"
     icon: "checkered"
@@ -22,6 +24,8 @@ fr:
 en:
   - label: "Articles"
     url: "/en/articles/"
+  - label: "AI Training"
+    url: "/en/ai-training/"
   - label: "BeautifullF1"
     url: "/en/beautifullf1/"
     icon: "checkered"
