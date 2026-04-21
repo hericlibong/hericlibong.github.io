@@ -2,6 +2,7 @@
 layout: project
 title: "Introduction to Large Language Models (LLMs)"
 subtitle: "Understand what an LLM is, how it is trained, and what it can — or cannot — do."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1776767529/prompteng_gsimo6.png"
 tags: [LLM, AI, Beginner, NLP]
 author: Héric Libong
 date: "2026-04-10"

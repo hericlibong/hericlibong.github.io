@@ -315,6 +315,14 @@ defaults:
       lang: "fr"
   -
     scope:
+      path: ""
+      type: "formation_ia"
+    values:
+      layout: "project"
+      lang: "fr"
+      feature-image: ""
+  -
+    scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"

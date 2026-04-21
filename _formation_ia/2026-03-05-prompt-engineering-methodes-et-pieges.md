@@ -2,6 +2,7 @@
 layout: project
 title: "Prompt engineering : méthodes et pièges à éviter"
 subtitle: "Structurer un prompt efficace, reconnaître les biais classiques et construire des prompts reproductibles."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1776767243/llm_bkok86.jpg"
 tags: [Prompt Engineering, IA, LLM, Méthodologie]
 author: Héric Libong
 date: "2026-03-05"

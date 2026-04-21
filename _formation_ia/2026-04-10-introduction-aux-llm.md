@@ -2,6 +2,7 @@
 layout: project
 title: "Introduction aux grands modèles de langage (LLM)"
 subtitle: "Comprendre ce qu'est un LLM, comment il est entraîné et ce qu'il sait (ou pas) faire."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1776767529/prompteng_gsimo6.png"
 tags: [LLM, IA, Débutant, NLP]
 author: Héric Libong
 date: "2026-04-10"

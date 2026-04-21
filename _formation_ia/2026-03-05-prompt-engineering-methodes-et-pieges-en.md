@@ -2,6 +2,7 @@
 layout: project
 title: "Prompt Engineering: Methods and Pitfalls to Avoid"
 subtitle: "Structure effective prompts, spot common biases, and build reproducible prompts."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1776767243/llm_bkok86.jpg"
 tags: [Prompt Engineering, AI, LLM, Methodology]
 author: Héric Libong
 date: "2026-03-05"
