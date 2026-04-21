@@ -9,7 +9,7 @@ layout: default
 {% endif %}
 
 <!-- Don't show page title on listing pages -->
-{% unless page.permalink contains '/articles/' or page.permalink contains '/projects/' %}
+{% unless page.permalink contains '/articles/' or page.permalink contains '/projects/' or page.permalink contains '/formation-ia/' or page.permalink contains '/ai-training/' %}
 {{ content }}
 {% endunless %}
 
@@ -18,6 +18,8 @@ layout: default
   {% assign display_content = site.posts | where: "lang", current_lang %}
 {% elsif page.permalink contains '/projects/' %}
   {% assign display_content = site.projects | where: "lang", current_lang | sort: 'date' | reverse %}
+{% elsif page.permalink contains '/formation-ia/' or page.permalink contains '/ai-training/' %}
+  {% assign display_content = site.formation_ia | where: "lang", current_lang | sort: 'date' | reverse %}
 {% else %}
   {% assign localized_posts = site.posts | where: "lang", current_lang %}
   {% assign localized_projects = site.projects | where: "lang", current_lang %}
