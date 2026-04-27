@@ -127,13 +127,13 @@ Statuts :
 | --- | ---: | --- | --- | --- | --- | --- |
 | [x] | 1 | `_layouts/formation_ia.html` | Creer un layout autonome | Ajouter un layout dedie avec header Formation IA, navigation interne et zone de contenu | Conflit visuel si CSS trop global | La section a une identite distincte sans casser navbar/footer |
 | [x] | 2 | `assets/css/formation-ia.css` | Ajouter le style dedie | Creer des classes prefixees `.formation-ia-*`, cartes, hero, boutons, responsive | Fuite CSS vers le reste du site | Les pages Articles/Projets restent inchangees |
-| [~] | 3 | `formation-ia.md` | Transformer l'accueil | Remplacer la liste automatique par une vraie page d'accueil Formation IA | La liste directe des modules disparait de l'accueil | `/formation-ia/` affiche la nouvelle entree de section |
-| [ ] | 4 | `formation-ia/mini-cours.md` | Creer la page Mini-cours | Ajouter 4 cartes de mini-cours "a venir" | Peu de risque | `/formation-ia/mini-cours/` est accessible |
-| [ ] | 5 | `formation-ia/ressources.md` | Creer la page Ressources | Ajouter des cartes pour prompts, fiches, checklists, exemples | Page encore placeholder | `/formation-ia/ressources/` est accessible |
-| [ ] | 6 | `formation-ia/newsletter.md` | Creer la page Newsletter | Ajouter une presentation et un bouton "Inscription a venir" | Bouton a ne pas connecter pour l'instant | Aucun outil externe n'est appele |
-| [ ] | 7 | `formation-ia/participer.md` | Creer la page Participer | Ajouter programme pilote, public, retours attendus, contact temporaire | Contact final a preciser | `/formation-ia/participer/` est accessible |
-| [ ] | 8 | `_config.yml` | Verifier la collection | Ne modifier que si necessaire | Changer le layout par defaut pourrait affecter les modules existants | Les modules existants restent accessibles |
-| [ ] | 9 | `_data/navigation.yml` | Verifier le lien global | Garder le lien existant vers `/formation-ia/` | Faible risque de duplication | Le menu principal pointe vers la nouvelle section |
+| [x] | 3 | `formation-ia.md` | Transformer l'accueil | Remplacer la liste automatique par une vraie page d'accueil Formation IA | La liste directe des modules disparait de l'accueil | `/formation-ia/` affiche la nouvelle entree de section |
+| [x] | 4 | `formation-ia/mini-cours.md` | Creer la page Mini-cours | Ajouter 4 cartes de mini-cours "a venir" | Peu de risque | `/formation-ia/mini-cours/` est accessible |
+| [x] | 5 | `formation-ia/ressources.md` | Creer la page Ressources | Ajouter des cartes pour prompts, fiches, checklists, exemples | Page encore placeholder | `/formation-ia/ressources/` est accessible |
+| [x] | 6 | `formation-ia/newsletter.md` | Creer la page Newsletter | Ajouter une presentation et un bouton "Inscription a venir" | Bouton a ne pas connecter pour l'instant | Aucun outil externe n'est appele |
+| [x] | 7 | `formation-ia/participer.md` | Creer la page Participer | Ajouter programme pilote, public, retours attendus, contact temporaire | Contact final a preciser | `/formation-ia/participer/` est accessible |
+| [x] | 8 | `_config.yml` | Verifier la collection | Aucune modification necessaire apres verification | Changer le layout par defaut pourrait affecter les modules existants | Les modules existants restent accessibles |
+| [x] | 9 | `_data/navigation.yml` | Verifier le lien global | Aucune modification necessaire apres verification | Faible risque de duplication | Le menu principal pointe vers la nouvelle section |
 
 ## Pages publiques visees
 
