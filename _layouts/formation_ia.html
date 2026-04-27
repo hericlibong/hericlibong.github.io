@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+{% assign current_lang = page.lang | default: "fr" %}
+{% assign formation_home = "/formation-ia/" %}
+{% assign formation_courses = "/formation-ia/mini-cours/" %}
+{% assign formation_resources = "/formation-ia/ressources/" %}
+{% assign formation_newsletter = "/formation-ia/newsletter/" %}
+{% assign formation_participate = "/formation-ia/participer/" %}
+
+{% if current_lang == "en" %}
+  {% assign formation_home = "/en/ai-training/" %}
+  {% assign formation_courses = "/en/ai-training/mini-courses/" %}
+  {% assign formation_resources = "/en/ai-training/resources/" %}
+  {% assign formation_newsletter = "/en/ai-training/newsletter/" %}
+  {% assign formation_participate = "/en/ai-training/participate/" %}
+{% endif %}
+
+<main class="formation-ia-shell">
+  <header class="formation-ia-hero">
+    <div class="formation-ia-container">
+      <p class="formation-ia-kicker">
+        {% if current_lang == "en" %}AI Training{% else %}Formation IA{% endif %}
+      </p>
+      <h1 class="formation-ia-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="formation-ia-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <nav class="formation-ia-nav" aria-label="{% if current_lang == "en" %}AI Training navigation{% else %}Navigation Formation IA{% endif %}">
+    <div class="formation-ia-container">
+      <a href="{{ formation_home | relative_url }}" {% if page.url == formation_home %}aria-current="page"{% endif %}>
+        {% if current_lang == "en" %}Home{% else %}Accueil{% endif %}
+      </a>
+      <a href="{{ formation_courses | relative_url }}" {% if page.url == formation_courses %}aria-current="page"{% endif %}>
+        {% if current_lang == "en" %}Mini-courses{% else %}Mini-cours{% endif %}
+      </a>
+      <a href="{{ formation_resources | relative_url }}" {% if page.url == formation_resources %}aria-current="page"{% endif %}>
+        {% if current_lang == "en" %}Resources{% else %}Ressources{% endif %}
+      </a>
+      <a href="{{ formation_newsletter | relative_url }}" {% if page.url == formation_newsletter %}aria-current="page"{% endif %}>
+        Newsletter
+      </a>
+      <a href="{{ formation_participate | relative_url }}" {% if page.url == formation_participate %}aria-current="page"{% endif %}>
+        {% if current_lang == "en" %}Participate{% else %}Participer{% endif %}
+      </a>
+    </div>
+  </nav>
+
+  <section class="formation-ia-content">
+    <div class="formation-ia-container">
+      {{ content }}
+    </div>
+  </section>
+</main>
