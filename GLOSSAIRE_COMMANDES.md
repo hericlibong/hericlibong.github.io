@@ -5,6 +5,7 @@ Ce document répertorie les commandes essentielles pour travailler avec le proje
 ## Table des Matières
 - [Création d'articles](#création-darticles)
 - [Création de projets](#création-de-projets)
+- [Création de contenus Formation IA](#création-de-contenus-formation-ia)
 - [Traduction FR → EN (semi-automatique)](#traduction-fr--en-semi-automatique)
 - [Serveur local](#serveur-local)
 - [Gestion du projet](#gestion-du-projet)
@@ -54,6 +55,34 @@ new_project "Titre de votre projet"
 # Création du hackathon
 new_hackathon "Titre du hackathon"
 ```
+
+## Création de contenus Formation IA
+
+### Créer un nouveau mini-cours Formation IA (méthode directe)
+```bash
+./scripts/new_formation_module.sh "Titre du mini-cours"
+```
+
+### Créer un nouveau mini-cours Formation IA depuis PowerShell
+```powershell
+.\scripts\new_formation_module.ps1 "Titre du mini-cours"
+```
+
+### Créer un nouveau mini-cours Formation IA (via l'alias)
+```bash
+# Configuration préalable des alias
+source setup_aliases.sh
+
+# Création du mini-cours
+new_formation_module "Titre du mini-cours"
+```
+
+### Ce que fait la commande
+- crée un fichier daté dans `_formation_ia/`
+- génère un slug à partir du titre
+- utilise le template `_templates/new_formation_module.md`
+- remplit automatiquement `title`, `date` et `translation_key`
+- initialise le contenu comme mini-cours francophone avec `content_type: mini-cours`
 
 ## Traduction FR → EN (semi-automatique)
 
@@ -152,12 +181,14 @@ source ~/.bashrc
 
 - `new_article "Titre"` : Créer un nouvel article
 - `new_project "Titre"` : Créer un nouveau projet
+- `new_formation_module "Titre"` : Créer un mini-cours Formation IA
 - `jekyll_serve` : Lancer le serveur local avec rechargement automatique
 
 ## Structure du projet
 
 - `_posts/` : Contient tous les articles
 - `_projects/` : Contient tous les projets
+- `_formation_ia/` : Contient les modules et ressources Formation IA
 - `_templates/` : Contient les templates pour les nouveaux articles et projets
 - `scripts/` : Contient les scripts utilitaires
 - `setup_aliases.sh` : Script pour configurer les alias

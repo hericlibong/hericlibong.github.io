@@ -56,10 +56,18 @@ collections:
     permalink: /formation-ia/:path/
 ```
 
-Cela signifie que les fichiers Markdown places dans `_formation_ia/` sont
-publies sous des URLs du type :
+Par defaut, les fichiers Markdown places dans `_formation_ia/` seraient publies
+sous des URLs du type :
 
 `/formation-ia/nom-du-module/`
+
+Decision mise a jour : les contenus publies doivent maintenant utiliser un
+`permalink` explicite selon leur type afin de respecter l'arborescence publique :
+
+```text
+/formation-ia/mini-cours/<date-slug>/
+/formation-ia/ressources/<date-slug>/
+```
 
 ### Layouts utilises actuellement
 
@@ -135,6 +143,27 @@ Statuts :
 | [x] | 8 | `_config.yml` | Verifier la collection | Aucune modification necessaire apres verification | Changer le layout par defaut pourrait affecter les modules existants | Les modules existants restent accessibles |
 | [x] | 9 | `_data/navigation.yml` | Verifier le lien global | Aucune modification necessaire apres verification | Faible risque de duplication | Le menu principal pointe vers la nouvelle section |
 
+## Plan contenu et templates
+
+Statuts :
+
+- `[x]` valide ;
+- `[~]` realise, en attente de verification navigateur ;
+- `[ ]` a faire.
+
+| Statut | Ordre | Fichier | Objectif | Modification prevue | Risque | Validation |
+| --- | ---: | --- | --- | --- | --- | --- |
+| [x] | 1 | `_templates/new_formation_module.md` | Creer le gabarit mini-cours FR | Template avec front matter Formation IA, `content_type: mini-cours`, champs pedagogiques et structure de cours | Trop de champs si le template devient rigide | Un mini-cours peut etre genere sans inventer sa structure |
+| [x] | 2 | `scripts/new_formation_module.ps1` | Creer les mini-cours depuis PowerShell | Generer un fichier date dans `_formation_ia/`, remplir title/date/slug/translation_key/permalink | PowerShell obligatoire sur Windows | La commande cree un fichier exploitable |
+| [x] | 3 | `scripts/new_formation_module.sh` | Garder une commande Bash equivalente | Meme logique que PowerShell pour Git Bash/WSL/Linux | Non executable dans certains environnements Windows | La commande reste disponible hors PowerShell |
+| [x] | 4 | `GLOSSAIRE_COMMANDES.md` et `setup_aliases.sh` | Documenter et exposer la commande | Ajouter `new_formation_module` dans les commandes utiles | Alias Bash peu utile en PowerShell | La commande est documentee |
+| [x] | 5 | `formation-ia/mini-cours.md` | Afficher automatiquement les mini-cours | Lister `site.formation_ia` filtre par `lang: fr` et `content_type: mini-cours` | Page dependante de champs front matter coherents | Les mini-cours crees apparaissent dans `/formation-ia/mini-cours/` |
+| [~] | 6 | `_formation_ia/*mini-cours*.md` | Aligner les URLs mini-cours | Ajouter un `permalink` explicite sous `/formation-ia/mini-cours/<date-slug>/` | Anciennes URLs directes sous `/formation-ia/<slug>/` ne sont plus la cible logique | Les cartes mini-cours ouvrent les pages detail sans 404 |
+| [ ] | 7 | `_templates/new_formation_resource.md` | Creer le gabarit ressource FR | Template avec `content_type: ressource` et champs utiles aux ressources pratiques | Trop generique si prompts/checklists ont besoin de champs dedies | Une ressource peut etre generee sans bricolage |
+| [ ] | 8 | `scripts/new_formation_resource.ps1` | Creer les ressources depuis PowerShell | Generer `/formation-ia/ressources/<date-slug>/` | Meme enjeu d'URL et de date | La commande cree une ressource consultable |
+| [ ] | 9 | `formation-ia/ressources.md` | Afficher automatiquement les ressources | Lister `content_type: ressource`, puis eventuellement filtrer par `resource_type` | Page vide tant qu'aucune ressource n'existe | Les ressources apparaissent dans `/formation-ia/ressources/` |
+| [ ] | 10 | Templates prompt/checklist si necessaire | Specialiser certaines ressources | Ajouter des templates dedies seulement si le template ressource est insuffisant | Multiplier trop tot les variantes | Les prompts/checklists ont une structure claire si besoin |
+
 ## Pages publiques visees
 
 ### `/formation-ia/`
@@ -150,18 +179,38 @@ Contenu prevu :
 
 ### `/formation-ia/mini-cours/`
 
-Liste des premiers mini-cours prevus :
+Liste automatique des mini-cours publies dans `_formation_ia/` avec :
 
-- Bien demarrer avec une IA conversationnelle ;
-- Rediger plus vite sans perdre son style ;
-- Organiser ses idees et ses taches avec un LLM ;
-- Utiliser l'IA avec sobriete et discernement.
+```yml
+lang: fr
+content_type: mini-cours
+```
 
-Chaque element sera affiche comme une carte "a venir".
+Chaque mini-cours doit utiliser une URL explicite :
+
+```text
+/formation-ia/mini-cours/<date-slug>/
+```
 
 ### `/formation-ia/ressources/`
 
-Emplacements pour ressources pratiques :
+Actuellement : emplacements pour ressources pratiques.
+
+Objectif suivant : transformer cette page en liste automatique des contenus
+publies dans `_formation_ia/` avec :
+
+```yml
+lang: fr
+content_type: ressource
+```
+
+URL cible pour chaque ressource :
+
+```text
+/formation-ia/ressources/<date-slug>/
+```
+
+Types de ressources prevus :
 
 - modeles de prompts ;
 - fiches methode ;
@@ -196,11 +245,35 @@ Contenu prevu :
 - Garder le site principal intact.
 - Garder la collection `_formation_ia` pour les futurs vrais modules.
 - Utiliser des pages Markdown simples pour les sous-sections publiques.
+- Utiliser des `permalink` explicites par type de contenu pour garder une
+  arborescence publique lisible.
+- Ne pas maintenir de workflow anglais pour les formations pour l'instant :
+  le public cible est francophone.
 
-## Points a valider avant implementation
+## Commandes disponibles
 
-- Valider le plan general.
-- Confirmer si les pages anglaises doivent etre creees maintenant ou plus tard.
-- Confirmer le type de contact temporaire pour la page Participer.
-- Confirmer si les modules existants de `_formation_ia` doivent rester visibles
-  depuis la page Mini-cours ou rester en retrait pour le moment.
+### Creer un mini-cours depuis PowerShell
+
+```powershell
+.\scripts\new_formation_module.ps1 "Titre du mini-cours"
+```
+
+La commande cree un fichier dans `_formation_ia/` et configure une URL de type :
+
+```text
+/formation-ia/mini-cours/<date-slug>/
+```
+
+### Creer un mini-cours depuis Bash
+
+```bash
+./scripts/new_formation_module.sh "Titre du mini-cours"
+```
+
+## Points a valider ensuite
+
+- Valider que les mini-cours s'ouvrent bien sous `/formation-ia/mini-cours/<date-slug>/`.
+- Tester la creation d'un nouveau mini-cours via PowerShell.
+- Mettre en place le meme flux pour les ressources.
+- Decider ensuite si les prompts et checklists doivent etre de simples
+  ressources typees ou des templates dedies.

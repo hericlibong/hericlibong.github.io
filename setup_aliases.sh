@@ -69,6 +69,25 @@ new_hackathon() {
     "$script_path" "$title"
 }
 
+# Alias pour creer un nouveau mini-cours Formation IA
+new_formation_module() {
+    local title="$*"
+    if [ -z "$title" ]; then
+        echo "Erreur: Vous devez fournir un titre pour le mini-cours"
+        echo "Usage: new_formation_module Titre du mini-cours"
+        return 1
+    fi
+
+    local script_path="$(dirname "${BASH_SOURCE[0]}")/scripts/new_formation_module.sh"
+
+    if [ ! -f "$script_path" ]; then
+        echo "Erreur: Le script $script_path n'existe pas"
+        return 1
+    fi
+
+    "$script_path" "$title"
+}
+
 # Alias pour lancer le serveur Jekyll
 jekyll_serve() {
     bundle exec jekyll serve --livereload
@@ -78,6 +97,7 @@ echo "✅ Alias configurés :"
 echo "  - new_article Titre : Créer un nouvel article"
 echo "  - new_project Titre : Créer un nouveau projet"
 echo "  - new_hackathon Titre : Créer un nouveau hackathon"
+echo "  - new_formation_module Titre : Creer un mini-cours Formation IA"
 echo "  - jekyll_serve : Lancer le serveur local"
 echo ""
 echo "Pour activer ces alias dans votre session actuelle, exécutez :"

@@ -8,6 +8,7 @@ translation_key: formation-ia-mini-cours
 css:
   - /assets/css/formation-ia.css
 ---
+{% assign mini_courses = site.formation_ia | where: "lang", "fr" | where: "content_type", "mini-cours" | sort: "date" | reverse %}
 
 <div class="formation-ia-panel">
   <p>
@@ -17,6 +18,25 @@ css:
   </p>
 </div>
 
+{% if mini_courses.size > 0 %}
+<div class="formation-ia-grid">
+  {% for course in mini_courses %}
+  <a class="formation-ia-card" href="{{ course.url | relative_url }}">
+    <div>
+      <h2>{{ course.title }}</h2>
+      {% if course.subtitle %}
+        <p>{{ course.subtitle }}</p>
+      {% else %}
+        <p>{{ course.excerpt | strip_html | truncatewords: 24 }}</p>
+      {% endif %}
+    </div>
+    <span class="formation-ia-pill">
+      {% if course.status %}{{ course.status }}{% else %}Mini-cours{% endif %}
+    </span>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
 <div class="formation-ia-grid">
   <article class="formation-ia-card">
     <div>
@@ -25,31 +45,8 @@ css:
     </div>
     <span class="formation-ia-pill">A venir</span>
   </article>
-
-  <article class="formation-ia-card">
-    <div>
-      <h2>Rediger plus vite sans perdre son style</h2>
-      <p>Utiliser l'IA pour structurer, reformuler et ameliorer ses textes tout en gardant sa voix.</p>
-    </div>
-    <span class="formation-ia-pill">A venir</span>
-  </article>
-
-  <article class="formation-ia-card">
-    <div>
-      <h2>Organiser ses idees et ses taches avec un LLM</h2>
-      <p>Transformer des notes, idees ou contraintes en plans d'action lisibles et faciles a suivre.</p>
-    </div>
-    <span class="formation-ia-pill">A venir</span>
-  </article>
-
-  <article class="formation-ia-card">
-    <div>
-      <h2>Utiliser l'IA avec sobriete et discernement</h2>
-      <p>Identifier les bons usages, eviter les automatismes inutiles et garder la maitrise de ses decisions.</p>
-    </div>
-    <span class="formation-ia-pill">A venir</span>
-  </article>
 </div>
+{% endif %}
 
 <div class="formation-ia-panel">
   <h2>Format prevu</h2>

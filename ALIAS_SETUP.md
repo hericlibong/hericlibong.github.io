@@ -13,6 +13,7 @@ source setup_aliases.sh
 
 2. Les alias suivants seront disponibles :
 - `new_article "Titre"` : Créer un nouvel article
+- `new_formation_module "Titre"` : Créer un mini-cours Formation IA
 - `jekyll_serve` : Lancer le serveur local
 
 ### Activation permanente
@@ -74,6 +75,9 @@ Une fois configuré, vous pouvez utiliser :
 ```bash
 # Créer un nouvel article
 new_article "Mon super article"
+
+# Créer un mini-cours Formation IA
+new_formation_module "Mon mini-cours"
 
 # Lancer le serveur
 jekyll_serve
