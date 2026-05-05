@@ -37,6 +37,8 @@ Avant de choisir un outil, avant de créer une interface, avant de demander à l
 
 À la fin de cette étape, vous aurez un **document de cadrage complet**, prêt à copier dans un Google Doc, Notion, Word ou tout autre support.
 
+Ce document servira de fondation pour toute la suite : il aidera à choisir les bons contenus, à cadrer le comportement de l’IA, à préparer les prochaines étapes et à éviter que la mini-app parte dans tous les sens.
+
 ---
 
 ## Pourquoi commencer par le cadrage ?
@@ -192,27 +194,35 @@ Ce sont simplement des mots-clés pour guider la conversation.
 
 ---
 
-## Exemple fil rouge : mini-app d’initiation à la philosophie politique
+## Exemple fil rouge
 
-Pour illustrer cette étape, nous allons utiliser un exemple destiné à des adultes.
+La méthode présentée ici peut servir à des projets très différents, dès lors que l’on souhaite **partager un savoir, transmettre une pratique ou ouvrir une réflexion**.
+
+Quelques exemples possibles :
+
+- une mini-app pour explorer des concepts de philosophie politique ;
+- une mini-app pour s’initier à la mythologie ou aux sciences initiatiques ;
+- une mini-app pour accompagner une pratique de sophrologie ;
+- une mini-app pour transmettre un savoir de jardinage saisonnier ;
+- une mini-app pour découvrir l’univers de la philatélie.
+
+Dans ce module, nous prenons un exemple précis : une **mini-app d’initiation à la philosophie politique**, destinée à des adultes.
 
 L’idée :
 
-> créer une mini-app qui aide à explorer des concepts de philosophie politique, des auteurs, des controverses et des problèmes théoriques.
+> créer une mini-app qui aide à explorer des concepts politiques, des auteurs et des controverses, sans imposer une opinion.
 
-Exemples de sujets possibles :
+Exemples de sujets possibles dans cette mini-app :
 
 - la banalité du mal chez Hannah Arendt ;
 - l’État chez Hobbes ;
-- la violence légitime chez Max Weber ;
-- la souveraineté chez Rousseau ou Carl Schmitt ;
-- le pouvoir chez Foucault ;
-- la justice chez Rawls ;
-- la domination chez Weber, Marx ou Bourdieu.
+- le pouvoir chez Foucault.
 
 L’application ne doit pas dire à l’utilisateur quoi penser.
 
-Elle doit l’aider à comprendre comment une pensée politique se construit, se discute et s’oppose à d’autres pensées.
+Elle doit l’aider à comprendre comment une pensée se construit, se discute et s’oppose à d’autres pensées.
+
+> Le principe reste transposable. Que vous travailliez sur la sophrologie, le jardin ou les timbres, la même logique s’applique : une mini-app n’impose pas, elle ouvre, explique et fait dialoguer.
 
 ---
 
@@ -456,9 +466,7 @@ Exemple :
 ```text
 1. La banalité du mal chez Arendt
 2. L’État chez Hobbes
-3. La violence légitime chez Weber
-4. La souveraineté chez Rousseau et Schmitt
-5. Le pouvoir chez Foucault
+3. Le pouvoir chez Foucault
 ```
 
 À vous :
@@ -468,8 +476,6 @@ Ma matière de départ sera :
 1.
 2.
 3.
-4.
-5.
 ```
 
 </details>
