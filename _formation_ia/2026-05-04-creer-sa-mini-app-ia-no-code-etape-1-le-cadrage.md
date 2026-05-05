@@ -125,6 +125,10 @@ Elle permet aussi d’apprendre une nouvelle manière de dialoguer avec l’IA.
 
 ## Option 1 - Remplir le cadrage dans un Google Doc
 
+**Ressource à télécharger :** [template de cadrage vierge]({{ '/assets/downloads/formation-ia/template_cadrage_mini_app_ia.md' | relative_url }})
+
+Ce fichier au format Markdown contient toutes les rubriques du brief, prêtes à remplir. Vous pouvez l’ouvrir avec un simple éditeur de texte, ou en copier le contenu directement dans Google Docs, Notion ou Word.
+
 ### Étape pratique
 
 1. Ouvrez Google Docs.
@@ -150,6 +154,10 @@ Il pourra évoluer.
 ---
 
 ## Option 2 - Utiliser l’assistant de cadrage IA
+
+**Ressource à télécharger :** [master prompt de l’assistant de cadrage]({{ '/assets/downloads/formation-ia/master_prompt_assistant_cadrage_v3.md' | relative_url }})
+
+Ce fichier au format Markdown contient le prompt complet à copier-coller dans votre outil IA (ChatGPT, Gemini, Claude ou autre). C’est lui qui transforme l’IA en assistant de cadrage guidé par commandes.
 
 ### Étape pratique
 
@@ -523,15 +531,6 @@ Avant de passer à la suite, vérifiez que vous avez :
 Si tout est clair, vous pouvez passer à l’étape suivante.
 
 </details>
-
-## Télécharger les ressources
-
-Deux ressources sont disponibles pour réaliser cette étape :
-
-- [Télécharger le template de cadrage vierge]({{ '/assets/downloads/formation-ia/template_cadrage_mini_app_ia.md' | relative_url }})
-- [Télécharger le master prompt de l’assistant de cadrage]({{ '/assets/downloads/formation-ia/master_prompt_assistant_cadrage_v3.md' | relative_url }})
-
-Les deux fichiers sont au format Markdown. Vous pouvez les ouvrir avec un éditeur de texte, un outil de prise de notes, Google Docs, Notion ou les copier directement dans votre outil IA.
 
 ---
 
