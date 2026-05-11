@@ -30,6 +30,8 @@ L'ensemble du pipeline est reproductible : un seul script (`build_all.py`) orche
 
 L'accueil est conçu pour tenir sur un seul écran, sans scroll superflu, et s'articule autour de quatre zones.
 
+[![Aperçu du dashboard Beautiful F1](https://res.cloudinary.com/dvlzgmjzb/image/upload/v1778496835/dashboard_front1_rkddm5.png)](https://hericlibong.github.io/beautifullF1/)
+
 
 
 ### Bandeau d'indicateurs clés
