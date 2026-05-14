@@ -23,7 +23,13 @@ url: "https://hericlibong.github.io"
 # Skills for the sidebar
 skills:
   - Python
+  - Django
+  - Flask
   - SQL
+  - PostgreSQL
+  - Docker
+  - spaCy
+  - OpenAI API
   - Tableau
   - D3.js
   - Git
