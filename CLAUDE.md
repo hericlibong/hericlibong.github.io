@@ -90,3 +90,75 @@ Ouvrir le fichier EN généré et traduire **uniquement le corps Markdown** :
 - **Ne pas modifier le front matter** : `title`, `subtitle`, `permalink`, `translation_key`, `lang`, `feature-image`, `tags`, `date` restent ceux générés par le script.
 - **Ne pas modifier les URLs** (liens externes, images Cloudinary, ancres internes) : elles doivent rester strictement identiques à celles du fichier FR.
 - Conserver les blocs de code, les emojis et les éléments de mise en forme à l'identique.
+
+## Content Generation — Fiches projet (_projects/)
+
+Quand on te demande de créer une fiche projet pour ce site, tu dois
+**obligatoirement** suivre ces conventions avant d'écrire quoi que ce soit.
+
+### Informations à collecter si manquantes
+
+- Titre du projet
+- Sous-titre (1 phrase de résumé)
+- Date de publication (format YYYY-MM-DD, par défaut : date du jour)
+- URL image de couverture (Cloudinary de préférence — ne jamais inventer une URL)
+- Tags (voir conventions ci-dessous)
+- Version EN prévue ? (pour le champ `translation_key`)
+
+### Frontmatter obligatoire
+
+```yaml
+---
+layout: project
+title: "Titre du projet"
+subtitle: "Une phrase qui résume le projet."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/..."
+tags: [tag-1, tag-2, tag-3]
+author: Héric Libong
+date: "YYYY-MM-DD"
+lang: fr
+translation_key: project-slug-du-projet  # omettre si pas de version EN
+---
+```
+
+### Conventions de tags
+
+- Tout en minuscule, kebab-case : `data-visualisation`, `formule-1`
+- 3 à 8 tags par projet
+- Toujours inclure les langages/outils principaux
+- Tags fréquents : `python`, `javascript`, `django`, `fastapi`, `docker`,
+  `data-visualisation`, `dataviz`, `nlp`, `scraping`, `api`,
+  `formule-1`, `fastf1`, `d3js`, `pandas`, `github-pages`, `hackathon`
+
+### Nommage du fichier
+
+Format strict : `YYYY-MM-DD-titre-en-kebab-case.md`
+Destination : `_projects/`
+
+### Structure narrative du corps
+
+Dans cet ordre :
+
+1. **Origine du projet** — pourquoi ce projet existe, quel problème il résout.
+   Ton narratif, 2-4 paragraphes. Pas de bullet points.
+
+2. **Sources de données** *(si projet data)* — liste avec **nom en gras**
+   + description courte du rôle de chaque source.
+
+3. **Présentation du projet** — ce que l'outil fait concrètement.
+   Sous-sections `###` autorisées. Captures d'écran si URL fournie.
+
+4. **Stack technique** *(si applicable)* — deux sous-sections :
+   - Côté données (libs Python, pipeline)
+   - Côté front (HTML/CSS/JS, framework, hébergement)
+
+5. **État du projet** — en cours / terminé / archivé + prochaines étapes.
+
+6. **Liens utiles** — démo publique + code source GitHub.
+
+### Workflow complet
+
+1. Lire le README du projet si fourni
+2. Collecter les informations manquantes (image, tags, date)
+3. Produire le fichier directement dans `_projects/` avec le bon nom
+4. Confirmer le chemin exact du fichier créé
