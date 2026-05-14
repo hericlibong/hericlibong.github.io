@@ -34,7 +34,7 @@ skills:
   - D3.js
   - Git
   - Flourish
-  - DataWarper
+  - Datawrapper
 
 # AI Assistant Configuration
 mistral_api_url: "https://data-stories-assistant.hericlibong.workers.dev"
