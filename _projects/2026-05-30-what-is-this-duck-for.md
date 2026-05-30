@@ -7,6 +7,7 @@ tags: [ia, fastapi, python, gemini, javascript, jinja2, hackathon]
 author: Héric Libong
 date: "2026-05-30"
 lang: fr
+translation_key: project-what-is-this-duck-for
 ---
 
 ## Origine du projet
@@ -18,6 +19,8 @@ Le point de départ est un objet trivial : un canard jaune en plastique. L'appli
 L'intérêt du projet n'est donc pas de résoudre un problème pratique. Il s'agit plutôt d'explorer un contraste : prendre un objet sans enjeu et lui appliquer les codes d'une enquête officielle, d'un rapport ministériel ou d'une analyse symbolique beaucoup trop confiante.
 
 Le résultat fonctionne comme une petite expérience d'interface, d'écriture et de ton. Le canard reste au centre, mais chaque réponse transforme cette banalité en diagnostic pseudo-scientifique, mystique, bureaucratique ou franchement suspicieux.
+
+🔗 **Démo en ligne** : [ricolajazz-whatisduckfor.hf.space](https://ricolajazz-whatisduckfor.hf.space/)
 
 ## Présentation du projet
 
@@ -61,4 +64,5 @@ Il n'est pas pensé comme un produit à faire évoluer indéfiniment. Son intér
 
 ## Liens utiles
 
+- **Démo en ligne** : [ricolajazz-whatisduckfor.hf.space](https://ricolajazz-whatisduckfor.hf.space/)
 - **Code source GitHub** : [github.com/hericlibong/What_Is_This_Duck_For](https://github.com/hericlibong/What_Is_This_Duck_For)
