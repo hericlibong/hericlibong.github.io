@@ -21,10 +21,8 @@ layout: default
 {% elsif page.permalink contains '/formation-ia/' or page.permalink contains '/ai-training/' %}
   {% assign display_content = site.formation_ia | where: "lang", current_lang | sort: 'date' | reverse %}
 {% else %}
-  {% assign localized_posts = site.posts | where: "lang", current_lang %}
   {% assign localized_projects = site.projects | where: "lang", current_lang %}
-  {% assign all_content = localized_posts | concat: localized_projects %}
-  {% assign display_content = all_content | sort: 'date' | reverse %}
+  {% assign display_content = localized_projects | sort: 'date' | reverse %}
 {% endif %}
 
 <div class="posts-grid">

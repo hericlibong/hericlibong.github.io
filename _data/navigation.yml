@@ -1,6 +1,4 @@
 fr:
-  - label: "Articles"
-    url: "/articles/"
   - label: "Formation IA"
     url: "/formation-ia/"
   - label: "BeautifullF1"
@@ -22,8 +20,6 @@ fr:
         url: "https://www.markdowntutorial.com/"
 
 en:
-  - label: "Articles"
-    url: "/en/articles/"
   - label: "AI Training"
     url: "/en/ai-training/"
   - label: "BeautifullF1"
