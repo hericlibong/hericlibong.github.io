@@ -1,0 +1,9 @@
+flow_id,date,date_end,from_place_id,to_place_id,flow_type,status,weight,source_id,confidence,data_status,notes
+fl_20260430_body_bunia_mongbwalu,2026-04-30,,bunia,mongbwalu,body_transfer,reported,1,jeune_afrique_pdf_2026_05_19,medium,reconstructed,Rapatriement de corps et rites funeraires; ne pas presenter comme transmission prouvee.
+fl_20260501_care_mongbwalu_rwampara,2026-05-01,,mongbwalu,rwampara,care_seeking,probable,3,deep_report_initial_2026_05_20,medium,reconstructed,Deplacements de malades cherchant des soins.
+fl_20260501_care_mongbwalu_bunia,2026-05-01,,mongbwalu,bunia,care_seeking,probable,3,deep_report_initial_2026_05_20,medium,reconstructed,Deplacements vers Bunia pour les soins.
+fl_20260511_patient_bunia_kampala,2026-05-11,,bunia,kampala,patient_travel,documented,2,deep_report_initial_2026_05_20,high,confirmed,Premier cas importe connu a Kampala.
+fl_20260512_samples_rwampara_kinshasa,2026-05-12,2026-05-14,rwampara,bunia,sample_transport,documented,1,deep_report_initial_2026_05_20,medium,provisional,Flux simplifie vers le circuit laboratoire; Kinshasa non encore dans places de reference.
+fl_20260519_extension_ituri_nordkivu,2026-05-19,,bunia,goma,official_extension,reported,2,deep_report_initial_2026_05_20,medium,provisional,Extension vers Nord-Kivu; flux narratif regional et non route exacte.
+fl_20260519_extension_goma_bukavu,2026-05-19,,goma,bukavu,official_extension,reported,1,deep_report_2026_05_27,medium,provisional,Signal secondaire vers Sud-Kivu selon sources recentes.
+fl_20260527_border_control_bunia_kampala,2026-05-27,,bunia,kampala,risk_corridor,control_measure,4,ja_2026_05_28_border,high,confirmed,Fermeture frontaliere et isolement 21 jours; corridor de controle pas transmission.

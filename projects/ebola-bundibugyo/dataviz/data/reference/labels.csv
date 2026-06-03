@@ -1,0 +1,47 @@
+label_group,key,label_fr,description,visual_hint
+event_type,first_known_case,Premier cas connu,Premier cas humain connu ou premier jalon clinique documente,point
+event_type,early_signal,Signal precoce,Signal local ou humanitaire avant confirmation officielle,point
+event_type,alert,Alerte,Alerte sanitaire ou notification officielle,point
+event_type,investigation,Investigation,Enquete de terrain ou prelevements,point
+event_type,lab_confirmation,Confirmation laboratoire,Confirmation virologique ou typage Bundibugyo,point
+event_type,official_declaration,Declaration officielle,Declaration institutionnelle nationale ou internationale,point
+event_type,cross_border_case,Cas transfrontalier,Cas importe ou confirme hors RDC,arc
+event_type,situation_update,Point de situation,Bilan chiffre ou mise a jour epidemiologique,chart
+event_type,response_measure,Mesure de riposte,Action de controle prevention quarantaine ou coordination,shield
+event_type,response_constraint,Contrainte de riposte,Manque de moyens obstacle logistique ou acces humanitaire,warning
+event_type,attack,Attaque ou incident,Incendie attaque fuite ou evenement perturbant la prise en charge,warning
+event_type,border_closure,Fermeture frontaliere,Mesure de controle transfrontaliere,barrier
+event_type,uncertainty_note,Note d'incertitude,Divergence de source ou limite d'interpretation,info
+flow_type,body_transfer,Rapatriement de corps,Deplacement ou rapatriement d'un corps mentionne par les sources,dashed
+flow_type,care_seeking,Recherche de soins,Deplacement probable ou documente de malades vers une structure de soins,dashed
+flow_type,patient_travel,Deplacement patient,Trajet documente d'un patient,solid
+flow_type,sample_transport,Transport d'echantillons,Flux operationnel lie aux prelevements ou analyses,dotted
+flow_type,risk_corridor,Corridor de risque,Axe de mobilite ou de controle frontalier a risque,dashed
+flow_type,official_extension,Extension documentee,Extension geographique rapportee par source officielle ou fiable,solid
+source_type,official,Officielle,Institution publique ou intergouvernementale,bold
+source_type,media,Media,Article ou depeche journalistique,regular
+source_type,humanitarian,Humanitaire,ONG terrain cluster ou acteur operationnel,regular
+source_type,analysis,Analyse,Synthese interne ou rapport de recherche,regular
+source_type,scientific,Scientifique,Donnee genomique modelisation ou publication technique,regular
+confidence,high,Elevee,Fait robuste source officielle ou sources convergentes,full
+confidence,medium,Moyenne,Fait documente mais provisoire ou incomplet,semi
+confidence,low,Faible,Hypothese reconstruction ou chiffre contradictoire,light
+data_status,confirmed,Confirme,Fait ou chiffre confirme selon la source,solid
+data_status,suspected,Suspect,Cas deces ou signal suspect non confirme,outline
+data_status,provisional,Provisoire,Donnee officielle ou fiable mais susceptible d'harmonisation,hatched
+data_status,reconstructed,Reconstruit,Reconstruction narrative ou analytique,dashed
+data_status,disputed,Divergent,Chiffres ou interpretations contradictoires,alert
+map_layer,clinical,Clinique,Symptomes deces cas confirmes,red
+map_layer,alert,Alerte,Alerte notification confirmation,orange
+map_layer,mobility,Mobilite,Flux de soins corps patients ou frontiere,blue
+map_layer,response,Riposte,Mesures de controle ou coordination,green
+map_layer,constraint,Contraintes,Conflit attaques defiance logistique,purple
+timeline_group,silent_spread,Circulation silencieuse,Avant l'alerte officielle,phase1
+timeline_group,detection_confirmation,Detection et confirmation,Alerte investigations confirmation,phase2
+timeline_group,regional_spread,Extension regionale,Ituri Nord-Kivu Sud-Kivu Ouganda,phase3
+timeline_group,response_breakdown,Riposte debordee,Attaques defiance contact tracing et manque de moyens,phase4
+timeline_group,cross_border_control,Controle transfrontalier,Fermeture frontiere isolement quarantaine,phase5
+display_tier,primary,Principal,Evenement structurant a afficher et annoter en priorite,strong
+display_tier,secondary,Secondaire,Evenement utile a afficher en point ou dans une fiche secondaire,medium
+display_tier,context,Contexte,Evenement de contexte a garder dans les donnees mais a afficher avec parcimonie,light
+display_tier,verify,A verifier,Evenement prometteur mais insuffisamment consolide pour un affichage principal,warning

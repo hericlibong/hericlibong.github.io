@@ -1,0 +1,15 @@
+place_id,name,country,admin1,health_zone,place_type,latitude,longitude,geo_precision,source_id,notes
+bunia,Bunia,RDC,Ituri,Bunia,city,1.5667,30.2500,city_centroid,deep_report_2026_05_27,Premier cas humain connu ou premier jalon clinique documente; chef-lieu provincial.
+mongbwalu,Mongbwalu,RDC,Ituri,Mongbwalu,mining_town,1.94468,30.03861,city_centroid,deep_report_2026_05_27,Foyer communautaire et funeraire precoce; zone miniere mobile.
+rwampara,Rwampara,RDC,Ituri,Rwampara,health_zone_proxy,1.5667,30.2500,proxy,deep_report_2026_05_27,Proxy Bunia-Rwampara; a remplacer par polygone officiel de zone de sante.
+nyankunde,Nyankunde,RDC,Ituri,Nyankunde,health_zone_proxy,1.2810,29.9640,approx_inferred,deep_report_2026_05_27,Approximation inferee depuis une distance a Bunia; precision faible.
+goma,Goma,RDC,Nord-Kivu,Goma,city,-1.693314,29.245241,city_centroid,deep_report_2026_05_27,Pole urbain du Nord-Kivu mentionne dans l'extension.
+katwa,Katwa,RDC,Nord-Kivu,Katwa,commune,0.116513,29.371825,commune_centroid,deep_report_2026_05_27,Commune ou zone de Butembo; extension documentee.
+butembo,Butembo,RDC,Nord-Kivu,Butembo,city,0.127752,29.287371,city_centroid,deep_report_2026_05_27,Pole urbain du Nord-Kivu.
+bukavu,Bukavu,RDC,Sud-Kivu,Bukavu,city,-2.5167,28.8500,city_centroid,deep_report_2026_05_27,Mentionne comme signal secondaire ou extension selon sources.
+kampala,Kampala,Ouganda,Central Region,Kampala,city,0.315278,32.568611,city_centre_proxy,deep_report_2026_05_27,Cas importes et mesures ougandaises.
+aru,Aru,RDC,Ituri,Aru,border_town,2.861948,30.83124,city_centroid,deep_report_2026_05_27,Point frontalier ou regional potentiel.
+fataki,Fataki,RDC,Ituri,Fataki,locality,2.022030,30.564297,locality_centroid,deep_report_2026_05_27,Localite mentionnee dans les sources secondaires.
+kasenyi_tchomia,Kasenyi/Tchomia,RDC,Ituri,Tchomia,risk_corridor,1.4160,30.4590,corridor_proxy,deep_report_initial_2026_05_20,Point moyen approximatif pour corridor lacustre; a consolider.
+drc_total,RDC total,RDC,,,,,,,,Entite non cartographique pour comptages nationaux.
+uganda_total,Ouganda total,Ouganda,,,,,,,,Entite non cartographique pour comptages nationaux.

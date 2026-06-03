@@ -1,0 +1,21 @@
+count_id,date,entity_id,entity_type,confirmed_cases,suspected_cases,confirmed_deaths,suspected_deaths,contacts,source_id,confidence,data_status,notes
+ct_20260515_drc_initial,2026-05-15,drc_total,country_total,8,246,,80,65,deep_report_initial_2026_05_20,high,provisional,Premier bilan officiel initial.
+ct_20260517_uganda,2026-05-17,uganda_total,country_total,2,,,1,,deep_report_initial_2026_05_20,high,confirmed,Deux cas confirmes a Kampala dont un deces selon synthese initiale.
+ct_20260520_drc_insp,2026-05-20,drc_total,country_total,51,575,,148,847,deep_report_initial_2026_05_20,medium,provisional,INSP; divergence avec OMS.
+ct_20260520_rwampara,2026-05-20,rwampara,health_zone,25,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260520_mongbwalu,2026-05-20,mongbwalu,health_zone,13,,,,77,deep_report_initial_2026_05_20,medium,provisional,Mongbwalu concentre 77 deces suspects.
+ct_20260520_bunia,2026-05-20,bunia,health_zone,6,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260520_nyankunde,2026-05-20,nyankunde,health_zone,4,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260520_goma,2026-05-20,goma,health_zone,1,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260520_katwa,2026-05-20,katwa,health_zone,1,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260520_butembo,2026-05-20,butembo,health_zone,1,,,,,deep_report_initial_2026_05_20,medium,provisional,Repartition INSP par zone.
+ct_20260522_drc_who,2026-05-22,drc_total,country_total,82,750,,177,,who_2026_05_22_item2,high,provisional,OMS donnees au 22 mai.
+ct_20260525_drc_disputed,2026-05-25,drc_total,country_total,,904,,119,,deep_report_2026_05_27,low,disputed,Communication congolaise relayee; deces contradictoires.
+ct_20260525_uganda,2026-05-25,uganda_total,country_total,7,,,1,,ap_2026_05_25_uganda_7,high,confirmed,Ouganda porte son total a 7 cas confirmes.
+ct_20260526_drc_who,2026-05-26,drc_total,country_total,,900,,223,,deep_report_2026_05_27,high,provisional,OMS reprise par presse; ordre de grandeur.
+ct_20260527_drc_ap,2026-05-27,drc_total,country_total,100,1000,,220,,deep_report_2026_05_27,medium,provisional,AP parle de plus de 100 cas confirmes et pres de 1000 suspects.
+ct_20260528_drc_ja_oms,2026-05-28,drc_total,country_total,,1000,,223,,ja_2026_05_28_border,medium,provisional,Plus de 1000 cas suspects et 223 deces selon OMS citee par Jeune Afrique.
+ct_20260528_drc_gov_elpais,2026-05-28,drc_total,country_total,,,,238,,elpais_2026_05_28_238,medium,provisional,238 deces suspects selon gouvernement congolais rapporte par El Pais; a recouper.
+ct_20260529_drc_cdc,2026-05-29,drc_total,country_total,203,1139,17,246,2987,africacdc_2026_05_29,high,provisional,Bilan Africa CDC au 29 mai; hausse des confirmes liee au destockage du retard de laboratoire.
+ct_20260530_drc_cdc,2026-05-30,drc_total,country_total,254,1199,42,259,3200,africacdc_2026_05_30,high,provisional,Bilan Africa CDC au 30 mai; 51 nouveaux confirmes et aucun nouveau deces.
+ct_20260531_drc_cdc,2026-05-31,drc_total,country_total,282,321,42,,3200,africacdc_2026_05_31,high,provisional,Bilan Africa CDC au 31 mai; cas suspects reclasses de 1199 a 321 apres confirmation laboratoire.
