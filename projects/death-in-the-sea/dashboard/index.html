@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Death in the Sea — Missing migrants in the Mediterranean</title>
+    <script type="module" crossorigin src="./assets/index-Czu6SUAG.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DN71roeb.css">
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <div class="header-left">
+          <h1>Death in the Sea</h1>
+          <p class="subtitle">Les morts en Méditerranée, depuis 2014.</p>
+        </div>
+        <div class="header-right">
+          <p id="scope-label" aria-live="polite">Total 2014–2026</p>
+          <div class="counters" aria-live="polite">
+            <div class="counter">
+              <span class="counter-num" id="incident-count">—</span>
+              <span class="counter-label">incidents</span>
+            </div>
+            <div class="counter">
+              <span class="counter-num" id="victim-count">—</span>
+              <span class="counter-label">victimes</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="toolbar">
+        <div class="toolbar-left" role="group" aria-label="Filtre par route">
+          <button class="route-btn active" data-route="all">Toutes</button>
+          <button class="route-btn" data-route="Central">Centrale</button>
+          <button class="route-btn" data-route="Western">Western</button>
+          <button class="route-btn" data-route="Eastern">Eastern</button>
+        </div>
+        <div class="toolbar-right">
+          <button id="timeline-toggle" aria-expanded="false" aria-controls="timeline-panel">
+            <span class="toggle-label">Voir la frise temporelle</span>
+            <span class="toggle-icon" aria-hidden="true">▾</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="map-wrapper">
+        <div id="map" role="region" aria-label="Carte des incidents migratoires en Méditerranée"></div>
+        <div id="map-legend">
+          <div class="legend-item"><span class="dot dot-central"></span>Centrale</div>
+          <div class="legend-item"><span class="dot dot-western"></span>Western</div>
+          <div class="legend-item"><span class="dot dot-eastern"></span>Eastern</div>
+          <div class="legend-item"><span class="dot dot-faded"></span>Localisation imprécise</div>
+          <div class="legend-item"><span class="dot dot-corrected"></span>Coordonnée corrigée</div>
+        </div>
+      </div>
+
+      <section id="timeline-panel" class="collapsed">
+        <div class="timeline-panel-header">
+          <h2>Victimes par année</h2>
+          <p class="timeline-hint">Cliquez sur une barre pour filtrer.</p>
+          <button id="timeline-clear" class="timeline-clear" disabled>Toutes années</button>
+        </div>
+        <div id="timeline" role="region" aria-label="Frise temporelle des victimes par année"></div>
+      </section>
+
+      <footer>
+        <small>
+          Source : IOM Missing Migrants Project — données extraites le 2026-05-19. Estimations minimales.
+        </small>
+      </footer>
+    </main>
+  </body>
+</html>
