@@ -2,6 +2,7 @@
 layout: project
 title: "Ebola Bundibugyo - Storymap"
 subtitle: "Une dataviz interactive pour suivre l'alerte Ebola entre la RDC et l'Ouganda."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1780576241/Capture_d_%C3%A9cran_du_2026-06-04_14-22-47_eycdf8.png"
 tags: [data-visualisation, storymap, cartographie, sante, ebola, d3js, typescript, vite, github-pages]
 author: Héric Libong
 date: "2026-06-03"
