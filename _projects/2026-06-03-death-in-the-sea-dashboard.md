@@ -2,6 +2,7 @@
 layout: project
 title: "Death in the Sea - Dashboard"
 subtitle: "Une cartographie interactive des morts et disparitions de personnes migrantes en Méditerranée depuis 2014."
+feature-image: "https://res.cloudinary.com/dvlzgmjzb/image/upload/v1780576676/Capture_d_%C3%A9cran_du_2026-06-04_14-37-32_hkxyei.png"
 tags: [data-visualisation, dashboard, cartographie, migration, méditerranée, d3js, mapbox, vite, github-pages]
 author: Héric Libong
 date: "2026-06-03"
