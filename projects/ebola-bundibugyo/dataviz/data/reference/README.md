@@ -1,6 +1,6 @@
 # Jeu de donnees de reference
 
-Ce dossier contient le jeu de donnees de reference pour reconstruire la dataviz a partir des faits documentes, du debut connu de l'epidemie jusqu'au 28 mai 2026.
+Ce dossier contient le jeu de donnees de reference pour reconstruire la dataviz a partir des faits documentes, du debut connu de l'epidemie jusqu'au 11 juin 2026.
 
 ## Fichiers
 

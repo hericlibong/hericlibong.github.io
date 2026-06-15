@@ -45,3 +45,5 @@ display_tier,primary,Principal,Evenement structurant a afficher et annoter en pr
 display_tier,secondary,Secondaire,Evenement utile a afficher en point ou dans une fiche secondaire,medium
 display_tier,context,Contexte,Evenement de contexte a garder dans les donnees mais a afficher avec parcimonie,light
 display_tier,verify,A verifier,Evenement prometteur mais insuffisamment consolide pour un affichage principal,warning
+entity_type,country_total,Total national,Bilan cumule a l'echelle d'un pays,aggregate
+entity_type,health_zone,Zone de sante,Ventilation par zone de sante,zone
